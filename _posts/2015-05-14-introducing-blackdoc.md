@@ -18,16 +18,16 @@ Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. 
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)
 
-Sogang University(Seoul, Korea)
-M.S. Student in Electrical Engineering
+Sogang University(Seoul, Korea)  
+M.S. Student in Electrical Engineering  
 2021.09 ~
 
-Ajou University(Suwon, Korea)
-internship @ power system lab
+Ajou University(Suwon, Korea)  
+internship @ power system lab  
 2020.12 ~ 2021.02
 
-Hongik University(Seoul, Korea)
-B.S in Electrical Engineering
+Hongik University(Seoul, Korea)  
+B.S in Electrical Engineering  
 2015.03 ~ 2021.02
 
 ### BlackDoc Features
