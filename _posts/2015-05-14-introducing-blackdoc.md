@@ -23,8 +23,8 @@ M.S. Student in Electrical Engineering
 2021.09 ~
 
 Ajou University(Suwon, Korea)  
-internship @ power system lab  
-2020.12 ~ 2021.02
+Internship @ power system lab  
+2020.12 ~ 2021.02.28
 
 Hongik University(Seoul, Korea)  
 B.S in Electrical Engineering  
