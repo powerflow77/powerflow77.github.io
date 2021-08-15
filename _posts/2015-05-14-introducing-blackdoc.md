@@ -31,7 +31,7 @@ Hongik University(Seoul, Korea)
 B.S in Electrical Engineering  
 2015.03 ~ 2021.02
 
-### BlackDoc Features
+### Research Interest
 
 In addition to the features of [Poole](http://getpoole.com) and [Hyde](http://hyde.getpoole.com), BlackDoc theme adds the following:
 
