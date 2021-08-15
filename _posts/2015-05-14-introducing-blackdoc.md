@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Introducing BlackDoc
+title: About Me
 ---
 
 BlackDoc is a two-column [Jekyll](http://jekyllrb.com) theme that's ideal for websites that require a master-detail layout for viewing of content. It's based on [Poole](http://getpoole.com), the Jekyll butler, and the [Hyde](http://hyde.getpoole.com) theme.
 
 I needed a two-column layout with a scrolling sidebar to publish my [code cheatsheets](http://karloespiritu.com/cheatsheets), and found the [Hyde](http://hyde.getpoole.com) Jekyll theme to be a good starting theme. To complement the color scheme of my main [website](http://karloespiritu.com), I customised the theme to make it look great in black background and changed the sidebar to display scrolling content. I created this theme because I can't seem to find any good Jekyll theme with a master-detail layout. Hopefully, someone will find this useful as well in their own projects.
 
-### Built on Poole
+### Education
 
 Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. Poole-based themes, such as BlackDoc here, include the following:
 
@@ -17,6 +17,18 @@ Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. 
 * Support for a wide gamut of HTML elements
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)
+
+Sogang University(Seoul, Korea)
+M.S. Student in Electrical Engineering
+2021.09 ~
+
+Ajou University(Suwon, Korea)
+internship @ power system lab
+2020.12 ~ 2021.02
+
+Hongik University(Seoul, Korea)
+B.S in Electrical Engineering
+2015.03 ~ 2021.02
 
 ### BlackDoc Features
 
