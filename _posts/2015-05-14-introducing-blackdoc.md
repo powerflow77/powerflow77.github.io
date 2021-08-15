@@ -28,7 +28,7 @@ Internship @ power system lab
 2020.12 ~ 2021.02.28
 
 Hongik University(Seoul, Korea)  
-B.S in Electrical Engineering  
+B.S. in Electrical Engineering  
 2015.03 ~ 2021.02
 
 ### Research Interest
