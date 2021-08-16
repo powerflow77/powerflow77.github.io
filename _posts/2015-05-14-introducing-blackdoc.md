@@ -6,7 +6,6 @@ title: About Me
 <!--BlackDoc is a two-column [Jekyll](http://jekyllrb.com) theme that's ideal for websites that require a master-detail layout for viewing of content. It's based on [Poole](http://getpoole.com), the Jekyll butler, and the [Hyde](http://hyde.getpoole.com) theme.
 
 I needed a two-column layout with a scrolling sidebar to publish my [code cheatsheets](http://karloespiritu.com/cheatsheets), and found the [Hyde](http://hyde.getpoole.com) Jekyll theme to be a good starting theme. To complement the color scheme of my main [website](http://karloespiritu.com), I customised the theme to make it look great in black background and changed the sidebar to display scrolling content. I created this theme because I can't seem to find any good Jekyll theme with a master-detail layout. Hopefully, someone will find this useful as well in their own projects.-->
-Hi. I am MIN-JAE SON.
 
 ### Education
 
@@ -33,7 +32,18 @@ B.S. in Electrical Engineering
 
 ### Research Interest
 
-In addition to the features of [Poole](http://getpoole.com) and [Hyde](http://hyde.getpoole.com), BlackDoc theme adds the following:
+* Power Systems
+* Machine Learning
+* Deep Learning
+* Reinforcement Learning
+
+### Tools
+
+* Python
+* Pytorch
+* MATLAB
+
+<!--In addition to the features of [Poole](http://getpoole.com) and [Hyde](http://hyde.getpoole.com), BlackDoc theme adds the following:
 
 * Scrolling sidebar with a thin scrollbar to allow displaying of numerous top-level content.
 * Elements and classes of the Hyde theme were updated to look great in black background. Check out the [Theme Styles](styles) to see the stylings used in the theme.
@@ -48,4 +58,4 @@ BlackDoc theme supports most modern browsers and only compatible with Internet E
 
 BlackDoc is a free Jekyll theme and hosted with GitHub. Head to the <a href="https://github.com/karloespiritu/BlackDoc">GitHub repository</a> to download.
 
-Cheers!
+Cheers!-->
