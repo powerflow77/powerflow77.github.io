@@ -32,7 +32,8 @@ B.S. in Electrical Engineering
 
 ### Research Interest
 
-* Power Systems
+* Power System
+* Power System Economics
 * Machine Learning
 * Deep Learning
 * Reinforcement Learning
