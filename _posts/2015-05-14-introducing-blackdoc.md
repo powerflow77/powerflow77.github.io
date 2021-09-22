@@ -18,16 +18,16 @@ I needed a two-column layout with a scrolling sidebar to publish my [code cheats
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)-->
 
-Sogang University(Seoul, Korea)  
+Sogang University(Seoul, S.Korea)  
 M.S. Student in Electronic Engineering  
 (Focused on Power System & AI)  
 2021.09 ~
 
-Ajou University(Suwon, Korea)  
+Ajou University(Suwon, S.Korea)  
 Internship @ power system lab  
 2020.12 ~ 2021.02.28
 
-Hongik University(Seoul, Korea)  
+Hongik University(Seoul, S.Korea)  
 B.S. in Electronic & Electrical Engineering  
 2015.03 ~ 2021.02
 
