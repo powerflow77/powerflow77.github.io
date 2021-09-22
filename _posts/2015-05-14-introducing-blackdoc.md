@@ -18,7 +18,7 @@ I needed a two-column layout with a scrolling sidebar to publish my [code cheats
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)-->
 
-Sogang University(Seoul, S.Korea)  
+<!--Sogang University(Seoul, S.Korea)  
 M.S. Student in Electronic Engineering  
 (Focused on Power System & AI)  
 2021.09 ~
@@ -29,7 +29,42 @@ Internship @ power system lab
 
 Hongik University(Seoul, S.Korea)  
 B.S. in Electronic & Electrical Engineering  
-2015.03 ~ 2021.02
+2015.03 ~ 2021.02-->
+
+<table>
+  <thead>
+    <tr>
+      <th>Univ.</th>
+      <th>Major</th>
+      <th>Period</th>
+    </tr>
+  </thead>
+  <!--<tfoot>
+    <tr>
+      <td>Totals</td>
+      <td>21</td>
+      <td>23</td>
+    </tr>
+  </tfoot>-->
+  <tbody>
+    <tr>
+      <td>Sogang University</td>
+      <td>M.S. Student in Electronic Engineering (Focused on Power System & AI)</td>
+      <td>2021.09 ~</td>
+    </tr>
+    <tr>
+      <td>Ajou University</td>
+      <td>Internship @ Power System Lab</td>
+      <td>2020.12 ~ 2021.02.28</td>
+    </tr>
+    <tr>
+      <td>Hongik University</td>
+      <td>B.S. in Electronic & Electrical Engineering</td>
+      <td>2015.03 ~ 2021.02</td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### Research Interest
 
