@@ -19,7 +19,7 @@ I needed a two-column layout with a scrolling sidebar to publish my [code cheats
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)-->
 
 Sogang University(Seoul, Korea)  
-M.S. Student in Electrical Engineering  
+M.S. Student in Electronic Engineering  
 2021.09 ~
 
 Ajou University(Suwon, Korea)  
@@ -27,14 +27,13 @@ Internship @ power system lab
 2020.12 ~ 2021.02.28
 
 Hongik University(Seoul, Korea)  
-B.S. in Electrical Engineering  
+B.S. in Electronic & Electrical Engineering  
 2015.03 ~ 2021.02
 
 ### Research Interest
 
-* Power System
+* Optimal Power Flow
 * Power System Economics
-* Machine Learning
 * Deep Learning
 * Reinforcement Learning
 
