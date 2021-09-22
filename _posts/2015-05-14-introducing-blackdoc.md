@@ -7,7 +7,7 @@ title: About Me
 
 I needed a two-column layout with a scrolling sidebar to publish my [code cheatsheets](http://karloespiritu.com/cheatsheets), and found the [Hyde](http://hyde.getpoole.com) Jekyll theme to be a good starting theme. To complement the color scheme of my main [website](http://karloespiritu.com), I customised the theme to make it look great in black background and changed the sidebar to display scrolling content. I created this theme because I can't seem to find any good Jekyll theme with a master-detail layout. Hopefully, someone will find this useful as well in their own projects.-->
 
-### Education
+### <span style="color: #03F3B3;">Education</span>
 
 <!--Poole is the Jekyll Butler, serving as a foundation for creating Jekyll themes. Poole-based themes, such as BlackDoc here, include the following:
 
@@ -66,14 +66,14 @@ B.S. in Electronic & Electrical Engineering<br>
 </table>
 
 
-### Research Interest
+### <span style="color: #03F3B3;">Research Interest</span>
 
 * Smart Grid
 * Power System Economics
 * Deep Learning
 * Reinforcement Learning
 
-### <span style="color: #3EE900;">Tools</span>
+### <span style="color: #03F3B3;">Tools</span>
 
 * Python
 * Pytorch
