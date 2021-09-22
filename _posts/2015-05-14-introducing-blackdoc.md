@@ -20,6 +20,7 @@ I needed a two-column layout with a scrolling sidebar to publish my [code cheats
 
 Sogang University(Seoul, Korea)  
 M.S. Student in Electronic Engineering  
+(Focused on Power System & AI)
 2021.09 ~
 
 Ajou University(Suwon, Korea)  
@@ -32,7 +33,7 @@ B.S. in Electronic & Electrical Engineering
 
 ### Research Interest
 
-* Optimal Power Flow
+* Smart Grid
 * Power System Economics
 * Deep Learning
 * Reinforcement Learning
