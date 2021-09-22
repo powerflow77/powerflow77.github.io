@@ -5,7 +5,7 @@ highlighter:      rouge
 # Setup
 title:            Minjae Son
 tagline:          Black Theme for Jekyll
-description:      "Hi!"
+description:      "Good to see you."
 url:              "https://powerflow77.github.io"
 baseurl:          /
                   # the optional subpath of your site, e.g. "/my-jekyll-site/"
