@@ -73,7 +73,7 @@ B.S. in Electronic & Electrical Engineering<br>
 * Deep Learning
 * Reinforcement Learning
 
-### Tools
+### <span style="color: #3EE900;">Tools</span>
 
 * Python
 * Pytorch
