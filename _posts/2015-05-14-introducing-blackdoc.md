@@ -18,17 +18,17 @@ I needed a two-column layout with a scrolling sidebar to publish my [code cheats
 * Related posts (time-based, because Jekyll) below each post
 * Syntax highlighting using Pygments (the Python-based code snippet highlighter)-->
 
-<!--Sogang University(Seoul, S.Korea)  
-M.S. Student in Electronic Engineering  
-(Focused on Power System & AI)  
+<!--Sogang University(Seoul, S.Korea)<br>
+M.S. Student in Electronic Engineering<br>
+(Focused on Power System & AI)<br>
 2021.09 ~
 
-Ajou University(Suwon, S.Korea)  
-Internship @ power system lab  
+Ajou University(Suwon, S.Korea)<br>
+Internship @ power system lab<br>
 2020.12 ~ 2021.02.28
 
-Hongik University(Seoul, S.Korea)  
-B.S. in Electronic & Electrical Engineering  
+Hongik University(Seoul, S.Korea)<br>
+B.S. in Electronic & Electrical Engineering<br>
 2015.03 ~ 2021.02-->
 
 <table>
