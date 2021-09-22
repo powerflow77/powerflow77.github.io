@@ -53,13 +53,13 @@ B.S. in Electronic & Electrical Engineering<br>
       <td>2021.09 ~</td>
     </tr>
     <tr>
-      <td>Ajou University</td>
-      <td>Internship @ Power System Lab<br>(Suwon, S.Korea)</td>
+      <td>Ajou University<br>(Suwon, S.Korea)</td>
+      <td>Internship @ Power System Lab</td>
       <td>2020.12 ~ 2021.02.28</td>
     </tr>
     <tr>
-      <td>Hongik University</td>
-      <td>B.S. in Electronic & Electrical Engineering<br>(Seoul, S.Korea)</td>
+      <td>Hongik University<br>(Seoul, S.Korea)</td>
+      <td>B.S. in Electronic & Electrical Engineering</td>
       <td>2015.03 ~ 2021.02</td>
     </tr>
   </tbody>
