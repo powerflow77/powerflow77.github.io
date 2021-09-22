@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            MIN-JAE SON
+title:            Minjae Son
 tagline:          Black Theme for Jekyll
 description:      "Hi!"
 url:              "https://powerflow77.github.io"
