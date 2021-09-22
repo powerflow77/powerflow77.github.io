@@ -49,7 +49,7 @@ B.S. in Electronic & Electrical Engineering
   <tbody>
     <tr>
       <td>Sogang University</td>
-      <td width='300px' style="word-break:break-all">M.S. Student in Electronic Engineering (Focused on Power System & AI)</td>
+      <td>M.S. Student in Electronic Engineering<br>(Focused on Power System & AI)</td>
       <td>2021.09 ~</td>
     </tr>
     <tr>
