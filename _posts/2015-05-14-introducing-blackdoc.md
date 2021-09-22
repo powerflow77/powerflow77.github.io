@@ -48,18 +48,18 @@ B.S. in Electronic & Electrical Engineering<br>
   </tfoot>-->
   <tbody>
     <tr>
-      <td>Sogang University</td>
+      <td>Sogang University<br>(Seoul, S.Korea)</td>
       <td>M.S. Student in Electronic Engineering<br>(Focused on Power System & AI)</td>
       <td>2021.09 ~</td>
     </tr>
     <tr>
       <td>Ajou University</td>
-      <td>Internship @ Power System Lab</td>
+      <td>Internship @ Power System Lab<br>(Suwon, S.Korea)</td>
       <td>2020.12 ~ 2021.02.28</td>
     </tr>
     <tr>
       <td>Hongik University</td>
-      <td>B.S. in Electronic & Electrical Engineering</td>
+      <td>B.S. in Electronic & Electrical Engineering<br>(Seoul, S.Korea)</td>
       <td>2015.03 ~ 2021.02</td>
     </tr>
   </tbody>
