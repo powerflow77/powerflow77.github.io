@@ -79,8 +79,6 @@ B.S. in Electronic & Electrical Engineering<br>
 * Pytorch
 * MATLAB
 
-<img src="profile_pic.jpg">
-
 <!--In addition to the features of [Poole](http://getpoole.com) and [Hyde](http://hyde.getpoole.com), BlackDoc theme adds the following:
 
 * Scrolling sidebar with a thin scrollbar to allow displaying of numerous top-level content.
