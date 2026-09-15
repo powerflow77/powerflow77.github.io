@@ -41,7 +41,7 @@ Theme folders were reused from the supplied reference at commit `7227dba`. The r
 - `python scripts/verify_site.py`: all local links, image and CSS/font references, original outgoing links, record counts, image SHA-256 checksums, and absence of the reference owner's content checked.
 - Browser comparison at 1280px: identical 18px body font, font stack, sidebar width (192.953px), and outer article width (1020.688px) to the reference.
 - Main sections and all three resource pages checked at 390px and 768px. Home and Research also checked at 320px. No horizontal overflow.
-- Mobile navigation, profile dropdown, and light/dark theme switching checked.
+- Mobile navigation, profile dropdown, and the fixed light theme checked.
 - All retained page images loaded successfully; no browser console errors observed.
 
 Deployment status and URLs are recorded in the final delivery after the remote deployment has been verified.

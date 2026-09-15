@@ -1,11 +1,4 @@
-// Keyboard access and state announcements for the original AcademicPages controls.
-const themeControl = document.querySelector('#theme-toggle a');
-themeControl?.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    themeControl.click();
-  }
-});
+// Keyboard access and state announcements for the AcademicPages navigation.
 const navButton = document.querySelector('#site-nav > button');
 const mobileNavigation = document.querySelector('#mobile-navigation');
 function syncNavigation() {
