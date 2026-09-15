@@ -8,6 +8,10 @@ layout: default
   {% include page__hero.html %}
 {% endif %}
 
+{% if page.home_hero %}
+  {% include home-hero.html %}
+{% endif %}
+
 {% if page.url != "/" and site.breadcrumbs %}
   {% unless paginator %}
     {% include breadcrumbs.html %}
