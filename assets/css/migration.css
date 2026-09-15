@@ -367,7 +367,7 @@ hr { border-top-color: #dce6f2; }
   font-weight: 680;
   letter-spacing: -.012em;
 }
-.page--minjae-son .home-profile-tagline { font-weight: 700; }
+.page--minjae-son .home-profile-tagline { color: #202936; font-weight: 700; }
 .page--minjae-son .page__content > hr {
   height: 1px;
   margin: 2.35rem 0 0;
