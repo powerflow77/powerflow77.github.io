@@ -11,13 +11,7 @@ hide_google_scholar: true
 {% for paper in publications %}
 <li id="{{ paper.publication_id | downcase }}">
 <h2>[{{ paper.publication_id }}] {{ paper.title }}{% if paper.paperurl != '' %} <a href="{{ paper.paperurl }}" aria-label="View {{ paper.title | escape }}">🔗</a>{% endif %}</h2>
-{% assign citation_parts = paper.citation_text | split: ', ' %}
-{% assign author_count = citation_parts.size | minus: 2 %}
-{% assign author_parts = citation_parts | slice: 0, author_count %}
-{% assign meta_parts = citation_parts | slice: author_count, 2 %}
-{% assign author_text = author_parts | join: ', ' %}
-<p class="publication-authors">{{ author_text | replace: 'M. Son', '<span class="publication-self">M. Son</span>' }}</p>
-<p class="publication-meta"><span>{{ meta_parts[0] }}</span><span>{{ meta_parts[1] }}</span></p>
+<p class="publication-citation">{{ paper.citation_text }}</p>
 </li>
 {% endfor %}
 </ul>
