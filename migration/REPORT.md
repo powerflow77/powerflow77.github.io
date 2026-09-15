@@ -8,27 +8,25 @@ Source captured on 2026-09-15: <https://sites.google.com/view/ssonn/%ED%99%88>.
 | --- | --- |
 | 홈 | `/` |
 | About Me → Researcher | `/` |
-| About Me → Gallery | `/gallery/` |
 | Research → Works | `/publications/`, `/projects/` |
 | Research → Research Area | `/research/` |
 | Misc. → Related Labs | `/resources/related-labs/` |
 | Misc. → Conferences | `/resources/conferences/` |
 | Misc. → Journals | `/resources/journals/` |
 
-The six main navigation entries lead to all migrated content. Redirects on the new domain also cover the former page paths. Google Sites URLs remain intact because the source site was never modified.
+The five main navigation entries lead to the retained site content. Redirects on the new domain cover the retained former page paths. Google Sites URLs remain intact because the source site was never modified.
 
 ## Completeness
 
-- 8 source pages.
+- 7 retained source pages.
 - Full biography, education, advisors, undergraduate thesis, memberships, languages, and tools.
 - 8 publication entries, including original unfinished titles and preparation/experimental/review statuses.
 - 7 projects: 3 ongoing and 4 completed, preserving Korean titles and sponsor names.
 - 4 research areas, their Korean descriptions, and every listed topic.
-- 3 gallery items, with original captions and original photos.
 - 32 institutions and 43 researcher/lab links.
 - 11 conference names and 24 journal names. The source provided no hyperlinks for these entries.
 - All 49 outgoing content links from the source are preserved.
-- 14 original local image files: 5 photos and 9 background images. Five section backgrounds are preserved as repository assets; the remaining nine images are displayed in the rebuilt pages.
+- 11 original local image files: 2 photos and 9 background images. Four images are displayed on the Home page; seven background images are retained as migration records and theme source assets.
 
 No email address was provided on the source, so no email address was inferred. The GitHub profile link was supplied by the user. J4's source link symbol had no href and is not treated as a publication link.
 
@@ -39,11 +37,11 @@ Theme folders were reused from the supplied reference at commit `7227dba`. The r
 ## Local verification
 
 - Real Ruby 3.3.12 / Jekyll 3.10.0 production build with strict front matter.
-- 37 generated HTML pages, including collection detail pages and redirects.
+- 35 generated HTML pages, including collection detail pages and redirects.
 - `python scripts/verify_site.py`: all local links, image and CSS/font references, original outgoing links, record counts, image SHA-256 checksums, and absence of the reference owner's content checked.
 - Browser comparison at 1280px: identical 18px body font, font stack, sidebar width (192.953px), and outer article width (1020.688px) to the reference.
 - Main sections and all three resource pages checked at 390px and 768px. Home and Research also checked at 320px. No horizontal overflow.
 - Mobile navigation, profile dropdown, and light/dark theme switching checked.
-- Original gallery photos loaded successfully; no browser console errors observed.
+- All retained page images loaded successfully; no browser console errors observed.
 
 Deployment status and URLs are recorded in the final delivery after the remote deployment has been verified.

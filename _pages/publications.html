@@ -10,10 +10,8 @@ author_profile: true
 {% assign publications = site.publications | sort: 'order' | reverse %}
 {% for paper in publications %}
 <li id="{{ paper.publication_id | downcase }}">
-<h2>[{{ paper.publication_id }}] <a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h2>
+<h2>[{{ paper.publication_id }}] {{ paper.title }}{% if paper.paperurl != '' %} <a href="{{ paper.paperurl }}" aria-label="View {{ paper.title | escape }}">🔗</a>{% endif %}</h2>
 <p class="publication-citation">{{ paper.citation_text }}</p>
-{% if paper.paperurl != '' %}<p><a href="{{ paper.paperurl }}">Publication link</a></p>{% endif %}
 </li>
 {% endfor %}
 </ul>
-<img class="research-banner" src="{{ "/images/works-grid.png" | relative_url }}" alt="Original Works page artwork" loading="lazy">

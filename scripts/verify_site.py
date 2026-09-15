@@ -102,7 +102,7 @@ for entry in inventory['projects']:
         errors.append(f'Missing project {entry["id"]}')
 
 assets = json.loads((ROOT / 'migration/assets.json').read_text(encoding='utf-8'))
-assert len(assets) == 14
+assert len(assets) == 11
 for asset in assets:
     p = ROOT / asset['file']
     if hashlib.sha256(p.read_bytes()).hexdigest() != asset['sha256']:

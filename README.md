@@ -5,8 +5,8 @@ AcademicPages/Jekyll source for [powerflow77.github.io](https://powerflow77.gith
 ## Edit the site
 
 - `_config.yml`: name, sidebar, profile links, and site settings.
-- `_data/navigation.yml`: Home, Research, Publications, Projects, Gallery, Resources.
-- `_pages/`: page content, gallery, and resource directories.
+- `_data/navigation.yml`: Home, Research, Publications, Projects, Resources.
+- `_pages/`: page content and resource directories.
 - `_publications/`: one editable file per publication, J1–J8.
 - `_portfolio/`: one editable file per project, P1–P7.
 - `images/`: all original photographs and background artwork, hosted locally.
@@ -35,7 +35,7 @@ The public repository is `powerflow77/powerflow77.github.io`. In **Settings → 
 
 ## Migration record
 
-See `migration/REPORT.md`, `migration/source-inventory.json`, and `migration/assets.json` for the page map, exact source records, original asset addresses, and checksums. The five plain section-background image files are retained in `images/` as source assets; the AcademicPages theme controls section styling. The other nine source images are displayed throughout the site. The original Google Sites site is unchanged.
+See `migration/REPORT.md`, `migration/source-inventory.json`, and `migration/assets.json` for the page map, source records retained on this site, original asset addresses, and checksums. Four source images are displayed on the Home page; seven background images are retained in `images/` as migration records and theme source assets. The original Google Sites site is unchanged.
 
 ## Licenses
 

@@ -111,19 +111,6 @@
       ]
     },
     {
-      "slug": "gallery",
-      "source_url": "https://sites.google.com/view/ssonn/about-me/gallery",
-      "destination_routes": [
-        "/gallery/"
-      ],
-      "paragraphs": [
-        "KICS Winter Conference 2024",
-        "KIEE Summer Conference 2022",
-        "Graduation Ceremony 2021"
-      ],
-      "links": []
-    },
-    {
       "slug": "research-area",
       "source_url": "https://sites.google.com/view/ssonn/research/research-area",
       "destination_routes": [
@@ -1022,10 +1009,5 @@
       "IEEE Transactions on Intelligent Transportation Systems",
       "JEET"
     ]
-  },
-  "gallery": [
-    "KICS Winter Conference 2024",
-    "KIEE Summer Conference 2022",
-    "Graduation Ceremony 2021"
-  ]
+  }
 }
