@@ -118,28 +118,24 @@
       ],
       "paragraphs": [
         "Research Area",
-        ">Distribution Network Design & Control",
-        "차세대 배전망 설계, 운영 및 제어",
-        "State Estimation",
-        "Microgrid",
-        "AC/DC Hybrid Distribution Network",
-        "V2G Control",
-        "Soft Open Point",
-        "Data Center",
-        ">Power System Operation",
-        "인공지능 기반 전력계통 운영",
-        "DCOPF",
-        "ACOPF",
+        ">Transmission System Operation & Stability",
+        "인공지능 기반 송전계통 운영 및 안정도 해석",
+        "Learning-based Optimal Power Flow",
+        "Power System Stability & Control",
+        "HVDC-Integrated Power Systems",
+        "AI Data Center–Grid Interaction",
         "T&D Co-optimization",
-        ">Power Electronics & Dynamic Control",
-        "인공지능 기반 전력전자 해석 및 동적 제어",
-        "GFM",
-        "GFL",
-        ">Building Energy Solution",
-        "데이터 기반 가정 및 빌딩 에너지 제어",
+        ">Distribution Network Operation & Analysis",
+        "인공지능 기반 배전계통 운영 및 동특성 해석",
+        "AI-based State Estimation",
+        "Distribution System Dynamics",
+        "V2G / EV Grid Integration",
+        "AI Data Center–Distribution Grid Interaction",
+        ">Building Energy Solutions",
+        "데이터·인공지능 기반 가정 및 빌딩 에너지 관리 및 제어",
         "ESS Control",
         "e-Heat Pump Control",
-        "...."
+        "Data-driven Energy Management"
       ],
       "links": []
     },
@@ -597,41 +593,33 @@
   ],
   "research_areas": [
     {
-      "title": "Distribution Network Design & Control",
-      "subtitle": "차세대 배전망 설계, 운영 및 제어",
+      "title": "Transmission System Operation & Stability",
+      "subtitle": "인공지능 기반 송전계통 운영 및 안정도 해석",
       "topics": [
-        "State Estimation",
-        "Microgrid",
-        "AC/DC Hybrid Distribution Network",
-        "V2G Control",
-        "Soft Open Point",
-        "Data Center"
-      ]
-    },
-    {
-      "title": "Power System Operation",
-      "subtitle": "인공지능 기반 전력계통 운영",
-      "topics": [
-        "DCOPF",
-        "ACOPF",
+        "Learning-based Optimal Power Flow",
+        "Power System Stability & Control",
+        "HVDC-Integrated Power Systems",
+        "AI Data Center–Grid Interaction",
         "T&D Co-optimization"
       ]
     },
     {
-      "title": "Power Electronics & Dynamic Control",
-      "subtitle": "인공지능 기반 전력전자 해석 및 동적 제어",
+      "title": "Distribution Network Operation & Analysis",
+      "subtitle": "인공지능 기반 배전계통 운영 및 동특성 해석",
       "topics": [
-        "GFM",
-        "GFL"
+        "AI-based State Estimation",
+        "Distribution System Dynamics",
+        "V2G / EV Grid Integration",
+        "AI Data Center–Distribution Grid Interaction"
       ]
     },
     {
-      "title": "Building Energy Solution",
-      "subtitle": "데이터 기반 가정 및 빌딩 에너지 제어",
+      "title": "Building Energy Solutions",
+      "subtitle": "데이터·인공지능 기반 가정 및 빌딩 에너지 관리 및 제어",
       "topics": [
         "ESS Control",
         "e-Heat Pump Control",
-        "...."
+        "Data-driven Energy Management"
       ]
     }
   ],
