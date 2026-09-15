@@ -23,12 +23,13 @@ a { transition: color .18s ease, border-color .18s ease, background-color .18s e
   border-color: #d5e3ef;
   box-shadow: 0 14px 38px rgba(31, 68, 116, .14);
 }
-.page__title { color: #146ef5; letter-spacing: -.02em; }
-.page__content h2 { color: #146ef5; border-bottom-color: #dce6f2; }
+.page__title { position: relative; color: #263647; letter-spacing: -.02em; }
+.page__title::after { display: block; width: 2.75rem; height: 3px; margin-top: .6rem; background: #146ef5; content: ""; }
+.page__content h2 { color: #2b3948; border-bottom-color: #dce6f2; }
 .page__content a { text-decoration-color: rgba(20, 110, 245, .38); text-underline-offset: .14em; }
 .page__content a:hover { text-decoration-color: currentColor; }
 hr { border-top-color: #dce6f2; }
-.sidebar .author__name { color: #146ef5; }
+.sidebar .author__name { color: #2b3948; }
 .author__avatar img {
   background: #fff;
   border-color: #d5e1ef;
@@ -52,7 +53,7 @@ hr { border-top-color: #dce6f2; }
   align-items: center;
   overflow: hidden;
   width: 100%;
-  min-height: clamp(36rem, calc(100svh - 70px), 52rem);
+  min-height: max(42rem, calc(100svh - 70px));
   margin: 0;
   border-bottom: 1px solid #dce6f2;
   background:
@@ -71,32 +72,24 @@ hr { border-top-color: #dce6f2; }
   -webkit-mask-image: linear-gradient(100deg, transparent 38%, #000 100%);
   mask-image: linear-gradient(100deg, transparent 38%, #000 100%);
 }
-.home-hero::after {
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  right: clamp(-15rem, -10vw, -6rem);
-  width: clamp(22rem, 42vw, 40rem);
-  height: clamp(22rem, 42vw, 40rem);
-  content: "";
-  border: 1px solid rgba(20, 110, 245, .15);
-  border-radius: 50%;
-  box-shadow: 0 0 0 5rem rgba(20, 110, 245, .03), 0 0 0 10rem rgba(20, 110, 245, .018);
-  transform: translateY(-50%);
-}
 .home-hero__inner {
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(22rem, .88fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: clamp(5rem, 11vh, 8rem) clamp(1.5rem, 7vw, 7rem);
+  padding: clamp(4.5rem, 9vh, 7rem) clamp(1.5rem, 5vw, 4.5rem);
 }
+.home-hero__copy { min-width: 0; }
 .home-hero h1 {
   max-width: 14ch;
   margin: 0;
   color: #146ef5;
-  font-size: clamp(4rem, 8.4vw, 7.4rem);
+  font-size: clamp(4rem, 7.2vw, 6.6rem);
   font-weight: 760;
   letter-spacing: -.06em;
   line-height: .94;
@@ -114,6 +107,32 @@ hr { border-top-color: #dce6f2; }
   letter-spacing: .015em;
 }
 .home-hero p strong { color: #0b57d0; font-weight: 720; }
+.home-hero__visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 30rem;
+}
+.home-hero__visual::before {
+  position: absolute;
+  width: min(34rem, 100%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(20, 110, 245, .10), rgba(20, 110, 245, .025) 54%, transparent 72%);
+  content: "";
+}
+.home-hero__visual svg { position: relative; width: min(100%, 39rem); height: auto; overflow: visible; }
+.power-grid__orbit { fill: rgba(255, 255, 255, .35); stroke: rgba(20, 110, 245, .13); stroke-width: 1.5; }
+.power-grid__orbit--inner { fill: none; stroke-dasharray: 4 9; }
+.power-grid__wires { fill: none; stroke: rgba(20, 110, 245, .32); stroke-width: 2; }
+.power-grid__tower { fill: none; stroke: #146ef5; stroke-linecap: round; stroke-linejoin: round; stroke-width: 3; }
+.power-grid__tower--left,
+.power-grid__tower--right { opacity: .62; }
+.power-grid__tower--center { opacity: .9; }
+.power-grid__flow { fill: none; stroke: url(#power-flow-gradient); stroke-linecap: round; stroke-width: 4; }
+.power-grid__nodes circle { fill: url(#node-fill); stroke: #146ef5; stroke-width: 3; }
+.power-grid__signal circle { fill: none; stroke: rgba(20, 110, 245, .25); stroke-width: 2; }
+.power-grid__signal circle:last-child { stroke: rgba(20, 110, 245, .12); }
 .home-hero + #main { margin-top: clamp(3rem, 7vw, 5rem); }
 .home-hero + #main .sidebar {
   position: relative;
@@ -123,7 +142,9 @@ hr { border-top-color: #dce6f2; }
 }
 .page__content .publication-list { padding-left: 0; list-style: none; }
 .publication-list > li { margin: 0 0 1.65em; }
-.publication-list h2 { margin: 0 0 .3em; padding: 0; border: 0; font-size: 1.1em; line-height: 1.45; }
+.publication-list h2 { margin: 0 0 .3em; padding: 0; border: 0; color: #2b3948; font-size: 1.1em; line-height: 1.45; }
+.publication-list h2 a { color: #146ef5; text-decoration: none; }
+.publication-list h2 a:hover { color: #0b57d0; }
 .publication-list p { margin-bottom: .4em; }
 .publication-list .publication-citation { font-size: .9em; }
 .source-note { font-size: .8em; margin-top: 3em; }
@@ -143,13 +164,20 @@ a:focus-visible, button:focus-visible { outline: 2px solid #146ef5; outline-offs
 .author__urls-wrapper .btn--inverse { color: #0b57d0; background: #f8fbff; border: 1px solid #ccdcf0; }
 
 @media (max-width: 600px) {
-  .home-hero { min-height: clamp(32rem, calc(100svh - 70px), 48rem); }
+  .home-hero { min-height: max(34rem, calc(100svh - 70px)); }
   .home-hero::before { background-size: 28px 28px; -webkit-mask-image: linear-gradient(110deg, transparent 10%, #000 100%); mask-image: linear-gradient(110deg, transparent 10%, #000 100%); }
-  .home-hero::after { right: -14rem; width: 28rem; height: 28rem; }
-  .home-hero__inner { padding: 4.5rem 1.5rem 5.5rem; }
+  .home-hero__inner { display: block; padding: 3.75rem 1.5rem 3rem; }
   .home-hero h1 { max-width: 14ch; font-size: clamp(2.9rem, 12vw, 4.5rem); line-height: .97; }
   .home-hero p { margin-top: 2rem; padding-left: .85rem; font-size: 1.05rem; }
+  .home-hero__visual { min-height: 19rem; margin: 1.25rem auto 0; }
+  .home-hero__visual svg { width: min(100%, 24rem); }
   .home-hero + #main { margin-top: 2.75rem; }
+}
+
+@media (min-width: 601px) and (max-width: 980px) {
+  .home-hero__inner { grid-template-columns: minmax(0, 1fr) minmax(17rem, .72fr); gap: 1.5rem; }
+  .home-hero h1 { font-size: clamp(3.8rem, 7.5vw, 5.2rem); }
+  .home-hero__visual { min-height: 25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

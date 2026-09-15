@@ -1,6 +1,58 @@
 <section class="home-hero" aria-labelledby="home-hero-title">
   <div class="home-hero__inner">
-    <h1 id="home-hero-title">{{ page.home_hero.title }}</h1>
-    <p>{{ page.home_hero.tagline }}</p>
+    <div class="home-hero__copy">
+      <h1 id="home-hero-title">{{ page.home_hero.title }}</h1>
+      <p>{{ page.home_hero.tagline }}</p>
+    </div>
+    <div class="home-hero__visual" aria-hidden="true">
+      <svg viewBox="0 0 640 520" focusable="false">
+        <defs>
+          <linearGradient id="power-flow-gradient" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#8DBBFF" />
+            <stop offset="0.48" stop-color="#146EF5" />
+            <stop offset="1" stop-color="#0B57D0" />
+          </linearGradient>
+          <radialGradient id="node-fill" cx="35%" cy="30%" r="70%">
+            <stop offset="0" stop-color="#FFFFFF" />
+            <stop offset="1" stop-color="#E5F0FF" />
+          </radialGradient>
+        </defs>
+
+        <circle class="power-grid__orbit" cx="365" cy="260" r="218" />
+        <circle class="power-grid__orbit power-grid__orbit--inner" cx="365" cy="260" r="160" />
+
+        <g class="power-grid__wires">
+          <path d="M82 244 C150 270 226 270 295 233 S435 194 558 224" />
+          <path d="M94 292 C170 312 230 306 306 276 S452 244 572 270" />
+          <path d="M112 343 C192 352 254 340 326 318 S468 300 585 321" />
+        </g>
+
+        <g class="power-grid__tower power-grid__tower--left">
+          <path d="M84 424 L139 174 L194 424 M104 332 H174 M111 280 H167 M121 226 H157 M96 382 H182 M72 244 H206 M87 294 H191" />
+          <path d="M119 424 H159" />
+        </g>
+        <g class="power-grid__tower power-grid__tower--center">
+          <path d="M270 424 L329 112 L388 424 M291 326 H367 M299 258 H359 M312 190 H346 M280 378 H378 M258 210 H400 M274 278 H384" />
+          <path d="M307 424 H351" />
+        </g>
+        <g class="power-grid__tower power-grid__tower--right">
+          <path d="M454 424 L505 194 L556 424 M472 338 H538 M479 290 H531 M488 242 H522 M464 382 H546 M444 258 H566 M459 306 H551" />
+          <path d="M487 424 H523" />
+        </g>
+
+        <path class="power-grid__flow" d="M54 455 C151 408 236 474 329 430 S500 396 603 438" />
+        <g class="power-grid__nodes">
+          <circle cx="54" cy="455" r="8" />
+          <circle cx="184" cy="438" r="10" />
+          <circle cx="329" cy="430" r="12" />
+          <circle cx="472" cy="414" r="9" />
+          <circle cx="603" cy="438" r="8" />
+        </g>
+        <g class="power-grid__signal">
+          <circle cx="329" cy="430" r="28" />
+          <circle cx="329" cy="430" r="47" />
+        </g>
+      </svg>
+    </div>
   </div>
 </section>
