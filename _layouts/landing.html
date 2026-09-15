@@ -1,0 +1,26 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js landing-document">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="landing-page">
+    <a class="skip-link" href="#home-hero-title">Skip to main content</a>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <main class="landing-shell">
+      {% include home-hero.html %}
+    </main>
+
+    {% include scripts.html %}
+  </body>
+</html>
