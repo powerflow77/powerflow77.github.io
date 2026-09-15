@@ -142,6 +142,7 @@ hr { border-top-color: #dce6f2; }
   letter-spacing: -.06em;
   line-height: 1.02;
 }
+.home-hero__name { color: #202936; }
 .home-hero p {
   max-width: none;
   margin: clamp(2rem, 3.6vw, 3rem) 0 0;
