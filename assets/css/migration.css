@@ -175,9 +175,6 @@ hr { border-top-color: #dce6f2; }
   display: block;
   width: 100%;
   height: auto;
-  filter: brightness(1.035) saturate(.88) contrast(.96);
-  -webkit-mask-image: radial-gradient(ellipse 96% 94% at 54% 50%, #000 64%, rgba(0, 0, 0, .96) 76%, transparent 100%);
-  mask-image: radial-gradient(ellipse 96% 94% at 54% 50%, #000 64%, rgba(0, 0, 0, .96) 76%, transparent 100%);
 }
 .page__content .publication-list { padding-left: 0; list-style: none; }
 .publication-list > li {
