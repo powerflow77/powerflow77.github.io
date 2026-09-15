@@ -118,24 +118,30 @@
       ],
       "paragraphs": [
         "Research Area",
+        ">AI & Data-Driven Methods",
+        "전력·에너지 시스템을 위한 인공지능 및 데이터 기반 방법론",
+        "Physics-Informed Neural Networks",
+        "Reinforcement Learning",
+        "Time Series Forecasting",
+        "Graph Neural Networks",
         ">Transmission System Operation & Stability",
-        "인공지능 기반 송전계통 운영 및 안정도 해석",
-        "Learning-based Optimal Power Flow",
+        "송전계통 운영, 제어 및 안정도 해석",
+        "Optimal Power Flow",
         "Power System Stability & Control",
-        "HVDC-Integrated Power Systems",
-        "AI Data Center–Grid Interaction",
-        "T&D Co-optimization",
+        "HVDC",
+        "AIDC–Grid Interaction",
+        "T&D Co-Optimization",
         ">Distribution Network Operation & Analysis",
-        "인공지능 기반 배전계통 운영 및 동특성 해석",
-        "AI-based State Estimation",
+        "배전계통 운영 및 동특성 해석",
+        "State Estimation",
         "Distribution System Dynamics",
         "V2G / EV Grid Integration",
-        "AI Data Center–Distribution Grid Interaction",
+        "AIDC–Distribution Grid Interaction",
         ">Building Energy Solutions",
-        "데이터·인공지능 기반 가정 및 빌딩 에너지 관리 및 제어",
+        "가정 및 빌딩 에너지 운영 및 제어",
         "ESS Control",
         "e-Heat Pump Control",
-        "Data-driven Energy Management"
+        "Data-Driven Energy Management"
       ],
       "links": []
     },
@@ -593,33 +599,43 @@
   ],
   "research_areas": [
     {
-      "title": "Transmission System Operation & Stability",
-      "subtitle": "인공지능 기반 송전계통 운영 및 안정도 해석",
+      "title": "AI & Data-Driven Methods",
+      "subtitle": "전력·에너지 시스템을 위한 인공지능 및 데이터 기반 방법론",
       "topics": [
-        "Learning-based Optimal Power Flow",
+        "Physics-Informed Neural Networks",
+        "Reinforcement Learning",
+        "Time Series Forecasting",
+        "Graph Neural Networks"
+      ]
+    },
+    {
+      "title": "Transmission System Operation & Stability",
+      "subtitle": "송전계통 운영, 제어 및 안정도 해석",
+      "topics": [
+        "Optimal Power Flow",
         "Power System Stability & Control",
-        "HVDC-Integrated Power Systems",
-        "AI Data Center–Grid Interaction",
-        "T&D Co-optimization"
+        "HVDC",
+        "AIDC–Grid Interaction",
+        "T&D Co-Optimization"
       ]
     },
     {
       "title": "Distribution Network Operation & Analysis",
-      "subtitle": "인공지능 기반 배전계통 운영 및 동특성 해석",
+      "subtitle": "배전계통 운영 및 동특성 해석",
       "topics": [
-        "AI-based State Estimation",
+        "State Estimation",
         "Distribution System Dynamics",
         "V2G / EV Grid Integration",
-        "AI Data Center–Distribution Grid Interaction"
+        "AIDC–Distribution Grid Interaction"
       ]
     },
     {
       "title": "Building Energy Solutions",
-      "subtitle": "데이터·인공지능 기반 가정 및 빌딩 에너지 관리 및 제어",
+      "subtitle": "가정 및 빌딩 에너지 운영 및 제어",
       "topics": [
         "ESS Control",
         "e-Heat Pump Control",
-        "Data-driven Energy Management"
+        "Data-Driven Energy Management"
       ]
     }
   ],
