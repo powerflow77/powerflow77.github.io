@@ -10,8 +10,10 @@ hide_google_scholar: true
 {% assign publications = site.publications | sort: 'order' | reverse %}
 {% for paper in publications %}
 <li id="{{ paper.publication_id | downcase }}">
-<h2>[{{ paper.publication_id }}] {{ paper.title }}{% if paper.paperurl != '' %} <a href="{{ paper.paperurl }}" aria-label="View {{ paper.title | escape }}">🔗</a>{% endif %}</h2>
-<p class="publication-citation">{{ paper.citation_text }}</p>
+<div class="publication-entry">
+<h2>[{{ paper.publication_id }}] {{ paper.title }}{% if paper.paperurl != '' %} <a class="publication-link" href="{{ paper.paperurl }}" aria-label="View {{ paper.title | escape }}">🔗</a>{% endif %}</h2>
+<p class="publication-citation"><span class="publication-authors">{{ paper.authors_text | replace: 'M. Son', '<strong class="publication-self">M. Son</strong>' }}</span><span class="publication-citation-separator">, </span><span class="publication-meta">{{ paper.venue_text }}</span></p>
+</div>
 </li>
 {% endfor %}
 </ul>
