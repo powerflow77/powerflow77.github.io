@@ -132,11 +132,11 @@ hr { border-top-color: #dce6f2; }
 .home-hero__copy::before {
   position: absolute;
   z-index: -1;
-  top: -5rem;
-  bottom: -5rem;
-  left: -3rem;
-  width: min(80vw, 72rem);
-  background: radial-gradient(ellipse 78% 88% at 34% 50%, rgba(255, 255, 255, .99) 0 48%, rgba(255, 255, 255, .86) 66%, rgba(255, 255, 255, 0) 100%);
+  top: -3rem;
+  bottom: -3rem;
+  left: -2rem;
+  width: min(62vw, 55rem);
+  background: radial-gradient(ellipse 72% 82% at 24% 50%, rgba(255, 255, 255, .76) 0 32%, rgba(255, 255, 255, .38) 56%, rgba(255, 255, 255, 0) 82%);
   content: "";
   pointer-events: none;
 }
@@ -148,6 +148,7 @@ hr { border-top-color: #dce6f2; }
   font-weight: 760;
   letter-spacing: -.06em;
   line-height: 1;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .92), 0 0 24px rgba(255, 255, 255, .72);
 }
 .home-hero p {
   max-width: none;
@@ -159,18 +160,19 @@ hr { border-top-color: #dce6f2; }
   font-weight: 520;
   line-height: 1.55;
   letter-spacing: .015em;
+  text-shadow: 0 1px 0 #fff, 0 0 16px rgba(255, 255, 255, .9);
 }
 .home-hero p strong { color: #0b57d0; font-weight: 720; }
 .home-hero__visual {
   position: absolute;
   z-index: 1;
-  right: clamp(-5.5rem, -3vw, -1rem);
-  bottom: clamp(-4.5rem, -5vh, -1.5rem);
+  right: clamp(-4rem, -2vw, -.5rem);
+  bottom: clamp(-3.5rem, -4vh, -1rem);
   display: grid;
   place-items: center;
-  width: min(53vw, 47rem);
+  width: min(58vw, 52rem);
   min-height: 0;
-  opacity: .82;
+  opacity: .94;
 }
 .home-hero__visual::before {
   position: absolute;
@@ -192,14 +194,17 @@ hr { border-top-color: #dce6f2; }
 .power-grid__nodes circle { fill: url(#node-fill); stroke: #146ef5; stroke-width: 3; }
 .power-grid__signal circle { fill: none; stroke: rgba(20, 110, 245, .25); stroke-width: 2; }
 .power-grid__signal circle:last-child { stroke: rgba(20, 110, 245, .12); }
-.power-grid__data-links { fill: none; stroke: rgba(20, 110, 245, .42); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.7; }
-.power-grid__data-links path:not(.power-grid__data-bridge) { stroke-dasharray: 3 7; }
-.power-grid__data-bridge { stroke: rgba(20, 110, 245, .25); stroke-dasharray: 8 8; }
-.power-grid__ai-nodes circle { fill: #fff; stroke: #146ef5; stroke-width: 2.4; }
-.power-grid__compute > rect { fill: rgba(255, 255, 255, .9); stroke: #146ef5; stroke-width: 2.5; }
-.power-grid__compute > path { fill: none; stroke: rgba(20, 110, 245, .65); stroke-width: 2; }
-.power-grid__compute > g { fill: #146ef5; stroke: #146ef5; stroke-width: 1.5; }
-.power-grid__compute > g path { fill: none; }
+.power-grid__intelligence-field { fill: none; stroke: rgba(20, 110, 245, .12); stroke-linecap: round; stroke-width: 1.4; }
+.power-grid__intelligence-field path:nth-child(2) { stroke: rgba(20, 110, 245, .18); stroke-dasharray: 2 7; }
+.power-grid__data-links { fill: none; stroke: rgba(20, 110, 245, .46); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.65; }
+.power-grid__data-links path:not(.power-grid__data-bridge) { stroke-dasharray: 2 6; }
+.power-grid__data-bridge { stroke: url(#intelligence-gradient); stroke-width: 2; stroke-dasharray: 7 8; }
+.power-grid__ai-nodes circle { fill: #fff; stroke: #146ef5; stroke-width: 2.25; }
+.power-grid__ai-nodes circle:nth-child(2),
+.power-grid__ai-nodes circle:nth-child(5) { fill: #dceaff; }
+.power-grid__decision-core circle:first-child { fill: rgba(255, 255, 255, .72); stroke: rgba(20, 110, 245, .3); stroke-width: 1.5; }
+.power-grid__decision-core circle:nth-child(2) { fill: url(#intelligence-gradient); stroke: #fff; stroke-width: 3; }
+.power-grid__decision-core path { fill: none; stroke: #146ef5; stroke-linecap: round; stroke-width: 2; }
 .page__content .publication-list { padding-left: 0; list-style: none; }
 .publication-list > li {
   position: relative;
@@ -487,7 +492,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #146ef5; outline-offs
   .home-hero__copy::before { display: none; }
   .home-hero h1 { max-width: 14ch; font-size: clamp(2.9rem, 12vw, 4.5rem); line-height: .97; }
   .home-hero p { margin-top: 2rem; padding-left: .85rem; font-size: 1.05rem; }
-  .home-hero__visual { position: relative; right: auto; bottom: auto; width: 100%; min-height: 19rem; margin: 1.25rem auto 0; opacity: .82; }
+  .home-hero__visual { position: relative; right: auto; bottom: auto; width: 100%; min-height: 19rem; margin: 1.25rem auto 0; opacity: .92; }
   .home-hero__visual svg { width: min(100%, 24rem); }
 }
 

@@ -16,33 +16,44 @@
             <stop offset="0" stop-color="#FFFFFF" />
             <stop offset="1" stop-color="#E5F0FF" />
           </radialGradient>
+          <linearGradient id="intelligence-gradient" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#8DBBFF" />
+            <stop offset="0.55" stop-color="#146EF5" />
+            <stop offset="1" stop-color="#0B57D0" />
+          </linearGradient>
         </defs>
 
         <circle class="power-grid__orbit" cx="365" cy="260" r="218" />
         <circle class="power-grid__orbit power-grid__orbit--inner" cx="365" cy="260" r="160" />
 
+        <g class="power-grid__intelligence-field">
+          <path d="M350 82 C420 31 531 30 604 83" />
+          <path d="M368 108 C435 65 526 65 591 105" />
+          <path d="M390 136 C447 105 518 107 570 137" />
+        </g>
         <g class="power-grid__data-links">
-          <path d="M329 112 L420 92 L474 145 L548 166 L588 112" />
-          <path d="M420 92 L520 72 L588 112 M474 145 L520 72 M474 145 L432 218 L548 166" />
-          <path class="power-grid__data-bridge" d="M329 430 C404 373 432 281 474 145" />
+          <path d="M329 112 C365 92 385 83 415 82 C451 80 467 111 492 143" />
+          <path d="M415 82 C448 49 492 57 515 96 C535 130 550 145 584 151" />
+          <path d="M383 151 C423 119 458 120 492 143 C526 166 549 190 580 218" />
+          <path d="M383 151 C406 188 432 203 469 204 C510 205 543 180 584 151" />
+          <path d="M469 204 C493 235 527 245 565 231" />
+          <path class="power-grid__data-bridge" d="M329 430 C378 393 395 337 411 283 C427 230 449 183 492 143" />
+          <path class="power-grid__data-bridge" d="M505 194 C510 176 504 158 492 143" />
         </g>
         <g class="power-grid__ai-nodes">
-          <circle cx="420" cy="92" r="7" />
-          <circle cx="474" cy="145" r="8" />
-          <circle cx="548" cy="166" r="7" />
-          <circle cx="588" cy="112" r="6" />
-          <circle cx="432" cy="218" r="6" />
+          <circle cx="329" cy="112" r="6" />
+          <circle cx="415" cy="82" r="7" />
+          <circle cx="515" cy="96" r="6" />
+          <circle cx="383" cy="151" r="6" />
+          <circle cx="584" cy="151" r="7" />
+          <circle cx="469" cy="204" r="6" />
+          <circle cx="580" cy="218" r="5" />
+          <circle cx="565" cy="231" r="5" />
         </g>
-        <g class="power-grid__compute" transform="translate(494 46)">
-          <rect width="56" height="52" rx="8" />
-          <path d="M12 0 V-8 M28 0 V-8 M44 0 V-8 M12 52 V60 M28 52 V60 M44 52 V60 M0 12 H-8 M0 26 H-8 M0 40 H-8 M56 12 H64 M56 26 H64 M56 40 H64" />
-          <g>
-            <circle cx="16" cy="16" r="3" />
-            <circle cx="28" cy="26" r="3" />
-            <circle cx="41" cy="15" r="3" />
-            <circle cx="41" cy="38" r="3" />
-            <path d="M16 16 L28 26 L41 15 M28 26 L41 38" />
-          </g>
+        <g class="power-grid__decision-core">
+          <circle cx="492" cy="143" r="25" />
+          <circle cx="492" cy="143" r="10" />
+          <path d="M492 118 V107 M517 143 H528 M492 168 V179 M467 143 H456" />
         </g>
 
         <g class="power-grid__wires">
