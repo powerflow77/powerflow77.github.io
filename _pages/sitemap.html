@@ -1,0 +1,8 @@
+---
+title: "Sitemap"
+permalink: /sitemap/
+layout: single
+author_profile: true
+---
+
+<ul>{% for link in site.data.navigation.main %}<li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>{% endfor %}<li><a href="{{ '/resources/related-labs/' | relative_url }}">Related Labs</a></li><li><a href="{{ '/resources/conferences/' | relative_url }}">Conferences</a></li><li><a href="{{ '/resources/journals/' | relative_url }}">Journals</a></li></ul>

@@ -1,0 +1,1031 @@
+{
+  "captured": "2026-09-15",
+  "pages": [
+    {
+      "slug": "home",
+      "source_url": "https://sites.google.com/view/ssonn/%ED%99%88",
+      "destination_routes": [
+        "/"
+      ],
+      "paragraphs": [
+        "Welcome to Minjae's Page!",
+        "Migration from SMART GRID to INTELLIGENT GRID"
+      ],
+      "links": []
+    },
+    {
+      "slug": "researcher",
+      "source_url": "https://sites.google.com/view/ssonn/about-me/researcher",
+      "destination_routes": [
+        "/"
+      ],
+      "paragraphs": [
+        "Researcher",
+        "Minjae Son (손민재)",
+        "Ph.D. Student",
+        "Physical AI Expert in Energy Industry",
+        ">Education",
+        "Sogang University, Seoul",
+        "ㅡ Ph.D. Student in EE (전자공학과), 2021 - present",
+        "ㅡ Advisor: Prof. Hongseok Kim 🔗",
+        "Hongik University, Seoul",
+        "ㅡ B.S. in EE (전자전기공학부), 2021",
+        "ㅡ Advisor: Prof. Balho Kim 🔗",
+        "ㅡ Thesis: A Study on the Prospects of the Electric Vehicle Industry in South Korea",
+        ">Membership",
+        "IEEE Student Member",
+        "IEEE Power & Energy Society (PES) Member",
+        "KIEE Member",
+        ">Skills",
+        "Languages",
+        "ㅡ Python, MATLAB, Julia",
+        "Tools",
+        "ㅡ Pytorch, Pyomo, AMPL, CVXPY, GUROBI, JuMP, Knitro",
+        "ㅡ PSS/E, MATPOWER, Simulink, pandapower, OpenDSS"
+      ],
+      "links": [
+        {
+          "text": "🔗",
+          "href": "https://nice.sogang.ac.kr/"
+        },
+        {
+          "text": "🔗",
+          "href": "https://scholarworks.bwise.kr/hongik/researcher-profile?ep=320"
+        }
+      ]
+    },
+    {
+      "slug": "works",
+      "source_url": "https://sites.google.com/view/ssonn/research/works",
+      "destination_routes": [
+        "/publications/",
+        "/projects/"
+      ],
+      "paragraphs": [
+        "Works",
+        ">Publications 🔗",
+        "[J8] AIDC ..... Oscillation .... ACOPF ....",
+        "ㅡ M. Son, R. Liv, H. Kim, IEEE TPWRS, (in Preparation)",
+        "[J7] AIDC .... DOE .... ACOPF ....",
+        "ㅡ M. Son, A. Kaina, A. Winter, H. Kim, IEEE TPWRS, (in Experiments)",
+        "[J6] Stability ..... AIOPF .....",
+        "ㅡ M. Son, C. Ronaldo, H. Kim, IEEE TPWRS, (in Experiments)",
+        "[J5] .... AIDC ..... Distribution Network ....",
+        "ㅡ M. Son, H. Kim, ...., IEEE TSG, (in Experiments)",
+        "[J4] Topology-Adaptive Physics-Informed GNN for Pseudo-Measurement-Free Distribution System State Estimation 🔗",
+        "ㅡ M. Son, Y. Lee, D. Kim, H. Kim, IEEE TPWRS, 2026 (under review)",
+        "[J3] Foreseeable Implicit Training for ESS Operation based on Deep Reinforcement Learning 🔗",
+        "ㅡ M. Son, K. Song, M. Kim, Y. Lim, J. Kim, H. Jeon, H. Kim, IEEE Access, 2026",
+        "[J2] Power System Decision Making in the Age of Deep Learning: A Comprehensive Review 🔗",
+        "ㅡ Y. Lim, M. Son, K. Park, M. Kim, K. Song, H. Lee, H. Kim, ENERGIES, 2025",
+        "[J1] Sector Coupling and Migration towards Carbon-Neutral Power Systems 🔗",
+        "ㅡ M. Son, M. Kim, and H. Kim, ENERGIES, 2023",
+        ">Projects",
+        "[Ongoing]",
+        "[P7] 물리기반 인공지능을 활용한 전력계통 운영계획 기술 개발 <한국전기연구원>",
+        "[P6] 하드웨어 가속기 내장형 물리정보 신경망 기반 국가전력망 최적화 연구실 <과학기술정보통신부 & 한국연구재단 >",
+        "[P4] 에너지 국가종합실증연구단지 인프라를 활용한 V2G 서비스 및 계통 안정화 기술 검증 <한국에너지기술평가원>",
+        "[Completed]",
+        "[P5] AWHP 최적제어 알고리즘 연구 <LG전자>",
+        "[P3] Home ESS 충방전 제어 알고리즘 연구 <LG전자>",
+        "[P2] 섹터커플링과 에너지 AI 동향 분석 <중소벤처기업부>",
+        "[P1] 가정에너지 진단 및 자율제어를 위한 원천기술 개발 <한국에너지기술평가원>"
+      ],
+      "links": [
+        {
+          "text": "🔗",
+          "href": "https://scholar.google.com/citations?user=NZdDW_8AAAAJ&hl=en"
+        },
+        {
+          "text": "🔗",
+          "href": "https://ieeexplore.ieee.org/abstract/document/11346471"
+        },
+        {
+          "text": "🔗",
+          "href": "https://www.mdpi.com/1996-1073/18/18/4867"
+        },
+        {
+          "text": "🔗",
+          "href": "https://www.mdpi.com/1996-1073/16/4/1897"
+        }
+      ]
+    },
+    {
+      "slug": "gallery",
+      "source_url": "https://sites.google.com/view/ssonn/about-me/gallery",
+      "destination_routes": [
+        "/gallery/"
+      ],
+      "paragraphs": [
+        "KICS Winter Conference 2024",
+        "KIEE Summer Conference 2022",
+        "Graduation Ceremony 2021"
+      ],
+      "links": []
+    },
+    {
+      "slug": "research-area",
+      "source_url": "https://sites.google.com/view/ssonn/research/research-area",
+      "destination_routes": [
+        "/research/"
+      ],
+      "paragraphs": [
+        "Research Area",
+        ">Distribution Network Design & Control",
+        "차세대 배전망 설계, 운영 및 제어",
+        "State Estimation",
+        "Microgrid",
+        "AC/DC Hybrid Distribution Network",
+        "V2G Control",
+        "Soft Open Point",
+        "Data Center",
+        ">Power System Operation",
+        "인공지능 기반 전력계통 운영",
+        "DCOPF",
+        "ACOPF",
+        "T&D Co-optimization",
+        ">Power Electronics & Dynamic Control",
+        "인공지능 기반 전력전자 해석 및 동적 제어",
+        "GFM",
+        "GFL",
+        ">Building Energy Solution",
+        "데이터 기반 가정 및 빌딩 에너지 제어",
+        "ESS Control",
+        "e-Heat Pump Control",
+        "...."
+      ],
+      "links": []
+    },
+    {
+      "slug": "related-labs",
+      "source_url": "https://sites.google.com/view/ssonn/misc/related-labs",
+      "destination_routes": [
+        "/resources/related-labs/"
+      ],
+      "paragraphs": [
+        ">Related Labs",
+        "MIT",
+        "Priya L. Donti",
+        "ETH zurich",
+        "Gabriela Hug",
+        "UC SanDiego",
+        "Yuanyuan Shi",
+        "UC Riverside",
+        "Nanpeng Yu",
+        "Johns Hopkins Univ.",
+        "Yury Dvorkin",
+        "Sijia Geng",
+        "Oklahoma State Univ.",
+        "Ying Zhang",
+        "University of Michigan",
+        "Vladimir Dvorkin",
+        "University of Houston",
+        "Xingpeng Li",
+        "University of Washington",
+        "Baosen Zhang",
+        "University of Texas at Austin",
+        "Hao Zhu",
+        "Javad Mohammadi",
+        "Technical University of Denmark",
+        "Spyros Chatzivasileiadis",
+        "University of Colorado, Boulder",
+        "Kyri Baker",
+        "===================================================================================================",
+        "광운대",
+        "윤민한",
+        "지스트",
+        "김윤수",
+        "유니스트",
+        "이준희",
+        "상명대",
+        "심재웅",
+        "경북대",
+        "정재정",
+        "건국대",
+        "박재영",
+        "포항공대",
+        "김영진",
+        "한국에너지공대",
+        "김집",
+        "이진오",
+        "김승완",
+        "인하대",
+        "김인수",
+        "원동준",
+        "고려대",
+        "장길수",
+        "주성관",
+        "최승연",
+        "이병준",
+        "홍익대",
+        "신훈영",
+        "이시영",
+        "연세대",
+        "허견",
+        "박정욱",
+        "숭실대",
+        "박병권",
+        "한양대",
+        "배성우",
+        "김성열",
+        "중앙대",
+        "장재원",
+        "서울시립대",
+        "정승민",
+        "서울대",
+        "이규섭",
+        "한국공학대",
+        "송성윤",
+        "에리카",
+        "한창희",
+        "카이스트",
+        "서갑수"
+      ],
+      "links": [
+        {
+          "text": "Priya L. Donti",
+          "href": "https://priyadonti.com/"
+        },
+        {
+          "text": "Gabriela Hug",
+          "href": "https://psl.ee.ethz.ch/"
+        },
+        {
+          "text": "Yuanyuan Shi",
+          "href": "https://yyshi.eng.ucsd.edu/home"
+        },
+        {
+          "text": "Nanpeng Yu",
+          "href": "https://intra.ece.ucr.edu/~nyu/"
+        },
+        {
+          "text": "Yury Dvorkin",
+          "href": "https://ydvorkin.github.io/index.html"
+        },
+        {
+          "text": "Sijia Geng",
+          "href": "https://pensa.engineering.jhu.edu/"
+        },
+        {
+          "text": "Ying Zhang",
+          "href": "https://sites.google.com/view/yingzhangwon/home?authuser=0"
+        },
+        {
+          "text": "Vladimir Dvorkin",
+          "href": "https://web.eecs.umich.edu/~dvorkin/"
+        },
+        {
+          "text": "Xingpeng Li",
+          "href": "https://rpglab.github.io/"
+        },
+        {
+          "text": "Baosen Zhang",
+          "href": "https://zhangbaosen.github.io/"
+        },
+        {
+          "text": "Hao Zhu",
+          "href": "https://sites.utexas.edu/haozhu/"
+        },
+        {
+          "text": "Javad Mohammadi",
+          "href": "https://javadm-utexas.github.io/Homepage/index.html"
+        },
+        {
+          "text": "Spyros Chatzivasileiadis",
+          "href": "http://www.chatziva.com/"
+        },
+        {
+          "text": "Kyri Baker",
+          "href": "http://www.kyrib.com/"
+        },
+        {
+          "text": "윤민한",
+          "href": "https://sites.google.com/view/kwuepel/home?authuser=0"
+        },
+        {
+          "text": "김윤수",
+          "href": "https://psl.gist.ac.kr/psl/"
+        },
+        {
+          "text": "이준희",
+          "href": "https://sites.google.com/view/unist-pesl/home?authuser=0"
+        },
+        {
+          "text": "심재웅",
+          "href": "https://sites.google.com/view/jaewshim/home?authuser=0"
+        },
+        {
+          "text": "정재정",
+          "href": "https://knuecslab.wixsite.com/knuecslab"
+        },
+        {
+          "text": "박재영",
+          "href": "https://sites.google.com/view/hcglab/"
+        },
+        {
+          "text": "김영진",
+          "href": "https://postech-esl.notion.site/main"
+        },
+        {
+          "text": "김집",
+          "href": "https://egolab.kentech.ac.kr/"
+        },
+        {
+          "text": "이진오",
+          "href": "https://psl.kentech.ac.kr/team/advisor"
+        },
+        {
+          "text": "김승완",
+          "href": "https://www.sendlab.kr/"
+        },
+        {
+          "text": "김인수",
+          "href": "https://sites.google.com/view/inhapower/home?authuser=0"
+        },
+        {
+          "text": "원동준",
+          "href": "https://sites.google.com/view/powerinha/home?authuser=0"
+        },
+        {
+          "text": "장길수",
+          "href": "http://pel.korea.ac.kr/"
+        },
+        {
+          "text": "주성관",
+          "href": "https://smartgrid.korea.ac.kr/"
+        },
+        {
+          "text": "최승연",
+          "href": "https://ugrid.korea.ac.kr/home"
+        },
+        {
+          "text": "이병준",
+          "href": "https://scholar.google.com/citations?hl=ko&user=aZuaAgQAAAAJ&view_op=list_works&sortby=pubdate"
+        },
+        {
+          "text": "신훈영",
+          "href": "https://sites.google.com/view/eselab"
+        },
+        {
+          "text": "이시영",
+          "href": "https://sites.google.com/hongik.ac.kr/peor-lab/home"
+        },
+        {
+          "text": "허견",
+          "href": "https://www.smartgrid.yonsei.ac.kr/"
+        },
+        {
+          "text": "박정욱",
+          "href": "https://pcsl.yonsei.ac.kr/"
+        },
+        {
+          "text": "박병권",
+          "href": "https://sites.google.com/view/byungkwon/home?authuser=0"
+        },
+        {
+          "text": "배성우",
+          "href": "http://pesl.hanyang.ac.kr/index.php"
+        },
+        {
+          "text": "김성열",
+          "href": "https://april.hanyang.ac.kr/"
+        },
+        {
+          "text": "장재원",
+          "href": "https://sites.google.com/view/cau-gml"
+        },
+        {
+          "text": "정승민",
+          "href": "https://sites.google.com/view/uospower/about-us?authuser=0"
+        },
+        {
+          "text": "이규섭",
+          "href": "https://sites.google.com/view/snupsl"
+        },
+        {
+          "text": "송성윤",
+          "href": "https://sites.google.com/view/psco-songsy/home?authuser=0"
+        },
+        {
+          "text": "한창희",
+          "href": "https://sites.google.com/view/advancedpsl/main?authuser=0"
+        },
+        {
+          "text": "서갑수",
+          "href": "https://sites.google.com/view/gab-su-seo/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "slug": "conferences",
+      "source_url": "https://sites.google.com/view/ssonn/misc/conferences",
+      "destination_routes": [
+        "/resources/conferences/"
+      ],
+      "paragraphs": [
+        ">Related Conferences",
+        "PESGM",
+        "SmartGridComm",
+        "PSCC",
+        "ECCE",
+        "PESIM",
+        "PowerUp",
+        "ACC",
+        "CDC",
+        "CIGRE",
+        "L4DC",
+        "ACM e-Energy"
+      ],
+      "links": []
+    },
+    {
+      "slug": "journals",
+      "source_url": "https://sites.google.com/view/ssonn/misc/journals",
+      "destination_routes": [
+        "/resources/journals/"
+      ],
+      "paragraphs": [
+        ">Related Journals",
+        "Energy",
+        "Energy and AI",
+        "Applied Energy",
+        "Energy Reports",
+        "eTransportation",
+        "Renewable Energy",
+        "Energy and Buildings",
+        "Building and Environment",
+        "Advances in Applied Energy",
+        "Electric Power Systems Research",
+        "Sustainable Energy, Grids, and Networks",
+        "International Journal of Electrical Power and Energy Systems",
+        "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+        "IEEE Access",
+        "IEEE Systems Journal",
+        "IEEE Control Systems Letters",
+        "IEEE Transactions on Smart Grid",
+        "IEEE Transactions on Power Systems",
+        "IEEE Transactions on Sustainable Energy",
+        "IEEE Transactions on Industry Applications",
+        "IEEE Transactions on Industrial Informatics",
+        "IEEE Open Access Journal of Power and Energy",
+        "IEEE Transactions on Control of Network Systems",
+        "IEEE Transactions on Intelligent Transportation Systems",
+        "ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ",
+        "JEET"
+      ],
+      "links": []
+    }
+  ],
+  "publications": [
+    {
+      "id": "J8",
+      "order": 8,
+      "title": "AIDC ..... Oscillation .... ACOPF ....",
+      "source_title": "[J8] AIDC ..... Oscillation .... ACOPF ....",
+      "citation": "M. Son, R. Liv, H. Kim, IEEE TPWRS, (in Preparation)",
+      "paperurl": "",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J7",
+      "order": 7,
+      "title": "AIDC .... DOE .... ACOPF ....",
+      "source_title": "[J7] AIDC .... DOE .... ACOPF ....",
+      "citation": "M. Son, A. Kaina, A. Winter, H. Kim, IEEE TPWRS, (in Experiments)",
+      "paperurl": "",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J6",
+      "order": 6,
+      "title": "Stability ..... AIOPF .....",
+      "source_title": "[J6] Stability ..... AIOPF .....",
+      "citation": "M. Son, C. Ronaldo, H. Kim, IEEE TPWRS, (in Experiments)",
+      "paperurl": "",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J5",
+      "order": 5,
+      "title": ".... AIDC ..... Distribution Network ....",
+      "source_title": "[J5] .... AIDC ..... Distribution Network ....",
+      "citation": "M. Son, H. Kim, ...., IEEE TSG, (in Experiments)",
+      "paperurl": "",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J4",
+      "order": 4,
+      "title": "Topology-Adaptive Physics-Informed GNN for Pseudo-Measurement-Free Distribution System State Estimation",
+      "source_title": "[J4] Topology-Adaptive Physics-Informed GNN for Pseudo-Measurement-Free Distribution System State Estimation 🔗",
+      "citation": "M. Son, Y. Lee, D. Kim, H. Kim, IEEE TPWRS, 2026 (under review)",
+      "paperurl": "",
+      "unlinked_symbol": true
+    },
+    {
+      "id": "J3",
+      "order": 3,
+      "title": "Foreseeable Implicit Training for ESS Operation based on Deep Reinforcement Learning",
+      "source_title": "[J3] Foreseeable Implicit Training for ESS Operation based on Deep Reinforcement Learning 🔗",
+      "citation": "M. Son, K. Song, M. Kim, Y. Lim, J. Kim, H. Jeon, H. Kim, IEEE Access, 2026",
+      "paperurl": "https://ieeexplore.ieee.org/abstract/document/11346471",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J2",
+      "order": 2,
+      "title": "Power System Decision Making in the Age of Deep Learning: A Comprehensive Review",
+      "source_title": "[J2] Power System Decision Making in the Age of Deep Learning: A Comprehensive Review 🔗",
+      "citation": "Y. Lim, M. Son, K. Park, M. Kim, K. Song, H. Lee, H. Kim, ENERGIES, 2025",
+      "paperurl": "https://www.mdpi.com/1996-1073/18/18/4867",
+      "unlinked_symbol": false
+    },
+    {
+      "id": "J1",
+      "order": 1,
+      "title": "Sector Coupling and Migration towards Carbon-Neutral Power Systems",
+      "source_title": "[J1] Sector Coupling and Migration towards Carbon-Neutral Power Systems 🔗",
+      "citation": "M. Son, M. Kim, and H. Kim, ENERGIES, 2023",
+      "paperurl": "https://www.mdpi.com/1996-1073/16/4/1897",
+      "unlinked_symbol": false
+    }
+  ],
+  "projects": [
+    {
+      "id": "P7",
+      "order": 7,
+      "title": "물리기반 인공지능을 활용한 전력계통 운영계획 기술 개발",
+      "sponsor": "한국전기연구원",
+      "status": "Ongoing",
+      "source_text": "[P7] 물리기반 인공지능을 활용한 전력계통 운영계획 기술 개발 <한국전기연구원>"
+    },
+    {
+      "id": "P6",
+      "order": 6,
+      "title": "하드웨어 가속기 내장형 물리정보 신경망 기반 국가전력망 최적화 연구실",
+      "sponsor": "과학기술정보통신부 & 한국연구재단",
+      "status": "Ongoing",
+      "source_text": "[P6] 하드웨어 가속기 내장형 물리정보 신경망 기반 국가전력망 최적화 연구실 <과학기술정보통신부 & 한국연구재단 >"
+    },
+    {
+      "id": "P4",
+      "order": 4,
+      "title": "에너지 국가종합실증연구단지 인프라를 활용한 V2G 서비스 및 계통 안정화 기술 검증",
+      "sponsor": "한국에너지기술평가원",
+      "status": "Ongoing",
+      "source_text": "[P4] 에너지 국가종합실증연구단지 인프라를 활용한 V2G 서비스 및 계통 안정화 기술 검증 <한국에너지기술평가원>"
+    },
+    {
+      "id": "P5",
+      "order": 5,
+      "title": "AWHP 최적제어 알고리즘 연구",
+      "sponsor": "LG전자",
+      "status": "Completed",
+      "source_text": "[P5] AWHP 최적제어 알고리즘 연구 <LG전자>"
+    },
+    {
+      "id": "P3",
+      "order": 3,
+      "title": "Home ESS 충방전 제어 알고리즘 연구",
+      "sponsor": "LG전자",
+      "status": "Completed",
+      "source_text": "[P3] Home ESS 충방전 제어 알고리즘 연구 <LG전자>"
+    },
+    {
+      "id": "P2",
+      "order": 2,
+      "title": "섹터커플링과 에너지 AI 동향 분석",
+      "sponsor": "중소벤처기업부",
+      "status": "Completed",
+      "source_text": "[P2] 섹터커플링과 에너지 AI 동향 분석 <중소벤처기업부>"
+    },
+    {
+      "id": "P1",
+      "order": 1,
+      "title": "가정에너지 진단 및 자율제어를 위한 원천기술 개발",
+      "sponsor": "한국에너지기술평가원",
+      "status": "Completed",
+      "source_text": "[P1] 가정에너지 진단 및 자율제어를 위한 원천기술 개발 <한국에너지기술평가원>"
+    }
+  ],
+  "research_areas": [
+    {
+      "title": "Distribution Network Design & Control",
+      "subtitle": "차세대 배전망 설계, 운영 및 제어",
+      "topics": [
+        "State Estimation",
+        "Microgrid",
+        "AC/DC Hybrid Distribution Network",
+        "V2G Control",
+        "Soft Open Point",
+        "Data Center"
+      ]
+    },
+    {
+      "title": "Power System Operation",
+      "subtitle": "인공지능 기반 전력계통 운영",
+      "topics": [
+        "DCOPF",
+        "ACOPF",
+        "T&D Co-optimization"
+      ]
+    },
+    {
+      "title": "Power Electronics & Dynamic Control",
+      "subtitle": "인공지능 기반 전력전자 해석 및 동적 제어",
+      "topics": [
+        "GFM",
+        "GFL"
+      ]
+    },
+    {
+      "title": "Building Energy Solution",
+      "subtitle": "데이터 기반 가정 및 빌딩 에너지 제어",
+      "topics": [
+        "ESS Control",
+        "e-Heat Pump Control",
+        "...."
+      ]
+    }
+  ],
+  "labs": [
+    {
+      "institution": "MIT",
+      "people": [
+        {
+          "name": "Priya L. Donti",
+          "href": "https://priyadonti.com/"
+        }
+      ]
+    },
+    {
+      "institution": "ETH zurich",
+      "people": [
+        {
+          "name": "Gabriela Hug",
+          "href": "https://psl.ee.ethz.ch/"
+        }
+      ]
+    },
+    {
+      "institution": "UC SanDiego",
+      "people": [
+        {
+          "name": "Yuanyuan Shi",
+          "href": "https://yyshi.eng.ucsd.edu/home"
+        }
+      ]
+    },
+    {
+      "institution": "UC Riverside",
+      "people": [
+        {
+          "name": "Nanpeng Yu",
+          "href": "https://intra.ece.ucr.edu/~nyu/"
+        }
+      ]
+    },
+    {
+      "institution": "Johns Hopkins Univ.",
+      "people": [
+        {
+          "name": "Yury Dvorkin",
+          "href": "https://ydvorkin.github.io/index.html"
+        },
+        {
+          "name": "Sijia Geng",
+          "href": "https://pensa.engineering.jhu.edu/"
+        }
+      ]
+    },
+    {
+      "institution": "Oklahoma State Univ.",
+      "people": [
+        {
+          "name": "Ying Zhang",
+          "href": "https://sites.google.com/view/yingzhangwon/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "University of Michigan",
+      "people": [
+        {
+          "name": "Vladimir Dvorkin",
+          "href": "https://web.eecs.umich.edu/~dvorkin/"
+        }
+      ]
+    },
+    {
+      "institution": "University of Houston",
+      "people": [
+        {
+          "name": "Xingpeng Li",
+          "href": "https://rpglab.github.io/"
+        }
+      ]
+    },
+    {
+      "institution": "University of Washington",
+      "people": [
+        {
+          "name": "Baosen Zhang",
+          "href": "https://zhangbaosen.github.io/"
+        }
+      ]
+    },
+    {
+      "institution": "University of Texas at Austin",
+      "people": [
+        {
+          "name": "Hao Zhu",
+          "href": "https://sites.utexas.edu/haozhu/"
+        },
+        {
+          "name": "Javad Mohammadi",
+          "href": "https://javadm-utexas.github.io/Homepage/index.html"
+        }
+      ]
+    },
+    {
+      "institution": "Technical University of Denmark",
+      "people": [
+        {
+          "name": "Spyros Chatzivasileiadis",
+          "href": "http://www.chatziva.com/"
+        }
+      ]
+    },
+    {
+      "institution": "University of Colorado, Boulder",
+      "people": [
+        {
+          "name": "Kyri Baker",
+          "href": "http://www.kyrib.com/"
+        }
+      ]
+    },
+    {
+      "institution": "광운대",
+      "people": [
+        {
+          "name": "윤민한",
+          "href": "https://sites.google.com/view/kwuepel/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "지스트",
+      "people": [
+        {
+          "name": "김윤수",
+          "href": "https://psl.gist.ac.kr/psl/"
+        }
+      ]
+    },
+    {
+      "institution": "유니스트",
+      "people": [
+        {
+          "name": "이준희",
+          "href": "https://sites.google.com/view/unist-pesl/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "상명대",
+      "people": [
+        {
+          "name": "심재웅",
+          "href": "https://sites.google.com/view/jaewshim/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "경북대",
+      "people": [
+        {
+          "name": "정재정",
+          "href": "https://knuecslab.wixsite.com/knuecslab"
+        }
+      ]
+    },
+    {
+      "institution": "건국대",
+      "people": [
+        {
+          "name": "박재영",
+          "href": "https://sites.google.com/view/hcglab/"
+        }
+      ]
+    },
+    {
+      "institution": "포항공대",
+      "people": [
+        {
+          "name": "김영진",
+          "href": "https://postech-esl.notion.site/main"
+        }
+      ]
+    },
+    {
+      "institution": "한국에너지공대",
+      "people": [
+        {
+          "name": "김집",
+          "href": "https://egolab.kentech.ac.kr/"
+        },
+        {
+          "name": "이진오",
+          "href": "https://psl.kentech.ac.kr/team/advisor"
+        },
+        {
+          "name": "김승완",
+          "href": "https://www.sendlab.kr/"
+        }
+      ]
+    },
+    {
+      "institution": "인하대",
+      "people": [
+        {
+          "name": "김인수",
+          "href": "https://sites.google.com/view/inhapower/home?authuser=0"
+        },
+        {
+          "name": "원동준",
+          "href": "https://sites.google.com/view/powerinha/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "고려대",
+      "people": [
+        {
+          "name": "장길수",
+          "href": "http://pel.korea.ac.kr/"
+        },
+        {
+          "name": "주성관",
+          "href": "https://smartgrid.korea.ac.kr/"
+        },
+        {
+          "name": "최승연",
+          "href": "https://ugrid.korea.ac.kr/home"
+        },
+        {
+          "name": "이병준",
+          "href": "https://scholar.google.com/citations?hl=ko&user=aZuaAgQAAAAJ&view_op=list_works&sortby=pubdate"
+        }
+      ]
+    },
+    {
+      "institution": "홍익대",
+      "people": [
+        {
+          "name": "신훈영",
+          "href": "https://sites.google.com/view/eselab"
+        },
+        {
+          "name": "이시영",
+          "href": "https://sites.google.com/hongik.ac.kr/peor-lab/home"
+        }
+      ]
+    },
+    {
+      "institution": "연세대",
+      "people": [
+        {
+          "name": "허견",
+          "href": "https://www.smartgrid.yonsei.ac.kr/"
+        },
+        {
+          "name": "박정욱",
+          "href": "https://pcsl.yonsei.ac.kr/"
+        }
+      ]
+    },
+    {
+      "institution": "숭실대",
+      "people": [
+        {
+          "name": "박병권",
+          "href": "https://sites.google.com/view/byungkwon/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "한양대",
+      "people": [
+        {
+          "name": "배성우",
+          "href": "http://pesl.hanyang.ac.kr/index.php"
+        },
+        {
+          "name": "김성열",
+          "href": "https://april.hanyang.ac.kr/"
+        }
+      ]
+    },
+    {
+      "institution": "중앙대",
+      "people": [
+        {
+          "name": "장재원",
+          "href": "https://sites.google.com/view/cau-gml"
+        }
+      ]
+    },
+    {
+      "institution": "서울시립대",
+      "people": [
+        {
+          "name": "정승민",
+          "href": "https://sites.google.com/view/uospower/about-us?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "서울대",
+      "people": [
+        {
+          "name": "이규섭",
+          "href": "https://sites.google.com/view/snupsl"
+        }
+      ]
+    },
+    {
+      "institution": "한국공학대",
+      "people": [
+        {
+          "name": "송성윤",
+          "href": "https://sites.google.com/view/psco-songsy/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "에리카",
+      "people": [
+        {
+          "name": "한창희",
+          "href": "https://sites.google.com/view/advancedpsl/main?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "카이스트",
+      "people": [
+        {
+          "name": "서갑수",
+          "href": "https://sites.google.com/view/gab-su-seo/home?authuser=0"
+        }
+      ]
+    }
+  ],
+  "resources": {
+    "conferences": [
+      "PESGM",
+      "SmartGridComm",
+      "PSCC",
+      "ECCE",
+      "PESIM",
+      "PowerUp",
+      "ACC",
+      "CDC",
+      "CIGRE",
+      "L4DC",
+      "ACM e-Energy"
+    ],
+    "journals": [
+      "Energy",
+      "Energy and AI",
+      "Applied Energy",
+      "Energy Reports",
+      "eTransportation",
+      "Renewable Energy",
+      "Energy and Buildings",
+      "Building and Environment",
+      "Advances in Applied Energy",
+      "Electric Power Systems Research",
+      "Sustainable Energy, Grids, and Networks",
+      "International Journal of Electrical Power and Energy Systems",
+      "IEEE Access",
+      "IEEE Systems Journal",
+      "IEEE Control Systems Letters",
+      "IEEE Transactions on Smart Grid",
+      "IEEE Transactions on Power Systems",
+      "IEEE Transactions on Sustainable Energy",
+      "IEEE Transactions on Industry Applications",
+      "IEEE Transactions on Industrial Informatics",
+      "IEEE Open Access Journal of Power and Energy",
+      "IEEE Transactions on Control of Network Systems",
+      "IEEE Transactions on Intelligent Transportation Systems",
+      "JEET"
+    ]
+  },
+  "gallery": [
+    "KICS Winter Conference 2024",
+    "KIEE Summer Conference 2022",
+    "Graduation Ceremony 2021"
+  ]
+}

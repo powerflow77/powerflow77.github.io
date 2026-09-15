@@ -1,0 +1,97 @@
+locale: "en-US"
+site_theme: "default"
+title: "Minjae Son"
+title_separator: "-"
+name: "Minjae Son"
+description: "Minjae Son (손민재), Ph.D. Student. Physical AI Expert in Energy Industry. Migration from SMART GRID to INTELLIGENT GRID."
+url: "https://powerflow77.github.io"
+baseurl: ""
+repository: "powerflow77/powerflow77.github.io"
+author:
+  avatar: "profile.jpg"
+  name: "Minjae Son (손민재)"
+  bio: "Ph.D. Student. Physical AI Expert in Energy Industry."
+  location: "Seoul"
+  employer: "Sogang University"
+  googlescholar: "https://scholar.google.com/citations?user=NZdDW_8AAAAJ&hl=en"
+  github: "powerflow77"
+breadcrumbs: false
+future: true
+read_more: "disabled"
+comments:
+  provider:
+analytics:
+  provider: false
+atom_feed:
+  hide: true
+social:
+  type: Person
+  name: "Minjae Son"
+  links:
+    - "https://github.com/powerflow77"
+    - "https://scholar.google.com/citations?user=NZdDW_8AAAAJ&hl=en"
+include:
+  - _pages
+exclude:
+  - .bundle
+  - .github
+  - .sass-cache
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - THIRD_PARTY_NOTICES.md
+  - README.md
+  - migration
+  - scripts
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+encoding: "utf-8"
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  portfolio:
+    output: true
+    permalink: /projects/:path/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: false
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+timezone: Asia/Seoul
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+compress_html:
+  clippings: all
+  ignore:
+    envs: development

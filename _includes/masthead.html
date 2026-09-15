@@ -1,0 +1,26 @@
+{% include base_path %}
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Main navigation">
+        <button aria-label="Toggle navigation" aria-controls="mobile-navigation" aria-expanded="false"><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></li>
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign link_url = link.url %}
+            {% else %}
+              {% assign link_url = link.url | relative_url %}
+            {% endif %}
+            <li class="masthead__menu-item"><a href="{{ link_url }}">{{ link.title }}</a></li>
+          {% endfor %}
+          <li id="theme-toggle" class="masthead__menu-item persist tail">
+            <a role="button" tabindex="0" aria-label="Toggle color theme"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          </li>
+        </ul>
+        <ul id="mobile-navigation" class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
