@@ -1,0 +1,61 @@
+{
+  "version": 8,
+  "name": "KoreaGrid Calm OpenFreeMap",
+  "metadata": {
+    "koreagrid:purpose": "Calm geographic context for the physical-network prototype",
+    "koreagrid:source": "OpenFreeMap vector tiles; individual vector-layer styling; no CSS filter"
+  },
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet",
+      "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+    }
+  },
+  "layers": [
+    { "id": "land", "type": "background", "paint": { "background-color": "#F1EFE8" } },
+    { "id": "water", "type": "fill", "source": "openmaptiles", "source-layer": "water", "filter": ["!=", ["get", "brunnel"], "tunnel"], "paint": { "fill-color": "#D9E8ED", "fill-antialias": true } },
+    { "id": "coastline", "type": "line", "source": "openmaptiles", "source-layer": "water", "minzoom": 3, "paint": { "line-color": "#AFC4CB", "line-width": 0.65, "line-opacity": 0.82 } },
+    {
+      "id": "major-roads", "type": "line", "source": "openmaptiles", "source-layer": "transportation", "minzoom": 5,
+      "filter": ["all", ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false], ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary"]]], ["!=", ["get", "brunnel"], "tunnel"]],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#D5D0C6", "line-opacity": 0.68, "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.25, 8, 0.55, 12, 1.2] }
+    },
+    {
+      "id": "country-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary",
+      "filter": ["all", ["==", ["get", "admin_level"], 2], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": { "line-color": "#71868F", "line-opacity": 0.92, "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.9, 8, 1.45] }
+    },
+    {
+      "id": "province-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary", "minzoom": 4,
+      "filter": ["all", ["in", ["get", "admin_level"], ["literal", [3, 4]]], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
+      "paint": { "line-color": "#899CA6", "line-opacity": 0.94, "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.84, 8, 1.4, 12, 1.9] }
+    },
+    {
+      "id": "city-county-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary", "minzoom": 6,
+      "filter": ["all", [">=", ["get", "admin_level"], 5], ["<=", ["get", "admin_level"], 6], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
+      "paint": { "line-color": "#C3CCCF", "line-opacity": 0.82, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.35, 10, 0.75] }
+    },
+    {
+      "id": "province-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 5, "maxzoom": 9,
+      "filter": ["all", ["==", ["get", "class"], "state"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
+      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-letter-spacing": 0.08, "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 8, 13], "text-max-width": 8 },
+      "paint": { "text-color": "#515E64", "text-opacity": 0.88, "text-halo-color": "#F1EFE8", "text-halo-width": 1.2, "text-halo-blur": 0.4 }
+    },
+    {
+      "id": "major-city-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 4,
+      "filter": ["all", ["==", ["get", "class"], "city"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
+      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 4, 10.5, 8, 13, 11, 16], "text-max-width": 7 },
+      "paint": { "text-color": "#515E64", "text-opacity": 0.94, "text-halo-color": "#F1EFE8", "text-halo-width": 1.25, "text-halo-blur": 0.3 }
+    },
+    {
+      "id": "town-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 7,
+      "filter": ["all", ["==", ["get", "class"], "town"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
+      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 7, 9, 11, 12], "text-max-width": 7 },
+      "paint": { "text-color": "#778287", "text-opacity": 0.82, "text-halo-color": "#F1EFE8", "text-halo-width": 1, "text-halo-blur": 0.3 }
+    }
+  ]
+}

@@ -4,10 +4,9 @@ permalink: /korea-grid/
 layout: default
 hide_title: true
 ---
-<link rel="stylesheet" href="{{ '/assets/vendor/maplibre/maplibre-gl.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/vendor/leaflet/leaflet.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/css/korea-grid.css' | relative_url }}">
 {% include korea-grid-app.html %}
-<script>window.KOREA_GRID_BASEMAP_STYLE_URL = {{ '/assets/data/korea-grid-basemap-style.json' | relative_url | jsonify }};</script>
-<script src="{{ '/assets/vendor/maplibre/maplibre-gl.js' | relative_url }}"></script>
+<script src="{{ '/assets/vendor/leaflet/leaflet.js' | relative_url }}"></script>
 <script src="{{ '/assets/data/korea-grid-data.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/korea-grid.js' | relative_url }}"></script>

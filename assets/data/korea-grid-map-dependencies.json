@@ -1,0 +1,17 @@
+{
+  "renderer": {
+    "name": "MapLibre GL JS",
+    "version": "5.24.0",
+    "javascript": "/assets/vendor/maplibre/maplibre-gl.js",
+    "stylesheet": "/assets/vendor/maplibre/maplibre-gl.css",
+    "upstream": "https://github.com/maplibre/maplibre-gl-js/releases/tag/v5.24.0",
+    "license": "/assets/vendor/maplibre/LICENSE.txt"
+  },
+  "basemap": {
+    "provider": "OpenFreeMap",
+    "vector_source": "https://tiles.openfreemap.org/planet",
+    "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+    "custom_style": "/assets/data/korea-grid-basemap-style.json",
+    "upstream_quick_start": "https://openfreemap.org/quick_start/"
+  }
+}

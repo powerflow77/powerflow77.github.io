@@ -1,0 +1,50 @@
+<span id="main" class="kg-skip-target" tabindex="-1"></span>
+<main id="korea-grid-app" class="kg-shell" aria-label="Korea Grid interactive map">
+    <aside class="kg-sidebar" aria-label="Site search and network information">
+      <div class="kg-brand">
+        <p class="kg-eyebrow">Interactive physical network</p>
+        <h1>Korea Grid</h1>
+        <p>Current evidence-backed physical facilities and connectivity.</p>
+      </div>
+
+      <section class="kg-metrics" aria-label="Network summary">
+        <div><strong>958</strong><span>physical sites</span></div>
+        <div><strong>1,430</strong><span>AC pairs</span></div>
+        <div><strong>4</strong><span>HVDC links</span></div>
+        <div><strong>1</strong><span>BTB</span></div>
+      </section>
+
+      <section class="kg-search-section" aria-label="Search sites">
+        <label for="kg-search">Search site, FGN, or NMI</label>
+        <div class="kg-search-row">
+          <input id="kg-search" type="search" autocomplete="off" placeholder="e.g. 신서산 or FGN0_…">
+          <button id="kg-clear" type="button" aria-label="Clear search">Clear</button>
+        </div>
+        <p id="kg-search-status" class="kg-status" aria-live="polite">Showing all 958 sites</p>
+        <ol id="kg-site-list" class="kg-site-list" aria-label="Site search results"></ol>
+      </section>
+
+      <section id="kg-selection" class="kg-selection" aria-live="polite">
+        <div class="kg-selection-head">
+          <h2>Selection</h2>
+          <button id="kg-clear-selection" type="button" disabled>Clear selection</button>
+        </div>
+        <p>Select a site to emphasize its physical neighbors.</p>
+      </section>
+
+      <section class="kg-disclaimer">
+        <p><strong>957</strong> independently sourced non-GIST coordinates</p>
+        <p><strong>1</strong> legacy GIST reference</p>
+        <p>Coordinates represent evidence-backed physical facility sites, not surveyed equipment/bus positions. Transmission lines are shown as straight connectivity links, not actual geographic routes.</p>
+      </section>
+    </aside>
+
+    <section class="kg-map-wrap">
+      <div class="kg-map-toolbar" aria-label="Map actions">
+        <button id="kg-toggle-sidebar" type="button" aria-expanded="true">Sites</button>
+        <button id="kg-fit" type="button">Fit Korea</button>
+      </div>
+      <div id="korea-grid-map" class="kg-map" role="application" aria-label="Interactive map of the KoreaGrid physical network"></div>
+      <div class="kg-map-note">Straight links show connectivity, not surveyed routes.</div>
+    </section>
+  </main>
