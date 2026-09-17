@@ -1,0 +1,113 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.59232781145413,
+            34.367339554602744
+          ],
+          [
+            126.59557550042297,
+            33.53465910444291
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "asset_id": "FDC0_ASSET_000001",
+        "capacity_mw": "300",
+        "current_status": "CURRENT_COMMISSIONED",
+        "dc_voltage_kv": "±180",
+        "from_fgn": "FGN0_000899",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "scheme": "#1 해남-제주 HVDC",
+        "technology": "LCC_CURRENT_SOURCE",
+        "to_fgn": "FGN0_001005"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.18623096303266,
+            34.385733942658376
+          ],
+          [
+            126.47336234165758,
+            33.455321281438295
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "asset_id": "FDC0_ASSET_000002",
+        "capacity_mw": "400",
+        "current_status": "CURRENT_COMMISSIONED",
+        "dc_voltage_kv": "±250",
+        "from_fgn": "FGN0_000832",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "scheme": "#2 진도-서제주 HVDC",
+        "technology": "LCC_CURRENT_SOURCE",
+        "to_fgn": "FGN0_000996"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.71599085976955,
+            34.32044021430028
+          ],
+          [
+            126.60071154166475,
+            33.5350247230253
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "asset_id": "FDC0_ASSET_000003",
+        "capacity_mw": "200",
+        "current_status": "CURRENT_COMMISSIONED",
+        "dc_voltage_kv": "±150",
+        "from_fgn": "FGN0_001007",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "scheme": "#3 완도-동제주 HVDC",
+        "technology": "VSC_VOLTAGE_SOURCE",
+        "to_fgn": "FGN0_001008"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.78392782807317,
+            36.95480925053405
+          ],
+          [
+            127.05770287466157,
+            37.02662504995675
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "asset_id": "FDC0_ASSET_000004",
+        "capacity_mw": "3000",
+        "current_status": "CURRENT_COMMISSIONED",
+        "dc_voltage_kv": "±500",
+        "from_fgn": "FGN0_000074",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "scheme": "북당진-고덕 HVDC",
+        "technology": "LCC_CURRENT_SOURCE",
+        "to_fgn": "FGN0_000989"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

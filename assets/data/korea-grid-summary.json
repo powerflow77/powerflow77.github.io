@@ -1,0 +1,39 @@
+{
+  "canonical_counts": {
+    "ac_physical_pairs": 1430,
+    "btb_assets": 1,
+    "independently_sourced_non_gist_coordinates": 957,
+    "legacy_gist_references": 1,
+    "physical_sites": 958,
+    "ptp_hvdc_links": 4
+  },
+  "canonical_source_hashes": {
+    "ac_pairs": "3C1F0103592BB05B0C2D2ECD1A47DB3A021BDF82164F010528BF135B36D6233F",
+    "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
+    "coordinates": "4950B59F14B7912C446615E7FDFF217F88B1EA5A3A775A223EF8E6384503C7E1",
+    "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
+    "stations": "8934DA31732A98B5D4773BA03F8A9F1B239174910EFB412A91CD6DC191B9867A"
+  },
+  "disclaimer": "Coordinates represent evidence-backed physical facility sites, not surveyed equipment/bus positions. Transmission lines are shown as straight connectivity links, not actual geographic routes.",
+  "render_counts": {
+    "plotted_sites": 958,
+    "rendered_ac_pairs": 1430,
+    "rendered_btb_assets": 1,
+    "rendered_hvdc_links": 4,
+    "skipped_ac_pairs": 0,
+    "skipped_btb_assets": 0,
+    "skipped_hvdc_links": 0,
+    "skipped_sites": 0
+  },
+  "title": "KoreaGrid Physical Network",
+  "viewport_bounds": [
+    [
+      33.23755541939071,
+      126.07550175611689
+    ],
+    [
+      38.3866735,
+      129.4840497
+    ]
+  ]
+}

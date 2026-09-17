@@ -1,0 +1,26 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          126.9196524,
+          37.6843357
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "asset_id": "FDC0_BTB_000001",
+        "capacity_mw": "200",
+        "current_status": "CURRENT_COMMISSIONED_BTB",
+        "dc_voltage_kv": "±120",
+        "host_fgn": "FGN0_000191",
+        "host_name": "양주",
+        "representation": "HOST_MARKER_ONLY_NO_INTERNAL_NODE_NO_SELF_LOOP",
+        "scheme": "양주 VSC BTB",
+        "technology": "VSC_MMC"
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
