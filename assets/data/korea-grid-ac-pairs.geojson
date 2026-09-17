@@ -42899,6 +42899,216 @@
         "voltage_classes": "154"
       },
       "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.24492129475975,
+            37.02073590105023
+          ],
+          [
+            127.2507235,
+            37.0087613
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "2",
+        "edge_id": "FGE0_001483",
+        "from_fgn": "FGN0_000673",
+        "from_name": "안성",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 1.428,
+        "to_fgn": "FGN0_000388",
+        "to_name": "남안성",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.0536371,
+            35.1947755
+          ],
+          [
+            129.08379774798385,
+            35.20057454203872
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "1",
+        "edge_id": "FGE0_001484",
+        "from_fgn": "FGN0_000504",
+        "from_name": "미남",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 2.815,
+        "to_fgn": "FGN0_000453",
+        "to_name": "동래",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.9514448,
+            37.3187094
+          ],
+          [
+            127.9759091,
+            37.3292529
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "1",
+        "edge_id": "FGE0_001485",
+        "from_fgn": "FGN0_000390",
+        "from_name": "남원주",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 2.461,
+        "to_fgn": "FGN0_000462",
+        "to_name": "동원주",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.0726022,
+            35.0682107
+          ],
+          [
+            128.0524041,
+            35.0644386
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "2",
+        "edge_id": "FGE0_001486",
+        "from_fgn": "FGN0_000561",
+        "from_name": "사천",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 1.886,
+        "to_fgn": "FGN0_000557",
+        "to_name": "사남",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.0846697,
+            37.2693443
+          ],
+          [
+            127.0866426,
+            37.2745771
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "1",
+        "edge_id": "FGE0_001487",
+        "from_fgn": "FGN0_000643",
+        "from_name": "신갈",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 0.607,
+        "to_fgn": "FGN0_000920",
+        "to_name": "흥덕",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.481413,
+            37.6817305
+          ],
+          [
+            126.396515035062,
+            37.70941497320838
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "1",
+        "edge_id": "FGE0_001488",
+        "from_fgn": "FGN0_000320",
+        "from_name": "강화",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 8.079,
+        "to_fgn": "FGN0_000991",
+        "to_name": "서강화변전소",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.09352264987314,
+            35.14774048881165
+          ],
+          [
+            129.1046196,
+            35.1183883
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "circuit_count": "1",
+        "edge_id": "FGE0_001489",
+        "from_fgn": "FGN0_000133",
+        "from_name": "신대연",
+        "highest_voltage_kv": 154,
+        "relation_type": "CURRENT_154KV_LINE_APPROVED_MAP_PATCH",
+        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
+        "straight_distance_km": 3.416,
+        "to_fgn": "FGN0_000750",
+        "to_name": "용호",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
     }
   ],
   "type": "FeatureCollection"

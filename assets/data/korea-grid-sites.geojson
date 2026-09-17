@@ -57,33 +57,6 @@
     {
       "geometry": {
         "coordinates": [
-          126.8781504,
-          37.4770513
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
-        "coordinate_method": "V12_EXTERNAL_SEED_EXACT_LOCATOR_RECOVERY",
-        "coordinate_note": "Evidence-backed physical facility site.",
-        "coordinate_tier": "GEO_B_OFFICIAL_ADDRESS",
-        "facility_type": "SUBSTATION",
-        "fgn": "FGN0_000309",
-        "highest_voltage_kv": 154,
-        "hvdc_link_count": 0,
-        "is_orphan": true,
-        "legacy_gist_reference": false,
-        "name": "가산",
-        "nmi": "NMI000310",
-        "voltage_band": "154",
-        "voltage_classes": "154"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
           127.3359915,
           36.2984346
         ],
@@ -441,8 +414,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 1,
-        "connected_physical_pair_count": 1,
+        "ac_pair_count": 2,
+        "connected_physical_pair_count": 2,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -2952,8 +2925,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -2961,7 +2934,7 @@
         "fgn": "FGN0_000388",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "남안성",
         "nmi": "NMI000389",
@@ -3060,8 +3033,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -5139,8 +5112,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "V6_LOCAL_EUM_VWORLD_EXACT_NAMED_FACILITY_POLYGON",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -5148,7 +5121,7 @@
         "fgn": "FGN0_000453",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "동래",
         "nmi": "NMI000454",
@@ -5463,8 +5436,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -5472,7 +5445,7 @@
         "fgn": "FGN0_000462",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "동원주",
         "nmi": "NMI000463",
@@ -7083,8 +7056,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 3,
-        "connected_physical_pair_count": 3,
+        "ac_pair_count": 4,
+        "connected_physical_pair_count": 4,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -8973,8 +8946,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -8982,7 +8955,7 @@
         "fgn": "FGN0_000557",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "사남",
         "nmi": "NMI000559",
@@ -9108,8 +9081,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -12537,8 +12510,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -13050,8 +13023,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "OFFICIAL_MUNICIPAL_CURRENT_IDENTITY_ADDRESS_PLUS_VWORLD_URBAN_PLAN_POLYGON",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_A_CANONICAL",
@@ -15102,8 +15075,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 4,
-        "connected_physical_pair_count": 4,
+        "ac_pair_count": 5,
+        "connected_physical_pair_count": 5,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -17964,8 +17937,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -17973,7 +17946,7 @@
         "fgn": "FGN0_000750",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "용호",
         "nmi": "NMI000757",
@@ -20353,33 +20326,6 @@
         "legacy_gist_reference": false,
         "name": "정선",
         "nmi": "NMI000813",
-        "voltage_band": "154",
-        "voltage_classes": "154"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
-          126.7325448,
-          37.3684215
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
-        "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
-        "coordinate_note": "Evidence-backed physical facility site.",
-        "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
-        "facility_type": "SUBSTATION",
-        "fgn": "FGN0_000807",
-        "highest_voltage_kv": 154,
-        "hvdc_link_count": 0,
-        "is_orphan": true,
-        "legacy_gist_reference": false,
-        "name": "정왕",
-        "nmi": "NMI000814",
         "voltage_band": "154",
         "voltage_classes": "154"
       },
@@ -25119,8 +25065,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -25128,7 +25074,7 @@
         "fgn": "FGN0_000920",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "흥덕",
         "nmi": "NMI000927",
@@ -25335,8 +25281,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "OFFLINE_APPROVED_OFFICIAL_FACILITY_SITE_GEOMETRY_REPLAY",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -25344,7 +25290,7 @@
         "fgn": "FGN0_000991",
         "highest_voltage_kv": 0,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "서강화변전소",
         "nmi": "NMI000936",

@@ -7,3 +7,5 @@ Bundled Font Awesome code is MIT-licensed; fonts are under SIL OFL 1.1 and icons
 Minjae Son's academic content and original image files are migrated from the user-supplied Google Sites website. Their presence here does not relicense them under the theme's MIT license. Original image source URLs and SHA-256 digests are recorded in `migration/assets.json`.
 
 The Korea Grid map uses MapLibre GL JS 5.24.0 under its BSD 3-Clause license; the vendored license is retained at `assets/vendor/maplibre/LICENSE.txt`. Its geographic basemap uses OpenFreeMap vector tiles and glyphs, based on OpenMapTiles data from OpenStreetMap. KoreaGrid physical-network data and overlays remain separate from the basemap source.
+
+Korean administrative boundaries use `vuski/admdongkor` version `ver20260701`, derived from Statistics Korea SGIS administrative-dong boundaries released under KOGL Type 1 and distributed by `admdongkor` under CC BY 4.0. The deployed derived GeoJSON and retained attribution text are in `assets/data/admin/`.

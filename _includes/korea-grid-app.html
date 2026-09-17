@@ -1,50 +1,42 @@
 <span id="main" class="kg-skip-target" tabindex="-1"></span>
 <main id="korea-grid-app" class="kg-shell" aria-label="Korea Grid interactive map">
-    <aside class="kg-sidebar" aria-label="Site search and network information">
+    <aside class="kg-sidebar" aria-label="Facility search and network information">
       <div class="kg-brand">
-        <p class="kg-eyebrow">Interactive physical network</p>
         <h1>Korea Grid</h1>
-        <p>Current evidence-backed physical facilities and connectivity.</p>
       </div>
 
-      <section class="kg-metrics" aria-label="Network summary">
-        <div><strong>958</strong><span>physical sites</span></div>
-        <div><strong>1,430</strong><span>AC pairs</span></div>
-        <div><strong>4</strong><span>HVDC links</span></div>
-        <div><strong>1</strong><span>BTB</span></div>
+      <section class="kg-search-section" aria-label="Search facilities">
+        <label for="kg-search">Search facilities</label>
+        <input id="kg-search" type="search" autocomplete="off" placeholder="e.g. 신서산">
+        <p id="kg-search-status" class="kg-status" aria-live="polite" hidden></p>
+        <ol id="kg-site-list" class="kg-site-list" aria-label="Facility search results" hidden></ol>
       </section>
 
-      <section class="kg-search-section" aria-label="Search sites">
-        <label for="kg-search">Search site, FGN, or NMI</label>
-        <div class="kg-search-row">
-          <input id="kg-search" type="search" autocomplete="off" placeholder="e.g. 신서산 or FGN0_…">
-          <button id="kg-clear" type="button" aria-label="Clear search">Clear</button>
-        </div>
-        <p id="kg-search-status" class="kg-status" aria-live="polite">Showing all 958 sites</p>
-        <ol id="kg-site-list" class="kg-site-list" aria-label="Site search results"></ol>
-      </section>
-
-      <section id="kg-selection" class="kg-selection" aria-live="polite">
-        <div class="kg-selection-head">
-          <h2>Selection</h2>
-          <button id="kg-clear-selection" type="button" disabled>Clear selection</button>
-        </div>
-        <p>Select a site to emphasize its physical neighbors.</p>
-      </section>
-
-      <section class="kg-disclaimer">
-        <p><strong>957</strong> independently sourced non-GIST coordinates</p>
-        <p><strong>1</strong> legacy GIST reference</p>
-        <p>Coordinates represent evidence-backed physical facility sites, not surveyed equipment/bus positions. Transmission lines are shown as straight connectivity links, not actual geographic routes.</p>
+      <section id="kg-selection" class="kg-selection" aria-live="polite" hidden>
+        <h2>Selection</h2>
+        <p></p>
       </section>
     </aside>
 
     <section class="kg-map-wrap">
       <div class="kg-map-toolbar" aria-label="Map actions">
-        <button id="kg-toggle-sidebar" type="button" aria-expanded="true">Sites</button>
+        <button id="kg-toggle-sidebar" type="button" aria-expanded="true">Search</button>
         <button id="kg-fit" type="button">Fit Korea</button>
       </div>
       <div id="korea-grid-map" class="kg-map" role="application" aria-label="Interactive map of the KoreaGrid physical network"></div>
-      <div class="kg-map-note">Straight links show connectivity, not surveyed routes.</div>
+      <footer class="kg-attribution-footer" aria-label="Map and data attribution">
+        <span>KoreaGrid</span>
+        <span aria-hidden="true">·</span>
+        <a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://openmaptiles.org/" target="_blank" rel="noopener noreferrer">OpenMapTiles</a>
+        <span>data from</span>
+        <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://sgis.kostat.go.kr/" target="_blank" rel="noopener noreferrer">Statistics Korea SGIS</a>
+        <span>(KOGL Type 1), modified by</span>
+        <a href="https://github.com/vuski/admdongkor" target="_blank" rel="noopener noreferrer">vuski/admdongkor</a>
+        <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">(CC BY 4.0)</a>
+      </footer>
     </section>
   </main>

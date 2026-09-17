@@ -9,20 +9,41 @@
   }
 
   const colors = {
-    "154": "#16866f",
-    "345": "#146ef5",
-    "765": "#c53a41",
+    "154": "#4f8f8b",
+    "345": "#c99a3d",
+    "765": "#a85f6a",
     other: "#7a8794",
-    hvdc: "#8b4bcc",
-    btb: "#e47d19",
+    hvdc: "#7566a8",
+    btb: "#7566a8",
     selected: "#15283d"
   };
 
+  const lineStyleVariants = {
+    light: {
+      widths: { "154": 1.1, "345": 1.8, "765": 2.7, other: 1.1, hvdc: 2.35 },
+      opacity: { "154": 0.58, "345": 0.74, "765": 0.84, other: 0.52, hvdc: 0.8 }
+    },
+    balanced: {
+      widths: { "154": 1.4, "345": 2.2, "765": 3.2, other: 1.4, hvdc: 2.8 },
+      opacity: { "154": 0.73, "345": 0.83, "765": 0.9, other: 0.6, hvdc: 0.88 }
+    },
+    strong: {
+      widths: { "154": 1.7, "345": 2.6, "765": 3.7, other: 1.7, hvdc: 3.3 },
+      opacity: { "154": 0.78, "345": 0.89, "765": 0.95, other: 0.69, hvdc: 0.93 }
+    }
+  };
+  const requestedVariant = new URLSearchParams(window.location.search).get("variant") || "balanced";
+  const lineStyleName = Object.hasOwn(lineStyleVariants, requestedVariant) ? requestedVariant : "balanced";
+  const lineStyle = lineStyleVariants[lineStyleName];
+  window.KOREA_GRID_LINE_STYLE = { name: lineStyleName, colors: { ...colors }, widths: { ...lineStyle.widths }, opacity: { ...lineStyle.opacity } };
+
   const siteById = new Map();
+  const acById = new Map();
+  const hvdcById = new Map();
   const neighbors = new Map();
   const incidentAc = new Map();
   const incidentHvdc = new Map();
-  let selectedId = null;
+  let selectionState = null;
   let activePopup = null;
 
   function escapeHtml(value) {
@@ -47,8 +68,14 @@
   }
 
   data.sites.features.forEach((feature) => siteById.set(feature.properties.fgn, feature));
-  data.ac.features.forEach((feature) => addNeighbor(feature.properties.from_fgn, feature.properties.to_fgn, "ac", feature.properties.edge_id));
-  data.hvdc.features.forEach((feature) => addNeighbor(feature.properties.from_fgn, feature.properties.to_fgn, "hvdc", feature.properties.asset_id));
+  data.ac.features.forEach((feature) => {
+    acById.set(feature.properties.edge_id, feature);
+    addNeighbor(feature.properties.from_fgn, feature.properties.to_fgn, "ac", feature.properties.edge_id);
+  });
+  data.hvdc.features.forEach((feature) => {
+    hvdcById.set(feature.properties.asset_id, feature);
+    addNeighbor(feature.properties.from_fgn, feature.properties.to_fgn, "hvdc", feature.properties.asset_id);
+  });
 
   const bounds = data.sites.features.reduce((box, feature) => box.extend(feature.geometry.coordinates), new maplibregl.LngLatBounds());
   const map = new maplibregl.Map({
@@ -67,13 +94,33 @@
   window.KOREA_GRID_MAP = map;
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), "top-left");
-  map.addControl(new maplibregl.AttributionControl({ compact: true, customAttribution: "KoreaGrid physical network" }), "bottom-right");
 
   const radiusExpression = ["match", ["get", "voltage_band"], "765", 5.8, "345", 4.2, "154", 2.9, 2.7];
   const colorExpression = ["match", ["get", "voltage_band"], "765", colors["765"], "345", colors["345"], "154", colors["154"], colors.other];
-  const siteStrokeColor = ["case", ["boolean", ["get", "legacy_gist_reference"], false], colors.btb, "#ffffff"];
-  const acWidth = ["match", ["get", "voltage_band"], "765", 2.05, "345", 1.35, "154", 0.8, 0.8];
-  const acOpacity = ["match", ["get", "voltage_band"], "154", 0.31, 0.5];
+  const siteStrokeColor = "#ffffff";
+  function zoomWidth(base, extra = 0) {
+    return ["interpolate", ["linear"], ["zoom"], 5, base * 0.82 + extra, 7, base + extra, 10, base * 1.32 + extra, 14, base * 1.58 + extra];
+  }
+  function acWidthAt(scale, extra = 0) {
+    return [
+      "match", ["get", "voltage_band"],
+      "765", lineStyle.widths["765"] * scale + extra,
+      "345", lineStyle.widths["345"] * scale + extra,
+      "154", lineStyle.widths["154"] * scale + extra,
+      lineStyle.widths.other * scale + extra
+    ];
+  }
+  const acWidth = ["interpolate", ["linear"], ["zoom"], 5, acWidthAt(0.82), 7, acWidthAt(1), 10, acWidthAt(1.32), 14, acWidthAt(1.58)];
+  const acSelectedWidth = ["interpolate", ["linear"], ["zoom"], 5, acWidthAt(0.82, 2.8), 7, acWidthAt(1, 2.8), 10, acWidthAt(1.32, 2.8), 14, acWidthAt(1.58, 2.8)];
+  const acOpacity = [
+    "match", ["get", "voltage_band"],
+    "765", lineStyle.opacity["765"],
+    "345", lineStyle.opacity["345"],
+    "154", lineStyle.opacity["154"],
+    lineStyle.opacity.other
+  ];
+  const hvdcWidth = zoomWidth(lineStyle.widths.hvdc);
+  const hvdcSelectedWidth = zoomWidth(lineStyle.widths.hvdc, 3);
 
   function addDashedRing(name, diameter, color, lineWidth, dash) {
     const pixelRatio = 2;
@@ -113,7 +160,7 @@
       type: "line",
       source: "kg-hvdc",
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": colors.hvdc, "line-width": 3, "line-opacity": 0.88, "line-dasharray": [3, 2] }
+      paint: { "line-color": colors.hvdc, "line-width": hvdcWidth, "line-opacity": lineStyle.opacity.hvdc, "line-dasharray": [3, 2] }
     });
 
     map.addLayer({
@@ -122,10 +169,10 @@
       source: "kg-sites",
       paint: {
         "circle-radius": radiusExpression,
-        "circle-color": ["case", ["boolean", ["get", "legacy_gist_reference"], false], "#ffffff", colorExpression],
+        "circle-color": colorExpression,
         "circle-opacity": 0.88,
         "circle-stroke-color": siteStrokeColor,
-        "circle-stroke-width": ["case", ["boolean", ["get", "legacy_gist_reference"], false], 2.4, 1],
+        "circle-stroke-width": 1,
         "circle-stroke-opacity": 0.96
       }
     });
@@ -175,7 +222,7 @@
       source: "kg-ac",
       filter: ["in", ["get", "edge_id"], ["literal", []]],
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": colorExpression, "line-width": ["+", acWidth, 3], "line-opacity": 1 }
+      paint: { "line-color": colorExpression, "line-width": acSelectedWidth, "line-opacity": 1 }
     });
 
     map.addLayer({
@@ -184,7 +231,7 @@
       source: "kg-hvdc",
       filter: ["in", ["get", "asset_id"], ["literal", []]],
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": colors.hvdc, "line-width": 6, "line-opacity": 1, "line-dasharray": [3, 2] }
+      paint: { "line-color": colors.hvdc, "line-width": hvdcSelectedWidth, "line-opacity": 1, "line-dasharray": [3, 2] }
     });
 
     map.addLayer({
@@ -196,90 +243,181 @@
     });
   }
 
+  const facilityTypeLabels = {
+    SUBSTATION: "Substation",
+    SWITCHING_STATION: "Switching station",
+    HVDC_CONVERTER: "HVDC converter station",
+    HVDC_CONVERTER_STATION: "HVDC converter station",
+    PLANT_HV_GIS_SWITCHYARD: "Power plant switchyard",
+    PLANT_SIDE_SUBSTATION: "Power plant substation",
+    PLANT_SWITCHYARD: "Power plant switchyard",
+    THERMAL_PLANT_SWITCHYARD: "Power plant switchyard",
+    GENERATOR_PLANT_154KV_SWITCHYARD: "Power plant switchyard",
+    CURRENT_PHYSICAL_STATION: "Electrical facility",
+    SOURCE_SCOPED_UNRESOLVED: "Electrical facility",
+    UNRESOLVED: "Electrical facility"
+  };
+
+  function publicFacilityType(value) {
+    return facilityTypeLabels[value] || "Electrical facility";
+  }
+
+  function highestVoltage(properties) {
+    const value = Number(properties.highest_voltage_kv || 0);
+    return value > 0 ? `${value} kV` : "Not specified";
+  }
+
   function sitePopup(properties) {
-    const legacy = properties.legacy_gist_reference
-      ? '<p class="kg-legacy"><strong>LEGACY GIST REFERENCE</strong><br>Exact 345-kV receiving-substation parcel unresolved.</p>'
-      : "";
     return `<div class="kg-popup"><h3>${escapeHtml(properties.name)}</h3><dl>
-      <dt>FGN</dt><dd>${escapeHtml(properties.fgn)}</dd>
-      <dt>NMI</dt><dd>${escapeHtml(properties.nmi || "—")}</dd>
-      <dt>Type</dt><dd>${escapeHtml(properties.facility_type || "—")}</dd>
-      <dt>Voltage</dt><dd>${escapeHtml(properties.voltage_classes || properties.highest_voltage_kv + " kV")}</dd>
-      <dt>Coordinate</dt><dd>${escapeHtml(properties.coordinate_tier)}</dd>
-      <dt>Connections</dt><dd>${properties.connected_physical_pair_count} physical pairs</dd>
-    </dl>${legacy}</div>`;
+      <dt>Facility type</dt><dd>${escapeHtml(publicFacilityType(properties.facility_type))}</dd>
+      <dt>Highest voltage</dt><dd>${escapeHtml(highestVoltage(properties))}</dd>
+      <dt>Mapped connections</dt><dd>${Number(properties.connected_physical_pair_count || 0)}</dd>
+    </dl></div>`;
+  }
+
+  function closeActivePopup() {
+    if (!activePopup) return;
+    const popup = activePopup;
+    activePopup = null;
+    popup.remove();
+  }
+
+  function showPopupAt(lngLat, html, maxWidth = "310px") {
+    closeActivePopup();
+    activePopup = new maplibregl.Popup({ maxWidth, closeButton: true })
+      .setLngLat(lngLat)
+      .setHTML(html)
+      .addTo(map);
+    activePopup.on("close", () => { activePopup = null; });
   }
 
   function showSitePopup(feature) {
-    if (activePopup) activePopup.remove();
-    activePopup = new maplibregl.Popup({ maxWidth: "290px", closeButton: true })
-      .setLngLat(feature.geometry.coordinates)
-      .setHTML(sitePopup(feature.properties))
-      .addTo(map);
+    showPopupAt(feature.geometry.coordinates, sitePopup(feature.properties), "290px");
   }
 
   function linePopup(properties, kind) {
     if (kind === "hvdc") {
-      return `<div class="kg-line-popup"><strong>${escapeHtml(properties.scheme)}</strong><br>${escapeHtml(properties.dc_voltage_kv)} kV DC · ${escapeHtml(properties.capacity_mw)} MW<br>${escapeHtml(properties.technology)}<br>Straight connectivity link, not an actual route.</div>`;
+      const fromName = properties.from_name || siteById.get(properties.from_fgn)?.properties.name || "Facility";
+      const toName = properties.to_name || siteById.get(properties.to_fgn)?.properties.name || "Facility";
+      return `<div class="kg-line-popup"><strong>${escapeHtml(fromName)} ↔ ${escapeHtml(toName)}</strong><br>${escapeHtml(properties.dc_voltage_kv)} kV DC<br>Shown as a straight connection, not an actual route.</div>`;
     }
-    return `<div class="kg-line-popup"><strong>${escapeHtml(properties.from_name)} ↔ ${escapeHtml(properties.to_name)}</strong><br>${escapeHtml(properties.voltage_classes || "Voltage not restated")} kV · ${escapeHtml(properties.circuit_count || "—")} circuit(s)<br>Straight connectivity link, not an actual route.</div>`;
+    return `<div class="kg-line-popup"><strong>${escapeHtml(properties.from_name)} ↔ ${escapeHtml(properties.to_name)}</strong><br>${escapeHtml(properties.voltage_classes || "Voltage not specified")} kV · ${escapeHtml(properties.circuit_count || "—")} circuit(s)<br>Shown as a straight connection, not an actual route.</div>`;
   }
 
-  function clearSiteSelection() {
-    selectedId = null;
+  function setSelectionAttributes(kind = "", id = "") {
+    app.setAttribute("data-selection-kind", kind);
+    app.setAttribute("data-selection-id", id);
+  }
+
+  function dimBaseNetwork() {
+    map.setPaintProperty("kg-sites", "circle-opacity", 0.035);
+    map.setPaintProperty("kg-sites", "circle-stroke-opacity", 0.09);
+    map.setPaintProperty("kg-orphan-rings", "icon-opacity", 0.09);
+    map.setPaintProperty("kg-btb", "icon-opacity", 0.12);
+    ["154", "345", "765", "other"].forEach((band) => map.setPaintProperty(`kg-ac-${band}`, "line-opacity", 0.055));
+    map.setPaintProperty("kg-hvdc", "line-opacity", 0.07);
+  }
+
+  function restoreBaseNetwork() {
     map.setPaintProperty("kg-sites", "circle-opacity", 0.88);
     map.setPaintProperty("kg-sites", "circle-stroke-opacity", 0.96);
     map.setPaintProperty("kg-orphan-rings", "icon-opacity", 0.96);
+    map.setPaintProperty("kg-btb", "icon-opacity", 0.95);
     ["154", "345", "765", "other"].forEach((band) => map.setPaintProperty(`kg-ac-${band}`, "line-opacity", acOpacity));
-    map.setPaintProperty("kg-hvdc", "line-opacity", 0.88);
+    map.setPaintProperty("kg-hvdc", "line-opacity", lineStyle.opacity.hvdc);
+  }
+
+  function resetSelectionFilters() {
     map.setFilter("kg-sites-related", ["in", ["get", "fgn"], ["literal", []]]);
     map.setFilter("kg-sites-selected", ["==", ["get", "fgn"], ""]);
     map.setFilter("kg-ac-selected", ["in", ["get", "edge_id"], ["literal", []]]);
     map.setFilter("kg-hvdc-selected", ["in", ["get", "asset_id"], ["literal", []]]);
-    clearSelection.disabled = true;
-    selection.querySelector("p").innerHTML = "Select a site to emphasize its physical neighbors.";
+  }
+
+  function clearSelectionState(options = {}) {
+    selectionState = null;
+    restoreBaseNetwork();
+    resetSelectionFilters();
+    setSelectionAttributes();
+    selection.hidden = true;
+    selection.querySelector("p").textContent = "";
+    if (options.closePopup !== false) closeActivePopup();
     renderList(searchInput.value);
   }
 
-  function selectSite(fgn, openPopup) {
+  function selectSite(fgn, openPopup, zoomTo = false) {
     const feature = siteById.get(fgn);
     if (!feature || !map.getLayer("kg-sites")) return;
-    selectedId = fgn;
+    if (selectionState && selectionState.kind === "site" && selectionState.id === fgn) {
+      clearSelectionState();
+      return;
+    }
+    selectionState = { kind: "site", id: fgn };
     const related = [...(neighbors.get(fgn) || new Set())];
     const acIds = [...(incidentAc.get(fgn) || new Set())];
     const hvdcIds = [...(incidentHvdc.get(fgn) || new Set())];
-    map.setPaintProperty("kg-sites", "circle-opacity", 0.035);
-    map.setPaintProperty("kg-sites", "circle-stroke-opacity", 0.09);
-    map.setPaintProperty("kg-orphan-rings", "icon-opacity", 0.09);
-    ["154", "345", "765", "other"].forEach((band) => map.setPaintProperty(`kg-ac-${band}`, "line-opacity", 0.018));
-    map.setPaintProperty("kg-hvdc", "line-opacity", 0.025);
+    closeActivePopup();
+    dimBaseNetwork();
     map.setFilter("kg-sites-related", ["in", ["get", "fgn"], ["literal", related]]);
     map.setFilter("kg-sites-selected", ["==", ["get", "fgn"], fgn]);
     map.setFilter("kg-ac-selected", ["in", ["get", "edge_id"], ["literal", acIds]]);
     map.setFilter("kg-hvdc-selected", ["in", ["get", "asset_id"], ["literal", hvdcIds]]);
     const p = feature.properties;
-    selection.querySelector("p").innerHTML = `<strong>${escapeHtml(p.name)}</strong><br>${related.length} connected neighboring site${related.length === 1 ? "" : "s"} · ${escapeHtml(p.coordinate_tier)}`;
-    clearSelection.disabled = false;
+    selection.hidden = false;
+    selection.querySelector("p").innerHTML = `<strong>${escapeHtml(p.name)}</strong><br>${related.length} connected neighboring facilit${related.length === 1 ? "y" : "ies"}`;
+    setSelectionAttributes("site", fgn);
     renderList(searchInput.value);
-    map.panTo(feature.geometry.coordinates, { animate: !window.matchMedia("(prefers-reduced-motion: reduce)").matches });
+    const animate = !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (zoomTo) map.easeTo({ center: feature.geometry.coordinates, zoom: Math.max(map.getZoom(), 10.5), duration: animate ? 650 : 0 });
+    else map.panTo(feature.geometry.coordinates, { animate });
     if (openPopup) showSitePopup(feature);
     if (window.innerWidth <= 920) app.classList.remove("is-sidebar-open");
   }
 
+  function selectLine(kind, feature, lngLat, openPopup = true) {
+    const properties = feature && feature.properties;
+    if (!properties || !map.getLayer("kg-sites")) return;
+    const id = kind === "hvdc" ? properties.asset_id : properties.edge_id;
+    if (selectionState && selectionState.kind === kind && selectionState.id === id) {
+      clearSelectionState();
+      return;
+    }
+    selectionState = { kind, id };
+    const endpoints = [properties.from_fgn, properties.to_fgn].filter(Boolean);
+    closeActivePopup();
+    dimBaseNetwork();
+    map.setFilter("kg-sites-related", ["in", ["get", "fgn"], ["literal", endpoints]]);
+    map.setFilter("kg-sites-selected", ["==", ["get", "fgn"], ""]);
+    map.setFilter("kg-ac-selected", ["in", ["get", "edge_id"], ["literal", kind === "ac" ? [id] : []]]);
+    map.setFilter("kg-hvdc-selected", ["in", ["get", "asset_id"], ["literal", kind === "hvdc" ? [id] : []]]);
+    const fromName = properties.from_name || (siteById.get(properties.from_fgn)?.properties.name) || "Facility";
+    const toName = properties.to_name || (siteById.get(properties.to_fgn)?.properties.name) || "Facility";
+    const label = kind === "hvdc" ? "HVDC link" : "AC connection";
+    selection.hidden = false;
+    selection.querySelector("p").innerHTML = `<strong>${escapeHtml(fromName)} ↔ ${escapeHtml(toName)}</strong><br>${label}`;
+    setSelectionAttributes(kind, id);
+    renderList(searchInput.value);
+    if (openPopup) showPopupAt(lngLat, linePopup(properties, kind));
+  }
+
   const searchInput = document.getElementById("kg-search");
-  const clearSearch = document.getElementById("kg-clear");
   const siteList = document.getElementById("kg-site-list");
   const searchStatus = document.getElementById("kg-search-status");
   const selection = document.getElementById("kg-selection");
-  const clearSelection = document.getElementById("kg-clear-selection");
   const sitesSorted = [...data.sites.features].sort((a, b) => a.properties.name.localeCompare(b.properties.name, "ko"));
 
   function renderList(query = "") {
     const needle = query.trim().toLocaleLowerCase("ko");
+    if (!needle) {
+      siteList.textContent = "";
+      siteList.hidden = true;
+      searchStatus.textContent = "";
+      searchStatus.hidden = true;
+      return;
+    }
     const matches = sitesSorted.filter((feature) => {
-      if (!needle) return true;
       const p = feature.properties;
-      return [p.name, p.fgn, p.nmi].some((value) => String(value || "").toLocaleLowerCase("ko").includes(needle));
+      return String(p.name || "").toLocaleLowerCase("ko").includes(needle);
     });
     siteList.textContent = "";
     const fragment = document.createDocumentFragment();
@@ -289,15 +427,21 @@
       const button = document.createElement("button");
       button.type = "button";
       button.dataset.fgn = p.fgn;
-      button.className = p.fgn === selectedId ? "is-selected" : "";
-      button.setAttribute("aria-label", `${p.name}, ${p.highest_voltage_kv} kV, ${p.fgn}`);
+      button.className = selectionState && selectionState.kind === "site" && p.fgn === selectionState.id ? "is-selected" : "";
+      button.setAttribute("aria-label", `${p.name}, ${highestVoltage(p)}`);
       button.innerHTML = `<span class="kg-dot" data-band="${escapeHtml(p.voltage_band)}"></span><span class="kg-name">${escapeHtml(p.name)}</span><span class="kg-kv">${p.highest_voltage_kv || "—"} kV</span>`;
-      button.addEventListener("click", () => selectSite(p.fgn, true));
+      button.addEventListener("click", () => {
+        selectSite(p.fgn, true, true);
+        searchInput.value = "";
+        renderList("");
+      });
       li.appendChild(button);
       fragment.appendChild(li);
     });
     siteList.appendChild(fragment);
-    searchStatus.textContent = needle ? `${matches.length} matching site${matches.length === 1 ? "" : "s"}` : `Showing all ${matches.length} sites`;
+    siteList.hidden = false;
+    searchStatus.hidden = false;
+    searchStatus.textContent = `${matches.length} matching facilit${matches.length === 1 ? "y" : "ies"}`;
   }
 
   function createMapFurniture() {
@@ -305,13 +449,11 @@
     layerControl.className = "kg-layer-control";
     layerControl.setAttribute("aria-label", "Network layer visibility");
     const groups = [
-      ["Physical sites", ["kg-sites", "kg-orphan-rings", "kg-sites-related", "kg-sites-selected"]],
-      ["154 kV AC pairs", ["kg-ac-154"]],
-      ["345 kV AC pairs", ["kg-ac-345"]],
-      ["765 kV AC pairs", ["kg-ac-765"]],
-      ["Other AC pairs", ["kg-ac-other"]],
-      ["HVDC links", ["kg-hvdc", "kg-hvdc-selected"]],
-      ["BTB asset", ["kg-btb"]]
+      ["Facilities", ["kg-sites", "kg-orphan-rings", "kg-sites-related", "kg-sites-selected"]],
+      ["154 kV", ["kg-ac-154", "kg-ac-other"]],
+      ["345 kV AC connections", ["kg-ac-345"]],
+      ["765 kV AC connections", ["kg-ac-765"]],
+      ["HVDC", ["kg-hvdc", "kg-hvdc-selected", "kg-btb"]]
     ];
     groups.forEach(([label, ids]) => {
       const row = document.createElement("label");
@@ -329,9 +471,7 @@
     legend.className = "kg-legend";
     legend.innerHTML = `<strong>Network layers</strong>
       <span><i data-band="154"></i>154 kV</span><span><i data-band="345"></i>345 kV</span>
-      <span><i data-band="765"></i>765 kV</span><span><i data-band="hvdc"></i>HVDC</span>
-      <span><i data-band="btb"></i>BTB host</span><span><i data-band="orphan"></i>Zero-degree site</span>
-      <span><i data-band="gist"></i>Legacy GIST reference</span>`;
+      <span><i data-band="765"></i>765 kV</span><span><i data-band="hvdc"></i>HVDC</span>`;
     document.querySelector(".kg-map-wrap").appendChild(legend);
   }
 
@@ -345,33 +485,46 @@
     addNetworkLayers();
     createMapFurniture();
 
-    ["kg-sites", "kg-sites-related", "kg-sites-selected"].forEach((id) => {
-      map.on("click", id, (event) => {
-        const feature = event.features && event.features[0];
-        if (feature) selectSite(feature.properties.fgn, true);
-      });
-      map.on("mouseenter", id, () => { map.getCanvas().style.cursor = "pointer"; });
-      map.on("mouseleave", id, () => { map.getCanvas().style.cursor = ""; });
+    const siteLayers = ["kg-sites-selected", "kg-sites-related", "kg-sites"];
+    const acLayers = ["kg-ac-selected", "kg-ac-765", "kg-ac-345", "kg-ac-154", "kg-ac-other"];
+    const hvdcLayers = ["kg-hvdc-selected", "kg-hvdc"];
+    const interactiveLayers = [...siteLayers, ...acLayers, ...hvdcLayers, "kg-btb"];
+
+    map.on("click", (event) => {
+      const siteHit = map.queryRenderedFeatures(event.point, { layers: siteLayers })[0];
+      if (siteHit) {
+        selectSite(siteHit.properties.fgn, true);
+        return;
+      }
+
+      const hitBox = [[event.point.x - 6, event.point.y - 6], [event.point.x + 6, event.point.y + 6]];
+      const lineHit = map.queryRenderedFeatures(hitBox, { layers: [...acLayers, ...hvdcLayers] })[0];
+      if (lineHit) {
+        const kind = String(lineHit.layer.id).includes("hvdc") ? "hvdc" : "ac";
+        selectLine(kind, lineHit, event.lngLat, true);
+        return;
+      }
+
+      const btbHit = map.queryRenderedFeatures(event.point, { layers: ["kg-btb"] })[0];
+      if (btbHit) {
+        selectSite(btbHit.properties.host_fgn, true);
+        return;
+      }
+
+      clearSelectionState();
     });
 
-    ["kg-ac-154", "kg-ac-345", "kg-ac-765", "kg-ac-other", "kg-ac-selected"].forEach((id) => {
-      map.on("click", id, (event) => {
-        const feature = event.features && event.features[0];
-        if (feature) new maplibregl.Popup({ maxWidth: "310px" }).setLngLat(event.lngLat).setHTML(linePopup(feature.properties, "ac")).addTo(map);
-      });
+    map.on("mousemove", (event) => {
+      const hitBox = [[event.point.x - 4, event.point.y - 4], [event.point.x + 4, event.point.y + 4]];
+      const hits = map.queryRenderedFeatures(hitBox, { layers: interactiveLayers });
+      map.getCanvas().style.cursor = hits.length ? "pointer" : "";
     });
-    ["kg-hvdc", "kg-hvdc-selected"].forEach((id) => map.on("click", id, (event) => {
-      const feature = event.features && event.features[0];
-      if (feature) new maplibregl.Popup({ maxWidth: "310px" }).setLngLat(event.lngLat).setHTML(linePopup(feature.properties, "hvdc")).addTo(map);
-    }));
-    map.on("click", "kg-btb", (event) => {
-      const p = event.features[0].properties;
-      new maplibregl.Popup({ maxWidth: "310px" }).setLngLat(event.lngLat).setHTML(`<div class="kg-line-popup"><strong>${escapeHtml(p.scheme)}</strong><br>${escapeHtml(p.host_name)} · ${escapeHtml(p.dc_voltage_kv)} kV DC · ${escapeHtml(p.capacity_mw)} MW<br>Same-site BTB host marker; no internal node or self-loop shown.</div>`).addTo(map);
-    });
+    map.on("mouseout", () => { map.getCanvas().style.cursor = ""; });
 
     renderList();
     app.setAttribute("data-map-ready", "true");
     app.setAttribute("data-renderer", "maplibre-gl-js-5.24.0");
+    app.setAttribute("data-line-style", lineStyleName);
     app.setAttribute("data-site-count", String(data.sites.features.length));
     app.setAttribute("data-ac-count", String(data.ac.features.length));
     app.setAttribute("data-hvdc-count", String(data.hvdc.features.length));
@@ -384,8 +537,9 @@
   });
 
   searchInput.addEventListener("input", () => renderList(searchInput.value));
-  clearSearch.addEventListener("click", () => { searchInput.value = ""; searchInput.focus(); renderList(); });
-  clearSelection.addEventListener("click", clearSiteSelection);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && selectionState && map.getLayer("kg-sites")) clearSelectionState();
+  });
   document.getElementById("kg-fit").addEventListener("click", fitKorea);
   const sidebarToggle = document.getElementById("kg-toggle-sidebar");
   sidebarToggle.addEventListener("click", () => {

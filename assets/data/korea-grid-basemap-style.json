@@ -1,9 +1,10 @@
 {
   "version": 8,
-  "name": "KoreaGrid Calm OpenFreeMap",
+  "name": "KoreaGrid Calm OpenFreeMap + admdongkor ver20260701",
   "metadata": {
-    "koreagrid:purpose": "Calm geographic context for the physical-network prototype",
-    "koreagrid:source": "OpenFreeMap vector tiles; individual vector-layer styling; no CSS filter"
+    "koreagrid:purpose": "Calm geographic context with authoritative Korean administrative polygons and labels",
+    "koreagrid:admin-source": "vuski/admdongkor ver20260701, derived from Statistics Korea SGIS",
+    "koreagrid:admin-license": "CC BY 4.0 + KOGL Type 1 attribution"
   },
   "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
   "sources": {
@@ -11,51 +12,249 @@
       "type": "vector",
       "url": "https://tiles.openfreemap.org/planet",
       "attribution": "OpenFreeMap © OpenMapTiles Data from OpenStreetMap"
+    },
+    "admdongkor-sido-polygons": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-sido-polygons.geojson",
+      "attribution": "Administrative boundaries: Statistics Korea SGIS (KOGL Type 1), modified by vuski/admdongkor (CC BY 4.0)"
+    },
+    "admdongkor-sido-labels": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-sido-labels.geojson"
+    },
+    "admdongkor-sgg-polygons": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-sgg-polygons.geojson"
+    },
+    "admdongkor-sgg-labels": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-sgg-labels.geojson"
+    },
+    "admdongkor-emd-polygons": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-emd-polygons.geojson"
+    },
+    "admdongkor-emd-labels": {
+      "type": "geojson",
+      "data": "/assets/data/admin/admdongkor-emd-labels.geojson"
     }
   },
   "layers": [
-    { "id": "land", "type": "background", "paint": { "background-color": "#F1EFE8" } },
-    { "id": "water", "type": "fill", "source": "openmaptiles", "source-layer": "water", "filter": ["!=", ["get", "brunnel"], "tunnel"], "paint": { "fill-color": "#D9E8ED", "fill-antialias": true } },
-    { "id": "coastline", "type": "line", "source": "openmaptiles", "source-layer": "water", "minzoom": 3, "paint": { "line-color": "#AFC4CB", "line-width": 0.65, "line-opacity": 0.82 } },
     {
-      "id": "major-roads", "type": "line", "source": "openmaptiles", "source-layer": "transportation", "minzoom": 5,
-      "filter": ["all", ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false], ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary"]]], ["!=", ["get", "brunnel"], "tunnel"]],
+      "id": "land",
+      "type": "background",
+      "paint": { "background-color": "#F1EFE8" }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "filter": ["!=", ["get", "brunnel"], "tunnel"],
+      "paint": { "fill-color": "#D9E8ED", "fill-antialias": true }
+    },
+    {
+      "id": "coastline",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "minzoom": 3,
+      "paint": {
+        "line-color": "#AFC4CB",
+        "line-width": 0.65,
+        "line-opacity": 0.82
+      }
+    },
+    {
+      "id": "major-roads",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 5,
+      "filter": [
+        "all",
+        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
+        ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary"]]],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
       "layout": { "line-cap": "round", "line-join": "round" },
-      "paint": { "line-color": "#D5D0C6", "line-opacity": 0.68, "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.25, 8, 0.55, 12, 1.2] }
+      "paint": {
+        "line-color": "#D5D0C6",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 5, 0.34, 8, 0.48, 12, 0.62],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.22, 8, 0.48, 12, 1.08]
+      }
     },
     {
-      "id": "country-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary",
-      "filter": ["all", ["==", ["get", "admin_level"], 2], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
+      "id": "regional-roads",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 10,
+      "filter": [
+        "all",
+        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
+        ["==", ["get", "class"], "secondary"],
+        ["!=", ["get", "brunnel"], "tunnel"]
+      ],
       "layout": { "line-cap": "round", "line-join": "round" },
-      "paint": { "line-color": "#71868F", "line-opacity": 0.92, "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.9, 8, 1.45] }
+      "paint": {
+        "line-color": "#DDD8CE",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.12, 12, 0.42, 15, 0.55],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.18, 12, 0.5, 15, 1.05]
+      }
     },
     {
-      "id": "province-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary", "minzoom": 4,
-      "filter": ["all", ["in", ["get", "admin_level"], ["literal", [3, 4]]], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
-      "paint": { "line-color": "#899CA6", "line-opacity": 0.94, "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.84, 8, 1.4, 12, 1.9] }
+      "id": "country-boundaries",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "filter": [
+        "all",
+        ["==", ["get", "admin_level"], 2],
+        ["!=", ["get", "maritime"], 1],
+        ["!=", ["get", "disputed"], 1]
+      ],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#71868F",
+        "line-opacity": 0.88,
+        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.85, 8, 1.35]
+      }
     },
     {
-      "id": "city-county-boundaries", "type": "line", "source": "openmaptiles", "source-layer": "boundary", "minzoom": 6,
-      "filter": ["all", [">=", ["get", "admin_level"], 5], ["<=", ["get", "admin_level"], 6], ["!=", ["get", "maritime"], 1], ["!=", ["get", "disputed"], 1]],
-      "paint": { "line-color": "#C3CCCF", "line-opacity": 0.82, "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.35, 10, 0.75] }
+      "id": "adk-sido-boundaries",
+      "type": "line",
+      "source": "admdongkor-sido-polygons",
+      "minzoom": 4,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#7E949F",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 4, 0.92, 8, 0.96, 12, 0.7],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.9, 8, 1.45, 12, 1.2]
+      }
     },
     {
-      "id": "province-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 5, "maxzoom": 9,
-      "filter": ["all", ["==", ["get", "class"], "state"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
-      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-letter-spacing": 0.08, "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 8, 13], "text-max-width": 8 },
-      "paint": { "text-color": "#515E64", "text-opacity": 0.88, "text-halo-color": "#F1EFE8", "text-halo-width": 1.2, "text-halo-blur": 0.4 }
+      "id": "adk-sgg-boundaries",
+      "type": "line",
+      "source": "admdongkor-sgg-polygons",
+      "minzoom": 7,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#A2B1B7",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 8.1, 0.7, 10, 0.82, 13, 0.62],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.3, 8.5, 0.7, 11, 0.95, 14, 0.8]
+      }
     },
     {
-      "id": "major-city-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 4,
-      "filter": ["all", ["==", ["get", "class"], "city"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
-      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 4, 10.5, 8, 13, 11, 16], "text-max-width": 7 },
-      "paint": { "text-color": "#515E64", "text-opacity": 0.94, "text-halo-color": "#F1EFE8", "text-halo-width": 1.25, "text-halo-blur": 0.3 }
+      "id": "adk-emd-boundaries",
+      "type": "line",
+      "source": "admdongkor-emd-polygons",
+      "minzoom": 10,
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": "#C3CCCF",
+        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 11, 0.34, 13, 0.58, 15, 0.68],
+        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.2, 12, 0.42, 14, 0.62]
+      }
     },
     {
-      "id": "town-labels", "type": "symbol", "source": "openmaptiles", "source-layer": "place", "minzoom": 7,
-      "filter": ["all", ["==", ["get", "class"], "town"], ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]],
-      "layout": { "text-field": ["coalesce", ["get", "name:nonlatin"], ["get", "name"], ["get", "name_en"]], "text-font": ["Noto Sans Regular"], "text-size": ["interpolate", ["linear"], ["zoom"], 7, 9, 11, 12], "text-max-width": 7 },
-      "paint": { "text-color": "#778287", "text-opacity": 0.82, "text-halo-color": "#F1EFE8", "text-halo-width": 1, "text-halo-blur": 0.3 }
+      "id": "major-road-labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "transportation_name",
+      "minzoom": 10.5,
+      "filter": [
+        "all",
+        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
+        ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary"]]],
+        ["has", "name:ko"],
+        ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]
+      ],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 430,
+        "text-field": ["get", "name:ko"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 10.5, 8.5, 13, 10.8],
+        "text-letter-spacing": 0.01,
+        "text-max-angle": 30
+      },
+      "paint": {
+        "text-color": "#85817A",
+        "text-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11.5, 0.56, 13, 0.7],
+        "text-halo-color": "#F1EFE8",
+        "text-halo-width": 1.15,
+        "text-halo-blur": 0.3
+      }
+    },
+    {
+      "id": "adk-sido-labels",
+      "type": "symbol",
+      "source": "admdongkor-sido-labels",
+      "minzoom": 4.7,
+      "maxzoom": 11,
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Noto Sans Medium"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 4.7, 10.5, 7, 13.5, 9, 14.5],
+        "text-letter-spacing": 0.06,
+        "text-max-width": 9,
+        "text-allow-overlap": false,
+        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-radial-offset": 0.25
+      },
+      "paint": {
+        "text-color": "#4D5B62",
+        "text-opacity": ["interpolate", ["linear"], ["zoom"], 4.7, 0, 5.3, 0.92, 8.8, 0.82, 10.8, 0],
+        "text-halo-color": "#F1EFE8",
+        "text-halo-width": 1.35,
+        "text-halo-blur": 0.35
+      }
+    },
+    {
+      "id": "adk-sgg-labels",
+      "type": "symbol",
+      "source": "admdongkor-sgg-labels",
+      "minzoom": 7.8,
+      "maxzoom": 13,
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 7.8, 9, 9.5, 10.5, 12, 11.2],
+        "text-max-width": 7,
+        "text-allow-overlap": false,
+        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-radial-offset": 0.25
+      },
+      "paint": {
+        "text-color": "#617078",
+        "text-opacity": ["interpolate", ["linear"], ["zoom"], 7.8, 0, 8.5, 0.78, 11.5, 0.8, 12.9, 0],
+        "text-halo-color": "#F1EFE8",
+        "text-halo-width": 1.15,
+        "text-halo-blur": 0.3
+      }
+    },
+    {
+      "id": "adk-emd-labels",
+      "type": "symbol",
+      "source": "admdongkor-emd-labels",
+      "minzoom": 10.7,
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-font": ["Noto Sans Regular"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 10.7, 8, 12.5, 9.2, 15, 10.4],
+        "text-max-width": 7,
+        "text-allow-overlap": false,
+        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-radial-offset": 0.2
+      },
+      "paint": {
+        "text-color": "#778287",
+        "text-opacity": ["interpolate", ["linear"], ["zoom"], 10.7, 0, 11.4, 0.64, 13, 0.76, 15, 0.82],
+        "text-halo-color": "#F1EFE8",
+        "text-halo-width": 1,
+        "text-halo-blur": 0.3
+      }
     }
   ]
 }
