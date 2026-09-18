@@ -17,6 +17,8 @@ a { transition: color .18s ease, border-color .18s ease, background-color .18s e
 .greedy-nav { background: transparent; }
 .greedy-nav .visible-links a::before { background: #146ef5; }
 .greedy-nav .visible-links li:first-child a { color: #146ef5; }
+.greedy-nav .visible-links .is-active > a { color: #0b57d0; font-weight: 700; }
+.greedy-nav .visible-links .is-active > a::before { transform: scaleX(1); }
 .greedy-nav button { background: #146ef5; border-radius: 5px; }
 .greedy-nav .hidden-links {
   background: #fff;
@@ -50,6 +52,16 @@ hr { border-top-color: #dce6f2; }
   border-top-color: #cfdeea;
 }
 .page__footer a { color: #225faf; }
+.page__footer footer { margin-top: 0; padding-top: .85rem; padding-bottom: .85rem; }
+.page__footer-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem .55rem;
+  align-items: center;
+  color: #647689;
+  line-height: 1.55;
+}
+.page__footer-separator { color: #a7b7c7; }
 
 .page__inner-wrap {
   padding: 1.4rem 0 0;
@@ -281,8 +293,106 @@ hr { border-top-color: #dce6f2; }
 .gallery-item { margin: 0 0 2.5em; }
 .gallery-item img { width: 100%; height: auto; display: block; }
 .gallery-item figcaption { margin-top: .6em; text-align: left; font: inherit; }
-.resource-directory h2 { margin: 1.7em 0 .4em; padding: 0 0 .4rem; border: 0; border-bottom: 1px solid #dfe7ef; font-size: 1.05em; }
-.resource-directory ul { margin-bottom: 1em; }
+.resource-index {
+  margin: 1.75rem 0 0;
+  border-top: 1px solid #cfd9e4;
+  border-bottom: 1px solid #cfd9e4;
+}
+.resource-index a {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.2rem 1.25rem 1.65rem;
+  border-bottom: 1px solid #dce4ec;
+  color: #263442;
+  font-size: 1.03em;
+  font-weight: 680;
+  text-decoration: none;
+}
+.resource-index a:last-child { border-bottom: 0; }
+.resource-index a::before {
+  position: absolute;
+  top: 1.2rem;
+  bottom: 1.2rem;
+  left: 0;
+  width: 3px;
+  background: #b9d4fb;
+  content: "";
+  transition: background-color .18s ease;
+}
+.resource-index a:nth-child(even) { background: #fafcff; }
+.resource-index a:hover { color: #0b57d0; background: #f7faff; }
+.resource-index a:hover::before { background: #146ef5; }
+.resource-index a span:last-child { color: #146ef5; font-size: 1.15em; }
+
+.page--related-labs .resource-directory {
+  display: grid;
+  grid-template-columns: minmax(12rem, .95fr) minmax(0, 1.35fr);
+  margin-top: 1.75rem;
+  border-top: 1px solid #cfd9e4;
+  border-bottom: 1px solid #cfd9e4;
+}
+.page--related-labs .resource-directory h2,
+.page--related-labs .resource-directory ul {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 0;
+  border-bottom: 1px solid #dce4ec;
+}
+.page--related-labs .resource-directory h2 {
+  color: #263442;
+  font-size: .98em;
+  font-weight: 680;
+  line-height: 1.55;
+}
+.page--related-labs .resource-directory ul {
+  padding-left: 1.85rem;
+  background: #fafcff;
+  font-size: .92em;
+  line-height: 1.55;
+}
+.page--related-labs .resource-directory h2:nth-last-of-type(1),
+.page--related-labs .resource-directory ul:last-child { border-bottom: 0; }
+
+.page--conferences .page__content > ul,
+.page--journals .page__content > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.35rem 0 0;
+  padding: 0;
+  border-top: 1px solid #cfd9e4;
+  border-bottom: 1px solid #cfd9e4;
+  list-style: none;
+}
+.page--conferences .page__content > ul > li,
+.page--journals .page__content > ul > li {
+  position: relative;
+  margin: 0;
+  padding: .9rem 1rem .9rem 1.35rem;
+  border-bottom: 1px solid #e2e8ef;
+  color: #3d4956;
+}
+.page--conferences .page__content > ul > li:nth-child(odd),
+.page--journals .page__content > ul > li:nth-child(odd) { border-right: 1px solid #e2e8ef; }
+.page--conferences .page__content > ul > li::before,
+.page--journals .page__content > ul > li::before {
+  position: absolute;
+  top: 1.42rem;
+  left: .65rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #146ef5;
+  content: "";
+}
+.page--conferences .page__content > ul > li:last-child,
+.page--journals .page__content > ul > li:last-child,
+.page--conferences .page__content > ul > li:nth-last-child(2):nth-child(odd),
+.page--journals .page__content > ul > li:nth-last-child(2):nth-child(odd) { border-bottom: 0; }
+.page--journals .page__content > hr { margin: 1.55rem 0 0; }
 .page--research .research-list {
   margin: 1.75rem 0 0;
   padding: 0;
@@ -445,6 +555,23 @@ a:focus-visible, button:focus-visible { outline: 2px solid #146ef5; outline-offs
   .page--minjae-son .page__content > p:first-child,
   .page--minjae-son .page__content > ul { font-size: .88em; line-height: 1.62; }
   .page--minjae-son .page__content > ul { margin-top: .85rem; }
+  .page__footer-copyright { display: block; }
+  .page__footer-copyright > span { display: inline; }
+  .page__footer-separator { padding: 0 .2rem; }
+  .resource-index { margin-top: 1.35rem; }
+  .resource-index a { padding: 1.05rem .9rem 1.05rem 1.35rem; }
+  .resource-index a::before { top: 1rem; bottom: 1rem; }
+  .page--related-labs .resource-directory { grid-template-columns: 1fr; margin-top: 1.35rem; }
+  .page--related-labs .resource-directory h2 { padding: 1rem .95rem .3rem; border-bottom: 0; }
+  .page--related-labs .resource-directory ul { padding: .25rem .95rem 1rem 2rem; }
+  .page--conferences .page__content > ul,
+  .page--journals .page__content > ul { grid-template-columns: 1fr; margin-top: 1.15rem; }
+  .page--conferences .page__content > ul > li,
+  .page--journals .page__content > ul > li,
+  .page--conferences .page__content > ul > li:nth-child(odd),
+  .page--journals .page__content > ul > li:nth-child(odd) { border-right: 0; border-bottom: 1px solid #e2e8ef; }
+  .page--conferences .page__content > ul > li:last-child,
+  .page--journals .page__content > ul > li:last-child { border-bottom: 0; }
   .home-hero { align-items: start; min-height: max(34rem, calc(100svh - 70px)); }
   .home-hero__artwork { top: auto; height: 47%; object-position: 78% center; }
   .home-hero__inner { display: block; padding: clamp(7.5rem, 18vh, 9rem) 1.5rem 0; }
