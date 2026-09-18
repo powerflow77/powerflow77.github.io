@@ -1116,8 +1116,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 1,
-        "connected_physical_pair_count": 1,
+        "ac_pair_count": 2,
+        "connected_physical_pair_count": 2,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -5544,8 +5544,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 3,
-        "connected_physical_pair_count": 3,
+        "ac_pair_count": 4,
+        "connected_physical_pair_count": 4,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -9243,8 +9243,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -9252,7 +9252,7 @@
         "fgn": "FGN0_000566",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "산지",
         "nmi": "NMI000568",
@@ -10350,8 +10350,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 3,
-        "connected_physical_pair_count": 3,
+        "ac_pair_count": 4,
+        "connected_physical_pair_count": 4,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -11187,8 +11187,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -14454,8 +14454,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 8,
-        "connected_physical_pair_count": 8,
+        "ac_pair_count": 9,
+        "connected_physical_pair_count": 9,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -15021,8 +15021,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -15042,18 +15042,18 @@
     {
       "geometry": {
         "coordinates": [
-          126.7775651,
-          37.294265
+          126.77870467152323,
+          37.294815727653514
         ],
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 1,
-        "connected_physical_pair_count": 1,
-        "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
+        "ac_pair_count": 2,
+        "connected_physical_pair_count": 2,
+        "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
-        "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
-        "facility_type": "SUBSTATION",
+        "coordinate_tier": "GEO_B_FACILITY_SITE",
+        "facility_type": "PLANT_SWITCHYARD",
         "fgn": "FGN0_000672",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
@@ -18747,8 +18747,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "OFFLINE_APPROVED_OFFICIAL_FACILITY_SITE_GEOMETRY_REPLAY",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -18756,7 +18756,7 @@
         "fgn": "FGN0_000988",
         "highest_voltage_kv": 0,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "율북SS",
         "nmi": "NMI000933",
@@ -21933,8 +21933,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 3,
-        "connected_physical_pair_count": 3,
+        "ac_pair_count": 4,
+        "connected_physical_pair_count": 4,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -22311,8 +22311,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 3,
+        "connected_physical_pair_count": 3,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -22986,8 +22986,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -22995,7 +22995,7 @@
         "fgn": "FGN0_000875",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "팽성",
         "nmi": "NMI000882",
@@ -23283,8 +23283,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 2,
-        "connected_physical_pair_count": 2,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
@@ -23715,8 +23715,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 1,
-        "connected_physical_pair_count": 1,
+        "ac_pair_count": 2,
+        "connected_physical_pair_count": 2,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -25254,8 +25254,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "OFFLINE_APPROVED_OFFICIAL_FACILITY_SITE_GEOMETRY_REPLAY",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -25263,7 +25263,7 @@
         "fgn": "FGN0_000990",
         "highest_voltage_kv": 0,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "고옥S/S",
         "nmi": "NMI000935",
@@ -25335,8 +25335,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "OFFLINE_APPROVED_OFFICIAL_FACILITY_SITE_GEOMETRY_REPLAY",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -25344,7 +25344,7 @@
         "fgn": "FGN0_000993",
         "highest_voltage_kv": 0,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "대구난방TP",
         "nmi": "NMI000938",
@@ -25605,8 +25605,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 0,
-        "connected_physical_pair_count": 0,
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
         "coordinate_method": "OFFLINE_APPROVED_OFFICIAL_GEOMETRY_REPLAY",
         "coordinate_note": "Evidence-backed physical facility site.",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
@@ -25614,7 +25614,7 @@
         "fgn": "FGN0_001003",
         "highest_voltage_kv": 154,
         "hvdc_link_count": 0,
-        "is_orphan": true,
+        "is_orphan": false,
         "legacy_gist_reference": false,
         "name": "세종열병합S/Y",
         "nmi": "NMI000946",
@@ -25809,6 +25809,60 @@
         "nmi": "NMI000953",
         "voltage_band": "154",
         "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          126.27276889538089,
+          33.401533264116495
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "ac_pair_count": 1,
+        "connected_physical_pair_count": 1,
+        "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
+        "coordinate_note": "Evidence-backed physical facility site.",
+        "coordinate_tier": "GEO_B_FACILITY_SITE",
+        "facility_type": "PLANT_SIDE_SUBSTATION",
+        "fgn": "FGN0_001011",
+        "highest_voltage_kv": 154,
+        "hvdc_link_count": 0,
+        "is_orphan": false,
+        "legacy_gist_reference": false,
+        "name": "상명풍력",
+        "nmi": "NMI000954",
+        "voltage_band": "154",
+        "voltage_classes": "154"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          127.17116225701317,
+          37.94608922746164
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "ac_pair_count": 2,
+        "connected_physical_pair_count": 2,
+        "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
+        "coordinate_note": "Evidence-backed physical facility site.",
+        "coordinate_tier": "GEO_B_FACILITY_SITE",
+        "facility_type": "PLANT_SWITCHYARD",
+        "fgn": "FGN0_000280",
+        "highest_voltage_kv": 345,
+        "hvdc_link_count": 0,
+        "is_orphan": false,
+        "legacy_gist_reference": false,
+        "name": "포천LNGC/C",
+        "nmi": "NMI000281",
+        "voltage_band": "345",
+        "voltage_classes": "345"
       },
       "type": "Feature"
     }

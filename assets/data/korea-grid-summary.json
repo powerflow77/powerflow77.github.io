@@ -1,23 +1,23 @@
 {
   "canonical_counts": {
-    "ac_physical_pairs": 1437,
+    "ac_physical_pairs": 1446,
     "btb_assets": 1,
-    "independently_sourced_non_gist_coordinates": 955,
+    "independently_sourced_non_gist_coordinates": 957,
     "legacy_gist_references": 1,
-    "physical_sites": 956,
+    "physical_sites": 958,
     "ptp_hvdc_links": 4
   },
   "canonical_source_hashes": {
-    "ac_pairs": "28B88945F1DF2740BD0ECE7A365C88F47C3FDB2D299E5B2E0E1878172B715829",
+    "ac_pairs": "8A3294BFEA2342EA7ADAE5B7DCF2516213F1B84F61D88184D3306AF5C143EE41",
     "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
-    "coordinates": "0032EBD5A4EFD0B3691348683E70FF1ED873725DABF23A6C3BB833E717BDE5FE",
+    "coordinates": "CBECD73A48E5EF5394694326D177F1A914AD7012FAC94DA84209B9FD885A2EAB",
     "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
-    "stations": "639DE3671B195C6631B685D1CF15773DE0A8611787302FF45CDDA650AA1413FE"
+    "stations": "E947CDA88CE0454B05FA4AD21C1E41B8C5CCB2AD13E29113DD32A150A7E0A531"
   },
   "disclaimer": "Connections are shown as straight lines for clarity, not as actual transmission-line routes.",
   "render_counts": {
-    "plotted_sites": 956,
-    "rendered_ac_pairs": 1437,
+    "plotted_sites": 958,
+    "rendered_ac_pairs": 1446,
     "rendered_btb_assets": 1,
     "rendered_hvdc_links": 4,
     "skipped_ac_pairs": 0,
