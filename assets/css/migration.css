@@ -363,37 +363,6 @@ hr { border-top-color: #dce6f2; }
 .page--related-labs .resource-directory h2:nth-last-of-type(1),
 .page--related-labs .resource-directory ul:last-child { border-bottom: 0; }
 
-.page--journals .page__content > ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.page--journals .page__content > ul:first-of-type {
-  margin-top: 1.75rem;
-  border-top: 1px solid #cfd9e4;
-}
-.page--journals .page__content > ul > li {
-  position: relative;
-  margin: 0;
-  padding: .9rem 1rem .9rem 1.35rem;
-  border-bottom: 1px solid #e2e8ef;
-  background: #fff;
-  color: #3d4956;
-}
-.page--journals .page__content > ul > li:nth-child(even) { background: #fafcff; }
-.page--journals .page__content > ul > li::before {
-  position: absolute;
-  top: 1.35rem;
-  left: .65rem;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #146ef5;
-  content: "";
-}
-.page--journals .page__content > ul > li:hover { background: #f7faff; }
-.page--journals .page__content > hr { display: none; }
-
 .page--research .research-list {
   margin: 1.75rem 0 0;
   padding: 0;
