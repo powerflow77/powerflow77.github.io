@@ -153,9 +153,12 @@
       ],
       "paragraphs": [
         ">Related Labs",
+        "Boston University",
+        "Emiliano Dall'Anese",
         "MIT",
         "Priya L. Donti",
         "ETH zurich",
+        "Florian Dörfler",
         "Gabriela Hug",
         "UC SanDiego",
         "Yuanyuan Shi",
@@ -232,8 +235,16 @@
       ],
       "links": [
         {
+          "text": "Emiliano Dall'Anese",
+          "href": "https://emilianoda.github.io/"
+        },
+        {
           "text": "Priya L. Donti",
           "href": "https://priyadonti.com/"
+        },
+        {
+          "text": "Florian Dörfler",
+          "href": "https://control.ee.ethz.ch/people/profile.florian-doerfler.html"
         },
         {
           "text": "Gabriela Hug",
@@ -641,6 +652,15 @@
   ],
   "labs": [
     {
+      "institution": "Boston University",
+      "people": [
+        {
+          "name": "Emiliano Dall'Anese",
+          "href": "https://emilianoda.github.io/"
+        }
+      ]
+    },
+    {
       "institution": "MIT",
       "people": [
         {
@@ -652,6 +672,10 @@
     {
       "institution": "ETH zurich",
       "people": [
+        {
+          "name": "Florian Dörfler",
+          "href": "https://control.ee.ethz.ch/people/profile.florian-doerfler.html"
+        },
         {
           "name": "Gabriela Hug",
           "href": "https://psl.ee.ethz.ch/"
