@@ -353,6 +353,13 @@ hr { border-top-color: #dce6f2; }
   font-size: .92em;
   line-height: 1.55;
 }
+.page--related-labs .resource-directory__divider {
+  grid-column: 1 / -1;
+  height: 1.15rem;
+  border-top: 1px solid #b9d4fb;
+  border-bottom: 1px solid #b9d4fb;
+  background: #f3f8ff;
+}
 .page--related-labs .resource-directory h2:nth-last-of-type(1),
 .page--related-labs .resource-directory ul:last-child { border-bottom: 0; }
 
