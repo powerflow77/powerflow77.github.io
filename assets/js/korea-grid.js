@@ -9,12 +9,12 @@
   }
 
   const colors = {
-    "154": "#4f8f8b",
-    "345": "#c99a3d",
-    "765": "#a85f6a",
-    other: "#7a8794",
-    hvdc: "#7566a8",
-    btb: "#7566a8",
+    "154": "#237F83",
+    "345": "#C58A2B",
+    "765": "#A8394D",
+    other: "#697A79",
+    hvdc: "#5D4C91",
+    btb: "#5D4C91",
     selected: "#15283d"
   };
 
@@ -24,8 +24,8 @@
       opacity: { "154": 0.58, "345": 0.74, "765": 0.84, other: 0.52, hvdc: 0.8 }
     },
     balanced: {
-      widths: { "154": 1.4, "345": 2.2, "765": 3.2, other: 1.4, hvdc: 2.8 },
-      opacity: { "154": 0.73, "345": 0.83, "765": 0.9, other: 0.6, hvdc: 0.88 }
+      widths: { "154": 1.05, "345": 2.25, "765": 3.35, other: 0.92, hvdc: 2.8 },
+      opacity: { "154": 0.62, "345": 0.92, "765": 0.97, other: 0.47, hvdc: 0.94 }
     },
     strong: {
       widths: { "154": 1.7, "345": 2.6, "765": 3.7, other: 1.7, hvdc: 3.3 },
@@ -299,9 +299,9 @@
     if (kind === "hvdc") {
       const fromName = properties.from_name || siteById.get(properties.from_fgn)?.properties.name || "Facility";
       const toName = properties.to_name || siteById.get(properties.to_fgn)?.properties.name || "Facility";
-      return `<div class="kg-line-popup"><strong>${escapeHtml(fromName)} ↔ ${escapeHtml(toName)}</strong><br>${escapeHtml(properties.dc_voltage_kv)} kV DC<br>Shown as a straight connection, not an actual route.</div>`;
+      return `<div class="kg-line-popup"><strong>${escapeHtml(fromName)} ↔ ${escapeHtml(toName)}</strong><br>${escapeHtml(properties.dc_voltage_kv)} kV DC<br>Shown schematically, not as an actual route.</div>`;
     }
-    return `<div class="kg-line-popup"><strong>${escapeHtml(properties.from_name)} ↔ ${escapeHtml(properties.to_name)}</strong><br>${escapeHtml(properties.voltage_classes || "Voltage not specified")} kV · ${escapeHtml(properties.circuit_count || "—")} circuit(s)<br>Shown as a straight connection, not an actual route.</div>`;
+    return `<div class="kg-line-popup"><strong>${escapeHtml(properties.from_name)} ↔ ${escapeHtml(properties.to_name)}</strong><br>${escapeHtml(properties.voltage_classes || "Voltage not specified")} kV · ${escapeHtml(properties.circuit_count || "—")} circuit(s)<br>Shown schematically, not as an actual route.</div>`;
   }
 
   function setSelectionAttributes(kind = "", id = "") {

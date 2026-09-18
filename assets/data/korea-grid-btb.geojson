@@ -15,7 +15,6 @@
         "dc_voltage_kv": "±120",
         "host_fgn": "FGN0_000191",
         "host_name": "양주",
-        "representation": "HOST_MARKER_ONLY_NO_INTERNAL_NODE_NO_SELF_LOOP",
         "scheme": "양주 VSC BTB",
         "technology": "VSC_MMC"
       },

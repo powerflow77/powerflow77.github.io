@@ -1,31 +1,40 @@
 {
-  "canonical_counts": {
-    "ac_physical_pairs": 1446,
-    "btb_assets": 1,
-    "independently_sourced_non_gist_coordinates": 957,
-    "legacy_gist_references": 1,
-    "physical_sites": 958,
-    "ptp_hvdc_links": 4
+  "cartographic_geometry": {
+    "a_plus_one_bend_connections": 98,
+    "a_plus_registry_sha256": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+    "canonical_topology_modified": false,
+    "electrical_nodes_created": 0,
+    "policy": "STRAIGHT_BY_DEFAULT",
+    "straight_connections": 1348
   },
-  "canonical_source_hashes": {
-    "ac_pairs": "8A3294BFEA2342EA7ADAE5B7DCF2516213F1B84F61D88184D3306AF5C143EE41",
-    "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
-    "coordinates": "CBECD73A48E5EF5394694326D177F1A914AD7012FAC94DA84209B9FD885A2EAB",
-    "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
-    "stations": "E947CDA88CE0454B05FA4AD21C1E41B8C5CCB2AD13E29113DD32A150A7E0A531"
-  },
-  "disclaimer": "Connections are shown as straight lines for clarity, not as actual transmission-line routes.",
+  "disclaimer": "Connections are shown schematically for clarity, not as actual transmission-line routes.",
+  "legacy_reference_count_internal": 1,
   "render_counts": {
     "plotted_sites": 958,
-    "rendered_ac_pairs": 1446,
+    "rendered_ac_connections": 1446,
     "rendered_btb_assets": 1,
     "rendered_hvdc_links": 4,
-    "skipped_ac_pairs": 0,
+    "skipped_ac_connections": 0,
     "skipped_btb_assets": 0,
     "skipped_hvdc_links": 0,
     "skipped_sites": 0
   },
-  "title": "KoreaGrid Physical Network",
+  "source_checkpoint": "M1I_M3BA_M2K",
+  "source_counts": {
+    "ac_connections": 1446,
+    "btb_assets": 1,
+    "hvdc_links": 4,
+    "physical_facilities": 958
+  },
+  "source_sha256": {
+    "a_plus_registry": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+    "ac_pairs": "25E1F2B850E044EF4BD308957F974B8CD5444CBBC135E77173F97981CED8C307",
+    "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
+    "coordinates": "9C6FA579FCE81C6CC13A550635A8379438DBF9E140C574EEBB512FAA84D3EB78",
+    "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
+    "stations": "9FC0AD6888D9FEB9B959222A538C236C749E2E4A70829FAAC39BDBAE73C13D4C"
+  },
+  "title": "Korea Grid",
   "viewport_bounds": [
     [
       33.23755541939071,

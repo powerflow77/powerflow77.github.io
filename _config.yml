@@ -44,7 +44,8 @@ exclude:
   - README.md
   - migration
   - scripts
-  - vendor
+  - vendor/bundle
+  - assets/rollback
   - node_modules
   - package.json
   - package-lock.json
@@ -75,6 +76,8 @@ defaults:
       comments: false
 sass:
   sass_dir: _sass
+  load_paths:
+    - _sass
   style: compressed
 permalink: /:categories/:title/
 timezone: Asia/Seoul

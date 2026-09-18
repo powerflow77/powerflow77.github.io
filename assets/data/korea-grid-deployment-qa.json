@@ -1,0 +1,177 @@
+{
+  "broken_endpoint_references": [],
+  "canonical_inputs_read_only": true,
+  "checkpoint": "M1I_M3BA_M2K",
+  "checks": [
+    {
+      "detail": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+      "name": "A+ registry SHA-256",
+      "status": "PASS"
+    },
+    {
+      "detail": 958,
+      "name": "M1I physical-site count",
+      "status": "PASS"
+    },
+    {
+      "detail": 958,
+      "name": "M3BA coordinate count",
+      "status": "PASS"
+    },
+    {
+      "detail": 1446,
+      "name": "M2K AC-pair count",
+      "status": "PASS"
+    },
+    {
+      "detail": 4,
+      "name": "PTP HVDC count",
+      "status": "PASS"
+    },
+    {
+      "detail": 1,
+      "name": "BTB count",
+      "status": "PASS"
+    },
+    {
+      "detail": 98,
+      "name": "A+ registry row count",
+      "status": "PASS"
+    },
+    {
+      "detail": 98,
+      "name": "A+ GeoJSON feature count",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique M1I FGN",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique M3BA FGN",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "M1I/M3BA FGN set equality",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique M2K pair IDs",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique A+ registry pair IDs",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique A+ GeoJSON pair IDs",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "A+ CSV/GeoJSON pair ID equality",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "all A+ pair IDs exist in M2K",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "98/98 A+ endpoint IDs and coordinates preserved",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "98/98 A+ rules preserved",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique nonblank station NMI",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "all M3BA coordinates accepted",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "broken AC endpoint references = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "broken HVDC endpoint references = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "broken BTB host references = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": 98,
+      "name": "98/98 A+ corrected geometries materialized",
+      "status": "PASS"
+    },
+    {
+      "detail": 1348,
+      "name": "1,348 straight geometries retained",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "coordinate outliers outside broad Korea bounds = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "after": {
+          "a_plus_geojson": "5CCBE87702A314B4EF03CB253A340BF6EE1E14139D8EE570F2DAEE8C168873DD",
+          "a_plus_registry": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+          "ac_pairs": "25E1F2B850E044EF4BD308957F974B8CD5444CBBC135E77173F97981CED8C307",
+          "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
+          "coordinates": "9C6FA579FCE81C6CC13A550635A8379438DBF9E140C574EEBB512FAA84D3EB78",
+          "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
+          "stations": "9FC0AD6888D9FEB9B959222A538C236C749E2E4A70829FAAC39BDBAE73C13D4C"
+        },
+        "before": {
+          "a_plus_geojson": "5CCBE87702A314B4EF03CB253A340BF6EE1E14139D8EE570F2DAEE8C168873DD",
+          "a_plus_registry": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+          "ac_pairs": "25E1F2B850E044EF4BD308957F974B8CD5444CBBC135E77173F97981CED8C307",
+          "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
+          "coordinates": "9C6FA579FCE81C6CC13A550635A8379438DBF9E140C574EEBB512FAA84D3EB78",
+          "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
+          "stations": "9FC0AD6888D9FEB9B959222A538C236C749E2E4A70829FAAC39BDBAE73C13D4C"
+        }
+      },
+      "name": "canonical and proposal inputs unchanged",
+      "status": "PASS"
+    }
+  ],
+  "coordinate_outliers": [],
+  "counts": {
+    "a_plus_one_bend_connections": 98,
+    "a_plus_registry_sha256": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
+    "ac_connections": 1446,
+    "btb_assets": 1,
+    "canonical_topology_modified": false,
+    "electrical_nodes_created": 0,
+    "hvdc_links": 4,
+    "physical_facilities": 958,
+    "policy": "STRAIGHT_BY_DEFAULT",
+    "straight_connections": 1348
+  },
+  "proposal_endpoint_issues": [],
+  "proposal_rule_issues": [],
+  "status": "PASS"
+}
