@@ -1,10 +1,12 @@
 {
   "version": 8,
-  "name": "KoreaGrid Calm OpenFreeMap + admdongkor ver20260701",
+  "name": "KoreaGrid final geographic basemap candidate",
   "metadata": {
     "koreagrid:purpose": "Calm geographic context with authoritative Korean administrative polygons and labels",
     "koreagrid:admin-source": "vuski/admdongkor ver20260701, derived from Statistics Korea SGIS",
-    "koreagrid:admin-license": "CC BY 4.0 + KOGL Type 1 attribution"
+    "koreagrid:admin-license": "CC BY 4.0 + KOGL Type 1 attribution",
+    "koreagrid:prototype": "C-final",
+    "koreagrid:terrain": "omitted: OpenFreeMap Planet TileJSON exposes no DEM/hillshade source"
   },
   "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
   "sources": {
@@ -37,21 +39,448 @@
     "admdongkor-emd-labels": {
       "type": "geojson",
       "data": "/assets/data/admin/admdongkor-emd-labels.geojson"
+    },
+    "major-city-points": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "서울",
+              "source_name": "서울특별시",
+              "class": "city",
+              "rank": 2,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                126.97826385498047,
+                37.56669139176208
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "인천",
+              "source_name": "인천광역시",
+              "class": "city",
+              "rank": 5,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                126.70523643493652,
+                37.45598729852948
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "수원",
+              "source_name": "수원시",
+              "class": "city",
+              "rank": 6,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.02873229980469,
+                37.26332901162404
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "대전",
+              "source_name": "대전광역시",
+              "class": "city",
+              "rank": 5,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.38492965698242,
+                36.349697458498966
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "세종",
+              "source_name": "세종특별자치시",
+              "class": "city",
+              "rank": 11,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.28897094726562,
+                36.47996606341266
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "대구",
+              "source_name": "대구광역시",
+              "class": "city",
+              "rank": 6,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                128.60183715820312,
+                35.871316401677205
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "부산",
+              "source_name": "부산광역시",
+              "class": "city",
+              "rank": 5,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                129.07527923583984,
+                35.179982050814914
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "울산",
+              "source_name": "울산광역시",
+              "class": "city",
+              "rank": 6,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                129.31191444396973,
+                35.53914088669748
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "광주",
+              "source_name": "광주",
+              "class": "city",
+              "rank": 5,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                126.85149192810059,
+                35.15949467966668
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "전주",
+              "source_name": "전주시",
+              "class": "city",
+              "rank": 7,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.14726448059082,
+                35.823728815303554
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "청주",
+              "source_name": "청주시",
+              "class": "city",
+              "rank": 8,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.48921394348145,
+                36.642115552313086
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "춘천",
+              "source_name": "춘천시",
+              "class": "city",
+              "rank": 8,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                127.72979736328125,
+                37.88108620012163
+              ]
+            }
+          },
+          {
+            "type": "Feature",
+            "properties": {
+              "name": "제주",
+              "source_name": "제주시",
+              "class": "city",
+              "rank": 7,
+              "source": "OpenFreeMap/OpenMapTiles place source-layer"
+            },
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                126.53142929077148,
+                33.49982066326952
+              ]
+            }
+          }
+        ]
+      }
     }
   },
   "layers": [
     {
       "id": "land",
       "type": "background",
-      "paint": { "background-color": "#F1EFE8" }
+      "paint": {
+        "background-color": "#F1EFE8"
+      }
     },
     {
       "id": "water",
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "water",
-      "filter": ["!=", ["get", "brunnel"], "tunnel"],
-      "paint": { "fill-color": "#D9E8ED", "fill-antialias": true }
+      "filter": [
+        "!=",
+        [
+          "get",
+          "brunnel"
+        ],
+        "tunnel"
+      ],
+      "paint": {
+        "fill-color": "#D9E8ED",
+        "fill-antialias": true
+      }
+    },
+    {
+      "id": "major-inland-water",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "minzoom": 4,
+      "filter": [
+        "all",
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "lake",
+              "river"
+            ]
+          ]
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "brunnel"
+          ],
+          "tunnel"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "paint": {
+        "fill-color": "#C4DCE3",
+        "fill-opacity": 0.32,
+        "fill-antialias": true
+      }
+    },
+    {
+      "id": "major-rivers",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "minzoom": 4.5,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "class"
+          ],
+          "river"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "brunnel"
+          ],
+          "tunnel"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#A8C8D2",
+        "line-opacity": 0.5,
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.5,
+          0.3,
+          7,
+          0.66,
+          11,
+          1.38
+        ]
+      }
+    },
+    {
+      "id": "principal-rivers",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "minzoom": 4.5,
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "class"
+          ],
+          "river"
+        ],
+        [
+          "in",
+          [
+            "coalesce",
+            [
+              "get",
+              "name:ko"
+            ],
+            [
+              "get",
+              "name"
+            ]
+          ],
+          [
+            "literal",
+            [
+              "한강",
+              "낙동강",
+              "금강",
+              "영산강",
+              "Han River",
+              "Nakdong River",
+              "Geum River",
+              "Yeongsan River"
+            ]
+          ]
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "brunnel"
+          ],
+          "tunnel"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "intermittent"
+          ],
+          1
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#91B9C6",
+        "line-opacity": 0.62,
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.5,
+          0.38,
+          7,
+          0.82,
+          11,
+          1.62
+        ]
+      }
     },
     {
       "id": "coastline",
@@ -61,46 +490,216 @@
       "minzoom": 3,
       "paint": {
         "line-color": "#AFC4CB",
-        "line-width": 0.65,
-        "line-opacity": 0.82
+        "line-width": 1.0,
+        "line-opacity": 0.95
       }
     },
     {
-      "id": "major-roads",
-      "type": "line",
+      "id": "urban-context",
+      "type": "fill",
       "source": "openmaptiles",
-      "source-layer": "transportation",
+      "source-layer": "landuse",
       "minzoom": 5,
       "filter": [
-        "all",
-        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
-        ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary"]]],
-        ["!=", ["get", "brunnel"], "tunnel"]
+        "in",
+        [
+          "get",
+          "class"
+        ],
+        [
+          "literal",
+          [
+            "residential",
+            "commercial",
+            "industrial",
+            "retail"
+          ]
+        ]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
       "paint": {
-        "line-color": "#D5D0C6",
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 5, 0.34, 8, 0.48, 12, 0.62],
-        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.22, 8, 0.48, 12, 1.08]
+        "fill-color": "#D8D5CE",
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          5,
+          0.07200000000000001,
+          8,
+          0.16,
+          12,
+          0.17600000000000002
+        ]
       }
     },
     {
-      "id": "regional-roads",
+      "id": "expressways",
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 10,
+      "minzoom": 4.8,
       "filter": [
         "all",
-        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
-        ["==", ["get", "class"], "secondary"],
-        ["!=", ["get", "brunnel"], "tunnel"]
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "LineString",
+            "MultiLineString"
+          ],
+          true,
+          false
+        ],
+        [
+          "any",
+          [
+            "==",
+            [
+              "get",
+              "class"
+            ],
+            "motorway"
+          ],
+          [
+            "==",
+            [
+              "get",
+              "expressway"
+            ],
+            1
+          ]
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "brunnel"
+          ],
+          "tunnel"
+        ]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
-        "line-color": "#DDD8CE",
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0.12, 12, 0.42, 15, 0.55],
-        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.18, 12, 0.5, 15, 1.05]
+        "line-color": "#C9C3B8",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.8,
+          0.3528,
+          7,
+          0.49,
+          11,
+          0.62
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.8,
+          0.30800000000000005,
+          7,
+          0.56,
+          11,
+          1.204
+        ]
+      }
+    },
+    {
+      "id": "major-arterials",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "transportation",
+      "minzoom": 7.2,
+      "filter": [
+        "all",
+        [
+          "match",
+          [
+            "geometry-type"
+          ],
+          [
+            "LineString",
+            "MultiLineString"
+          ],
+          true,
+          false
+        ],
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "trunk",
+              "primary"
+            ]
+          ]
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "brunnel"
+          ],
+          "tunnel"
+        ]
+      ],
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#D5D0C6",
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.2,
+          0,
+          8.2,
+          0.34,
+          12,
+          0.48000000000000004
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.2,
+          0.198,
+          9,
+          0.44,
+          13,
+          0.946
+        ]
       }
     },
     {
@@ -110,15 +709,51 @@
       "source-layer": "boundary",
       "filter": [
         "all",
-        ["==", ["get", "admin_level"], 2],
-        ["!=", ["get", "maritime"], 1],
-        ["!=", ["get", "disputed"], 1]
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          2
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          1
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "disputed"
+          ],
+          1
+        ]
       ],
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "#71868F",
         "line-opacity": 0.88,
-        "line-width": ["interpolate", ["linear"], ["zoom"], 3, 0.85, 8, 1.35]
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.85,
+          8,
+          1.35
+        ]
       }
     },
     {
@@ -126,11 +761,42 @@
       "type": "line",
       "source": "admdongkor-sido-polygons",
       "minzoom": 4,
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "#7E949F",
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 4, 0.92, 8, 0.96, 12, 0.7],
-        "line-width": ["interpolate", ["linear"], ["zoom"], 4, 0.9, 8, 1.45, 12, 1.2]
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          0.92,
+          8,
+          0.96,
+          12,
+          0.7
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4,
+          0.9,
+          8,
+          1.45,
+          12,
+          1.2
+        ]
       }
     },
     {
@@ -138,11 +804,46 @@
       "type": "line",
       "source": "admdongkor-sgg-polygons",
       "minzoom": 7,
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "#A2B1B7",
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 7, 0, 8.1, 0.7, 10, 0.82, 13, 0.62],
-        "line-width": ["interpolate", ["linear"], ["zoom"], 7, 0.3, 8.5, 0.7, 11, 0.95, 14, 0.8]
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0,
+          8.1,
+          0.7,
+          10,
+          0.82,
+          13,
+          0.62
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7,
+          0.3,
+          8.5,
+          0.7,
+          11,
+          0.95,
+          14,
+          0.8
+        ]
       }
     },
     {
@@ -150,40 +851,197 @@
       "type": "line",
       "source": "admdongkor-emd-polygons",
       "minzoom": 10,
-      "layout": { "line-cap": "round", "line-join": "round" },
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
       "paint": {
         "line-color": "#C3CCCF",
-        "line-opacity": ["interpolate", ["linear"], ["zoom"], 10, 0, 11, 0.34, 13, 0.58, 15, 0.68],
-        "line-width": ["interpolate", ["linear"], ["zoom"], 10, 0.2, 12, 0.42, 14, 0.62]
+        "line-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0,
+          11,
+          0.34,
+          13,
+          0.58,
+          15,
+          0.68
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10,
+          0.2,
+          12,
+          0.42,
+          14,
+          0.62
+        ]
       }
     },
     {
-      "id": "major-road-labels",
+      "id": "additional-city-labels",
       "type": "symbol",
       "source": "openmaptiles",
-      "source-layer": "transportation_name",
-      "minzoom": 10.5,
+      "source-layer": "place",
+      "minzoom": 7.3,
       "filter": [
         "all",
-        ["match", ["geometry-type"], ["LineString", "MultiLineString"], true, false],
-        ["in", ["get", "class"], ["literal", ["motorway", "trunk", "primary", "secondary"]]],
-        ["has", "name:ko"],
-        ["==", ["get", "name:ko"], ["get", "name:nonlatin"]]
+        [
+          "==",
+          [
+            "get",
+            "iso_a2"
+          ],
+          "KR"
+        ],
+        [
+          "in",
+          [
+            "get",
+            "class"
+          ],
+          [
+            "literal",
+            [
+              "city",
+              "town"
+            ]
+          ]
+        ],
+        [
+          "<=",
+          [
+            "coalesce",
+            [
+              "get",
+              "rank"
+            ],
+            30
+          ],
+          11
+        ],
+        [
+          "!",
+          [
+            "in",
+            [
+              "coalesce",
+              [
+                "get",
+                "name:ko"
+              ],
+              [
+                "get",
+                "name"
+              ]
+            ],
+            [
+              "literal",
+              [
+                "서울",
+                "서울특별시",
+                "인천",
+                "인천광역시",
+                "수원",
+                "수원시",
+                "대전",
+                "대전광역시",
+                "세종",
+                "세종특별자치시",
+                "대구",
+                "대구광역시",
+                "부산",
+                "부산광역시",
+                "울산",
+                "울산광역시",
+                "광주",
+                "광주광역시",
+                "전주",
+                "전주시",
+                "청주",
+                "청주시",
+                "춘천",
+                "춘천시",
+                "제주",
+                "제주시"
+              ]
+            ]
+          ]
+        ]
       ],
       "layout": {
-        "symbol-placement": "line",
-        "symbol-spacing": 430,
-        "text-field": ["get", "name:ko"],
-        "text-font": ["Noto Sans Regular"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 10.5, 8.5, 13, 10.8],
-        "text-letter-spacing": 0.01,
-        "text-max-angle": 30
+        "text-field": [
+          "coalesce",
+          [
+            "get",
+            "name:ko"
+          ],
+          [
+            "get",
+            "name"
+          ]
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.3,
+          8.6,
+          9.5,
+          10.2,
+          12,
+          11
+        ],
+        "text-allow-overlap": false,
+        "text-ignore-placement": false,
+        "symbol-sort-key": [
+          "coalesce",
+          [
+            "get",
+            "rank"
+          ],
+          30
+        ]
       },
       "paint": {
-        "text-color": "#85817A",
-        "text-opacity": ["interpolate", ["linear"], ["zoom"], 10.5, 0, 11.5, 0.56, 13, 0.7],
+        "text-color": "#667278",
+        "text-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.3,
+          0,
+          8.1,
+          0.64,
+          12,
+          0.72
+        ],
         "text-halo-color": "#F1EFE8",
-        "text-halo-width": 1.15,
+        "text-halo-width": 1.05,
         "text-halo-blur": 0.3
       }
     },
@@ -194,22 +1052,87 @@
       "minzoom": 4.7,
       "maxzoom": 11,
       "layout": {
-        "text-field": ["get", "name"],
-        "text-font": ["Noto Sans Medium"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 4.7, 10.5, 7, 13.5, 9, 14.5],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Noto Sans Medium"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.7,
+          10.5,
+          7,
+          13.5,
+          9,
+          14.5
+        ],
         "text-letter-spacing": 0.06,
         "text-max-width": 9,
         "text-allow-overlap": false,
-        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-variable-anchor": [
+          "center",
+          "top",
+          "bottom",
+          "left",
+          "right"
+        ],
         "text-radial-offset": 0.25
       },
       "paint": {
         "text-color": "#4D5B62",
-        "text-opacity": ["interpolate", ["linear"], ["zoom"], 4.7, 0, 5.3, 0.92, 8.8, 0.82, 10.8, 0],
+        "text-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.7,
+          0,
+          5.3,
+          0.92,
+          8.8,
+          0.82,
+          10.8,
+          0
+        ],
         "text-halo-color": "#F1EFE8",
         "text-halo-width": 1.35,
         "text-halo-blur": 0.35
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "name"
+          ],
+          [
+            "literal",
+            [
+              "서울특별시",
+              "인천광역시",
+              "대전광역시",
+              "세종특별자치시",
+              "대구광역시",
+              "부산광역시",
+              "울산광역시",
+              "광주광역시",
+              "제주특별자치도"
+            ]
+          ]
+        ]
+      ]
     },
     {
       "id": "adk-sgg-labels",
@@ -218,17 +1141,58 @@
       "minzoom": 7.8,
       "maxzoom": 13,
       "layout": {
-        "text-field": ["get", "name"],
-        "text-font": ["Noto Sans Regular"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 7.8, 9, 9.5, 10.5, 12, 11.2],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.8,
+          9,
+          9.5,
+          10.5,
+          12,
+          11.2
+        ],
         "text-max-width": 7,
         "text-allow-overlap": false,
-        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-variable-anchor": [
+          "center",
+          "top",
+          "bottom",
+          "left",
+          "right"
+        ],
         "text-radial-offset": 0.25
       },
       "paint": {
         "text-color": "#617078",
-        "text-opacity": ["interpolate", ["linear"], ["zoom"], 7.8, 0, 8.5, 0.78, 11.5, 0.8, 12.9, 0],
+        "text-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          7.8,
+          0,
+          8.5,
+          0.78,
+          11.5,
+          0.8,
+          12.9,
+          0
+        ],
         "text-halo-color": "#F1EFE8",
         "text-halo-width": 1.15,
         "text-halo-blur": 0.3
@@ -240,20 +1204,114 @@
       "source": "admdongkor-emd-labels",
       "minzoom": 10.7,
       "layout": {
-        "text-field": ["get", "name"],
-        "text-font": ["Noto Sans Regular"],
-        "text-size": ["interpolate", ["linear"], ["zoom"], 10.7, 8, 12.5, 9.2, 15, 10.4],
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.7,
+          8,
+          12.5,
+          9.2,
+          15,
+          10.4
+        ],
         "text-max-width": 7,
         "text-allow-overlap": false,
-        "text-variable-anchor": ["center", "top", "bottom", "left", "right"],
+        "text-variable-anchor": [
+          "center",
+          "top",
+          "bottom",
+          "left",
+          "right"
+        ],
         "text-radial-offset": 0.2
       },
       "paint": {
         "text-color": "#778287",
-        "text-opacity": ["interpolate", ["linear"], ["zoom"], 10.7, 0, 11.4, 0.64, 13, 0.76, 15, 0.82],
+        "text-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          10.7,
+          0,
+          11.4,
+          0.64,
+          13,
+          0.76,
+          15,
+          0.82
+        ],
         "text-halo-color": "#F1EFE8",
         "text-halo-width": 1,
         "text-halo-blur": 0.3
+      }
+    },
+    {
+      "id": "major-city-labels",
+      "type": "symbol",
+      "source": "major-city-points",
+      "minzoom": 4.7,
+      "maxzoom": 12,
+      "layout": {
+        "text-field": [
+          "get",
+          "name"
+        ],
+        "text-font": [
+          "Noto Sans Medium"
+        ],
+        "text-size": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          4.7,
+          10.7,
+          6.5,
+          12.7,
+          9,
+          13.6
+        ],
+        "text-letter-spacing": 0.025,
+        "text-allow-overlap": true,
+        "text-ignore-placement": false,
+        "text-offset": [
+          0,
+          0.32
+        ],
+        "symbol-sort-key": [
+          "coalesce",
+          [
+            "get",
+            "rank"
+          ],
+          20
+        ]
+      },
+      "paint": {
+        "text-color": "#45555D",
+        "text-opacity": 0.94,
+        "text-halo-color": "#F8F6F0",
+        "text-halo-width": 1.45,
+        "text-halo-blur": 0.35
       }
     }
   ]
