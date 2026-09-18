@@ -185,6 +185,8 @@
         "===================================================================================================",
         "광운대",
         "윤민한",
+        "목포대",
+        "이재형",
         "지스트",
         "김윤수",
         "유니스트",
@@ -301,6 +303,10 @@
         {
           "text": "윤민한",
           "href": "https://sites.google.com/view/kwuepel/home?authuser=0"
+        },
+        {
+          "text": "이재형",
+          "href": "https://sites.google.com/view/mnupel/"
         },
         {
           "text": "김윤수",
@@ -786,6 +792,15 @@
         {
           "name": "윤민한",
           "href": "https://sites.google.com/view/kwuepel/home?authuser=0"
+        }
+      ]
+    },
+    {
+      "institution": "목포대",
+      "people": [
+        {
+          "name": "이재형",
+          "href": "https://sites.google.com/view/mnupel/"
         }
       ]
     },
