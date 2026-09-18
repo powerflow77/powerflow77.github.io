@@ -138,10 +138,10 @@
         "V2G / EV Grid Integration",
         "AIDC–Distribution Grid Interaction",
         ">Building Energy Solutions",
-        "가정 및 빌딩 에너지 운영 및 제어",
+        "가정 및 빌딩 에너지 최적화",
         "ESS Control",
         "e-Heat Pump Control",
-        "Data-Driven Energy Management"
+        "PV & Load Forecasting"
       ],
       "links": []
     },
@@ -631,11 +631,11 @@
     },
     {
       "title": "Building Energy Solutions",
-      "subtitle": "가정 및 빌딩 에너지 운영 및 제어",
+      "subtitle": "가정 및 빌딩 에너지 최적화",
       "topics": [
         "ESS Control",
         "e-Heat Pump Control",
-        "Data-Driven Energy Management"
+        "PV & Load Forecasting"
       ]
     }
   ],
