@@ -449,30 +449,28 @@
     layerControl.className = "kg-layer-control";
     layerControl.setAttribute("aria-label", "Network layer visibility");
     const groups = [
-      ["Facilities", ["kg-sites", "kg-orphan-rings", "kg-sites-related", "kg-sites-selected"]],
-      ["154 kV", ["kg-ac-154", "kg-ac-other"]],
-      ["345 kV AC connections", ["kg-ac-345"]],
-      ["765 kV AC connections", ["kg-ac-765"]],
-      ["HVDC", ["kg-hvdc", "kg-hvdc-selected", "kg-btb"]]
+      ["Facilities", ["kg-sites", "kg-orphan-rings", "kg-sites-related", "kg-sites-selected"], "facilities"],
+      ["154 kV", ["kg-ac-154", "kg-ac-other"], "154"],
+      ["345 kV AC connections", ["kg-ac-345"], "345"],
+      ["765 kV AC connections", ["kg-ac-765"], "765"],
+      ["HVDC", ["kg-hvdc", "kg-hvdc-selected", "kg-btb"], "hvdc"]
     ];
-    groups.forEach(([label, ids]) => {
+    groups.forEach(([label, ids, band]) => {
       const row = document.createElement("label");
+      row.dataset.kgLayer = band;
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
       checkbox.checked = true;
       checkbox.addEventListener("change", () => ids.forEach((id) => map.setLayoutProperty(id, "visibility", checkbox.checked ? "visible" : "none")));
-      row.append(checkbox, document.createTextNode(label));
+      const swatch = document.createElement("i");
+      swatch.className = "kg-control-swatch";
+      swatch.setAttribute("aria-hidden", "true");
+      row.append(checkbox, swatch, document.createTextNode(label));
       layerControl.appendChild(row);
     });
     layerControl.addEventListener("pointerdown", (event) => event.stopPropagation());
     document.querySelector(".kg-map-wrap").appendChild(layerControl);
 
-    const legend = document.createElement("div");
-    legend.className = "kg-legend";
-    legend.innerHTML = `<strong>Network layers</strong>
-      <span><i data-band="154"></i>154 kV</span><span><i data-band="345"></i>345 kV</span>
-      <span><i data-band="765"></i>765 kV</span><span><i data-band="hvdc"></i>HVDC</span>`;
-    document.querySelector(".kg-map-wrap").appendChild(legend);
   }
 
   function fitKorea() {
