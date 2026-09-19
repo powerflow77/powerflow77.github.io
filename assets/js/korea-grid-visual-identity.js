@@ -4,10 +4,10 @@
   const identityKey = "premium-scientific";
   const spec = {
     name: "Premium Scientific",
-    colors: { "154": "#2C63A8", "345": "#C18428", "765": "#A23A50", other: "#687976", hvdc: "#5A4E93" },
+    colors: { "154": "#2F775D", "345": "#C18428", "765": "#A23A50", other: "#687976", hvdc: "#5A4E93" },
     markerColors: { "154": "#22777C", "345": "#C18428", "765": "#A23A50", other: "#687976" },
     widths: { "154": 1.20, "345": 2.25, "765": 3.35, other: 0.90, hvdc: 2.80 },
-    opacity: { "154": 0.82, "345": 0.94, "765": 0.98, other: 0.46, hvdc: 0.95 },
+    opacity: { "154": 0.80, "345": 0.94, "765": 0.98, other: 0.46, hvdc: 0.95 },
     casing: { color: "#F4F5F2", opacity: 0.88, extra: 1.55 },
     casing154: { color: "#F7F3EA", opacity: 0.76, extra: 1.10 },
     marker: {
