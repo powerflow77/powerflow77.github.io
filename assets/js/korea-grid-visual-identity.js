@@ -4,10 +4,12 @@
   const identityKey = "premium-scientific";
   const spec = {
     name: "Premium Scientific",
-    colors: { "154": "#22777C", "345": "#C18428", "765": "#A23A50", other: "#687976", hvdc: "#5A4E93" },
-    widths: { "154": 1.04, "345": 2.25, "765": 3.35, other: 0.90, hvdc: 2.80 },
-    opacity: { "154": 0.64, "345": 0.94, "765": 0.98, other: 0.46, hvdc: 0.95 },
+    colors: { "154": "#2C63A8", "345": "#C18428", "765": "#A23A50", other: "#687976", hvdc: "#5A4E93" },
+    markerColors: { "154": "#22777C", "345": "#C18428", "765": "#A23A50", other: "#687976" },
+    widths: { "154": 1.20, "345": 2.25, "765": 3.35, other: 0.90, hvdc: 2.80 },
+    opacity: { "154": 0.82, "345": 0.94, "765": 0.98, other: 0.46, hvdc: 0.95 },
     casing: { color: "#F4F5F2", opacity: 0.88, extra: 1.55 },
+    casing154: { color: "#F7F3EA", opacity: 0.76, extra: 1.10 },
     marker: {
       ring: "#F4F5F2",
       coreByZoom: {
@@ -132,9 +134,14 @@
     return voltageMatch({ "765": spec.colors["765"], "345": spec.colors["345"], "154": spec.colors["154"] }, spec.colors.other);
   }
 
+  function markerColorExpression() {
+    return voltageMatch({ "765": spec.markerColors["765"], "345": spec.markerColors["345"], "154": spec.markerColors["154"] }, spec.markerColors.other);
+  }
+
   function addCasing(map, band) {
     const coreId = `kg-ac-${band}`;
     const id = `kg-ac-casing-${band}`;
+    const casing = band === "154" ? spec.casing154 : spec.casing;
     if (map.getLayer(id)) return;
     map.addLayer({
       id,
@@ -145,9 +152,9 @@
         : ["==", ["get", "voltage_band"], band],
       layout: { "line-cap": "round", "line-join": "round" },
       paint: {
-        "line-color": spec.casing.color,
-        "line-width": scalarWidth(spec.widths[band], spec.casing.extra),
-        "line-opacity": spec.casing.opacity
+        "line-color": casing.color,
+        "line-width": scalarWidth(spec.widths[band], casing.extra),
+        "line-opacity": casing.opacity
       }
     }, coreId);
   }
@@ -187,7 +194,8 @@
     map.setPaintProperty("kg-hvdc", "line-width", scalarWidth(spec.widths.hvdc));
     map.setPaintProperty("kg-hvdc", "line-opacity", spec.opacity.hvdc);
 
-    const nativeColor = colorExpression();
+    const lineColor = colorExpression();
+    const nativeColor = markerColorExpression();
     if (!map.getLayer("kg-sites-ring")) {
       map.addLayer({
         id: "kg-sites-ring",
@@ -269,7 +277,7 @@
         }
       }, "kg-ac-selected");
     }
-    map.setPaintProperty("kg-ac-selected", "line-color", nativeColor);
+    map.setPaintProperty("kg-ac-selected", "line-color", lineColor);
     map.setPaintProperty("kg-ac-selected", "line-width", voltageWidth(spec.selection.lineExtra));
     map.setPaintProperty("kg-ac-selected", "line-opacity", 1);
 
@@ -305,7 +313,8 @@
       safeSetFilter(map, "kg-hvdc-selected-casing", "kg-hvdc-selected");
       const active = selectionActive();
       ["other", "154", "345", "765"].forEach((band) => {
-        map.setPaintProperty(`kg-ac-casing-${band}`, "line-opacity", active ? 0.025 : spec.casing.opacity);
+        const casing = band === "154" ? spec.casing154 : spec.casing;
+        map.setPaintProperty(`kg-ac-casing-${band}`, "line-opacity", active ? 0.025 : casing.opacity);
         map.setPaintProperty(`kg-ac-${band}`, "line-opacity", active ? spec.selection.unrelatedLineOpacity : spec.opacity[band]);
       });
       map.setPaintProperty("kg-hvdc-casing", "line-opacity", active ? 0.03 : spec.casing.opacity);

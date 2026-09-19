@@ -7,6 +7,7 @@
   --kg-bg: #F5F6F4;
   --kg-panel: rgba(250, 251, 250, 0.97);
   --kg-154: #22777C;
+  --kg-154-line: #2C63A8;
   --kg-345: #C18428;
   --kg-765: #A23A50;
   --kg-hvdc: #5A4E93;
@@ -264,7 +265,7 @@ button { cursor: pointer; }
   opacity: .96;
 }
 .kg-layer-control label[data-kg-layer="facilities"] .kg-control-swatch { width: 7px; height: 7px; margin: 0 5px; border-radius: 50%; background: var(--kg-345); }
-.kg-layer-control label[data-kg-layer="154"] .kg-control-swatch { background: var(--kg-154); }
+.kg-layer-control label[data-kg-layer="154"] .kg-control-swatch { background: var(--kg-154-line); }
 .kg-layer-control label[data-kg-layer="345"] .kg-control-swatch { height: 3px; background: var(--kg-345); }
 .kg-layer-control label[data-kg-layer="765"] .kg-control-swatch { height: 3px; background: var(--kg-765); }
 .kg-layer-control label[data-kg-layer="hvdc"] .kg-control-swatch { height: 3px; background: var(--kg-hvdc); }
