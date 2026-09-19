@@ -160,7 +160,7 @@
       type: "line",
       source: "kg-hvdc",
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": colors.hvdc, "line-width": hvdcWidth, "line-opacity": lineStyle.opacity.hvdc, "line-dasharray": [3, 2] }
+      paint: { "line-color": colors.hvdc, "line-width": hvdcWidth, "line-opacity": lineStyle.opacity.hvdc }
     });
 
     map.addLayer({
@@ -231,7 +231,7 @@
       source: "kg-hvdc",
       filter: ["in", ["get", "asset_id"], ["literal", []]],
       layout: { "line-cap": "round", "line-join": "round" },
-      paint: { "line-color": colors.hvdc, "line-width": hvdcSelectedWidth, "line-opacity": 1, "line-dasharray": [3, 2] }
+      paint: { "line-color": colors.hvdc, "line-width": hvdcSelectedWidth, "line-opacity": 1 }
     });
 
     map.addLayer({

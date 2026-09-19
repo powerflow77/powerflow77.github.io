@@ -267,7 +267,7 @@ button { cursor: pointer; }
 .kg-legend i[data-band="154"] { background: var(--kg-154); }
 .kg-legend i[data-band="345"] { background: var(--kg-345); }
 .kg-legend i[data-band="765"] { background: var(--kg-765); }
-.kg-legend i[data-band="hvdc"] { height: 0; border-top: 3px dashed var(--kg-hvdc); background: transparent; }
+.kg-legend i[data-band="hvdc"] { background: var(--kg-hvdc); }
 
 @media (max-width: 920px) {
   .site-nav { padding: 0 1rem; }

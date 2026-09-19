@@ -10,7 +10,6 @@
       opacity: { "154": 0.70, "345": 0.90, "765": 0.97, other: 0.55, hvdc: 0.96 },
       casing: { color: "#263D48", opacity: 0.25, extra: 1.55 },
       marker: { radii: { "154": 1.75, "345": 2.85, "765": 4.15, other: 1.65 }, ring: "#F8FAF7", ringOffset: 1.35, stroke: 0.75 },
-      hvdcDash: [5.2, 2.3],
       selection: { casing: "#102A36", haloOpacity: 0.20, lineExtra: 1.75, casingExtra: 4.15 }
     },
     premium: {
@@ -20,7 +19,6 @@
       opacity: { "154": 0.65, "345": 0.89, "765": 0.95, other: 0.50, hvdc: 0.93 },
       casing: { color: "#F8F3E8", opacity: 0.90, extra: 1.75 },
       marker: { radii: { "154": 1.70, "345": 2.90, "765": 4.20, other: 1.60 }, ring: "#F9F3E8", ringOffset: 1.45, stroke: 0.8 },
-      hvdcDash: [6.0, 2.8],
       selection: { casing: "#2D2832", haloOpacity: 0.18, lineExtra: 1.85, casingExtra: 4.25 }
     },
     contrast: {
@@ -30,7 +28,6 @@
       opacity: { "154": 0.72, "345": 0.93, "765": 0.98, other: 0.56, hvdc: 0.97 },
       casing: { color: "#263746", opacity: 0.27, extra: 1.65 },
       marker: { radii: { "154": 1.80, "345": 3.00, "765": 4.35, other: 1.70 }, ring: "#F8FAF8", ringOffset: 1.35, stroke: 0.75 },
-      hvdcDash: [4.6, 2.0],
       selection: { casing: "#0E1A24", haloOpacity: 0.21, lineExtra: 1.85, casingExtra: 4.25 }
     },
     hybrid: {
@@ -75,7 +72,6 @@
           "14": { "154": 0.78, "345": 0.94, "765": 1.08, other: 0.68 }
         }
       },
-      hvdcDash: [6.0, 2.8],
       selection: { casing: "#4A424C", haloOpacity: 0.18, lineExtra: 1.85, casingExtra: 4.25 }
     }
   };
@@ -200,15 +196,13 @@
         paint: {
           "line-color": spec.casing.color,
           "line-width": scalarWidth(spec.widths.hvdc, spec.casing.extra + 0.35),
-          "line-opacity": Math.min(0.95, spec.casing.opacity + 0.12),
-          "line-dasharray": spec.hvdcDash
+          "line-opacity": Math.min(0.95, spec.casing.opacity + 0.12)
         }
       }, "kg-hvdc");
     }
     map.setPaintProperty("kg-hvdc", "line-color", spec.colors.hvdc);
     map.setPaintProperty("kg-hvdc", "line-width", scalarWidth(spec.widths.hvdc));
     map.setPaintProperty("kg-hvdc", "line-opacity", spec.opacity.hvdc);
-    map.setPaintProperty("kg-hvdc", "line-dasharray", spec.hvdcDash);
 
     const nativeColor = colorExpression();
     if (!map.getLayer("kg-sites-ring")) {
@@ -305,15 +299,13 @@
         paint: {
           "line-color": spec.selection.casing,
           "line-width": scalarWidth(spec.widths.hvdc, spec.selection.casingExtra),
-          "line-opacity": 0.84,
-          "line-dasharray": spec.hvdcDash
+          "line-opacity": 0.84
         }
       }, "kg-hvdc-selected");
     }
     map.setPaintProperty("kg-hvdc-selected", "line-color", spec.colors.hvdc);
     map.setPaintProperty("kg-hvdc-selected", "line-width", scalarWidth(spec.widths.hvdc, spec.selection.lineExtra));
     map.setPaintProperty("kg-hvdc-selected", "line-opacity", 1);
-    map.setPaintProperty("kg-hvdc-selected", "line-dasharray", spec.hvdcDash);
 
     ["kg-ac-selected-casing", "kg-ac-selected", "kg-hvdc-selected-casing", "kg-hvdc-selected"].forEach((id) => {
       if (map.getLayer(id)) map.moveLayer(id, "kg-sites-ring");
