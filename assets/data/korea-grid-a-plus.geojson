@@ -1,0 +1,3239 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.66200197777684,
+            37.52501587863998
+          ],
+          [
+            126.68908430709871,
+            37.52298249116746
+          ],
+          [
+            126.72884620790477,
+            37.51592296085198
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000014",
+        "from_fgn": "FGN0_000010",
+        "from_name": "가정",
+        "pair_id": "FGE0_000014",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000138",
+        "to_name": "신부평",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.059643670708,
+            37.0263580512429
+          ],
+          [
+            127.1411819558827,
+            37.06106957962714
+          ],
+          [
+            127.22082123632241,
+            37.09855918425623
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000037",
+        "from_fgn": "FGN0_000016",
+        "from_name": "고덕2",
+        "pair_id": "FGE0_000037",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000101",
+        "to_name": "서안성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.3362306,
+            37.3715089
+          ],
+          [
+            127.46522677737929,
+            37.370704639649304
+          ],
+          [
+            127.65843825395186,
+            37.362928647485724
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000063",
+        "from_fgn": "FGN0_000022",
+        "from_name": "곤지암",
+        "pair_id": "FGE0_000063",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000195",
+        "to_name": "여주복합",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.6227454,
+            34.9701005
+          ],
+          [
+            127.67047513324887,
+            34.942778262092375
+          ],
+          [
+            127.7751428,
+            34.8889132
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000072",
+        "from_fgn": "FGN0_000024",
+        "from_name": "광양",
+        "pair_id": "FGE0_000072",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000027",
+        "to_name": "광양복합",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.775301,
+            34.8888335
+          ],
+          [
+            127.73319327453115,
+            34.862984994907194
+          ],
+          [
+            127.6888778,
+            34.8397949
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000086",
+        "from_fgn": "FGN0_000026",
+        "from_name": "광양CC",
+        "pair_id": "FGE0_000086",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000193",
+        "to_name": "여수TP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.46031514507882,
+            36.55336757484658
+          ],
+          [
+            127.44185048950754,
+            36.603669338116106
+          ],
+          [
+            127.42725721163711,
+            36.65479323531532
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000125",
+        "from_fgn": "FGN0_000039",
+        "from_name": "남청주",
+        "pair_id": "FGE0_000125",
+        "primary_admin_region": "충청북도",
+        "to_fgn": "FGN0_000169",
+        "to_name": "신청주",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.690432,
+            35.733198
+          ],
+          [
+            128.7610180179471,
+            35.8036963068608
+          ],
+          [
+            128.83477041686055,
+            35.87205072087548
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000139",
+        "from_fgn": "FGN0_000044",
+        "from_name": "대구",
+        "pair_id": "FGE0_000139",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000117",
+        "to_name": "신경산",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.3924653,
+            35.6514997
+          ],
+          [
+            129.34750633759447,
+            35.52315371810916
+          ],
+          [
+            129.32922369982342,
+            35.43531001915512
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000157",
+        "from_fgn": "FGN0_000048",
+        "from_name": "동울산",
+        "pair_id": "FGE0_000157",
+        "primary_admin_region": "울산광역시",
+        "to_fgn": "FGN0_000157",
+        "to_name": "신온산",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.3924653,
+            35.6514997
+          ],
+          [
+            129.33309584868863,
+            35.5579865683594
+          ],
+          [
+            129.30056975360722,
+            35.49292817283252
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000158",
+        "from_fgn": "FGN0_000048",
+        "from_name": "동울산",
+        "pair_id": "FGE0_000158",
+        "primary_admin_region": "울산광역시",
+        "to_fgn": "FGN0_000161",
+        "to_name": "신울산",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.17936440536764,
+            35.84225712185187
+          ],
+          [
+            127.09158525067798,
+            35.801312547891065
+          ],
+          [
+            127.00594793535983,
+            35.75752224454988
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000163",
+        "from_fgn": "FGN0_000049",
+        "from_name": "동전주",
+        "pair_id": "FGE0_000163",
+        "primary_admin_region": "전북특별자치도",
+        "to_fgn": "FGN0_000126",
+        "to_name": "신김제",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.1000134915126,
+            37.51026779387998
+          ],
+          [
+            129.19845905813878,
+            37.38360279744337
+          ],
+          [
+            129.33873807,
+            37.19024208
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000166",
+        "from_fgn": "FGN0_000051",
+        "from_name": "동해",
+        "pair_id": "FGE0_000166",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000088",
+        "to_name": "삼척GP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.1000134915126,
+            37.51026779387998
+          ],
+          [
+            128.83124716494615,
+            37.7738717656516
+          ],
+          [
+            128.5366525,
+            38.02019129
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000170",
+        "from_fgn": "FGN0_000051",
+        "from_name": "동해",
+        "pair_id": "FGE0_000170",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000190",
+        "to_name": "양양PP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.6394408611405,
+            36.00697218125413
+          ],
+          [
+            128.26389909795435,
+            35.74406944242893
+          ],
+          [
+            128.5531129,
+            35.6143312
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000188",
+        "from_fgn": "FGN0_000057",
+        "from_name": "무주",
+        "pair_id": "FGE0_000188",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000073",
+        "to_name": "북경남",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.70674310782856,
+            35.968296495896425
+          ],
+          [
+            128.21218554615174,
+            35.751413410532166
+          ],
+          [
+            128.5531129,
+            35.6143312
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000192",
+        "from_fgn": "FGN0_000059",
+        "from_name": "무주양수",
+        "pair_id": "FGE0_000192",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000073",
+        "to_name": "북경남",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.49279024165781,
+            36.40461535265879
+          ],
+          [
+            126.69301835970349,
+            36.44928000609011
+          ],
+          [
+            126.7884719,
+            36.4665888
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000224",
+        "from_fgn": "FGN0_000070",
+        "from_name": "보령화력",
+        "pair_id": "FGE0_000224",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000256",
+        "to_name": "청양",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.49279024165781,
+            36.40461535265879
+          ],
+          [
+            126.53698302620978,
+            36.392304957796746
+          ],
+          [
+            126.5819017,
+            36.3818689
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000225",
+        "from_fgn": "FGN0_000070",
+        "from_name": "보령화력",
+        "pair_id": "FGE0_000225",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000345",
+        "to_name": "관창",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.78392782807317,
+            36.95480925053405
+          ],
+          [
+            126.70146263580983,
+            36.916078039024974
+          ],
+          [
+            126.58057046464705,
+            36.854422123661394
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000235",
+        "from_fgn": "FGN0_000074",
+        "from_name": "북당진",
+        "pair_id": "FGE0_000235",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000131",
+        "to_name": "신당진개폐소",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.78392782807317,
+            36.95480925053405
+          ],
+          [
+            126.75438260088795,
+            36.97214996920599
+          ],
+          [
+            126.72262159060469,
+            36.9867612629969
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000237",
+        "from_fgn": "FGN0_000074",
+        "from_name": "북당진",
+        "pair_id": "FGE0_000237",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000302",
+        "to_name": "현대제철",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.02325906885116,
+            35.23638848478686
+          ],
+          [
+            129.12757367979185,
+            35.323006444057754
+          ],
+          [
+            129.38048116019263,
+            35.47620114259964
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000249",
+        "from_fgn": "FGN0_000077",
+        "from_name": "북부산",
+        "pair_id": "FGE0_000249",
+        "primary_admin_region": "부산광역시",
+        "to_fgn": "FGN0_000160",
+        "to_name": "신울산복합",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.02325906885116,
+            35.23638848478686
+          ],
+          [
+            128.90069270125585,
+            35.226242610401584
+          ],
+          [
+            128.77781170488248,
+            35.21920541255801
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000251",
+        "from_fgn": "FGN0_000077",
+        "from_name": "북부산",
+        "pair_id": "FGE0_000251",
+        "primary_admin_region": "경상남도",
+        "to_fgn": "FGN0_000180",
+        "to_name": "신김해",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.02325906885116,
+            35.23638848478686
+          ],
+          [
+            129.13071371608982,
+            35.319870763178514
+          ],
+          [
+            129.38048116019263,
+            35.47620114259964
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000252",
+        "from_fgn": "FGN0_000077",
+        "from_name": "북부산",
+        "pair_id": "FGE0_000252",
+        "primary_admin_region": "부산광역시",
+        "to_fgn": "FGN0_000213",
+        "to_name": "울산복합",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.02325906885116,
+            35.23638848478686
+          ],
+          [
+            129.1344116720169,
+            35.31617752968306
+          ],
+          [
+            129.38048116019263,
+            35.47620114259964
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000253",
+        "from_fgn": "FGN0_000077",
+        "from_name": "북부산",
+        "pair_id": "FGE0_000253",
+        "primary_admin_region": "부산광역시",
+        "to_fgn": "FGN0_000214",
+        "to_name": "울산TP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.77685375050027,
+            35.256395021758664
+          ],
+          [
+            127.98920858430606,
+            35.30384432663837
+          ],
+          [
+            128.12875154117873,
+            35.34132645707114
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000265",
+        "from_fgn": "FGN0_000083",
+        "from_name": "산청양수",
+        "pair_id": "FGE0_000265",
+        "primary_admin_region": "경상남도",
+        "to_fgn": "FGN0_000222",
+        "to_name": "의령",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.33873807,
+            37.19024208
+          ],
+          [
+            129.3614516369012,
+            37.14196053411439
+          ],
+          [
+            129.3803041923275,
+            37.09262899033544
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP;UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000277",
+        "from_fgn": "FGN0_000088",
+        "from_name": "삼척GP",
+        "pair_id": "FGE0_000277",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000294",
+        "to_name": "한울NP1",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.108205,
+            34.9083059
+          ],
+          [
+            128.4414102740265,
+            35.06564302076216
+          ],
+          [
+            128.77781170488248,
+            35.21920541255801
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000284",
+        "from_fgn": "FGN0_000090",
+        "from_name": "삼천포화력",
+        "pair_id": "FGE0_000284",
+        "primary_admin_region": "경상남도",
+        "to_fgn": "FGN0_000180",
+        "to_name": "신김해",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.40603838399787,
+            35.97071095956744
+          ],
+          [
+            128.42602432660445,
+            36.1103876143212
+          ],
+          [
+            128.43089928377697,
+            36.17647817518565
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000291",
+        "from_fgn": "FGN0_000095",
+        "from_name": "서대구",
+        "pair_id": "FGE0_000291",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000104",
+        "to_name": "선산",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.916917,
+            37.3102677
+          ],
+          [
+            126.88523125297905,
+            37.38421318251874
+          ],
+          [
+            126.849659987413,
+            37.4570332338926
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000310",
+        "from_fgn": "FGN0_000099",
+        "from_name": "서서울",
+        "pair_id": "FGE0_000310",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000200",
+        "to_name": "영서",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.91620584597848,
+            37.31049820185753
+          ],
+          [
+            126.98343426601836,
+            37.34833151254194
+          ],
+          [
+            127.05298645294873,
+            37.383427099328145
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000321",
+        "from_fgn": "FGN0_000100",
+        "from_name": "서서울2",
+        "pair_id": "FGE0_000321",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000142",
+        "to_name": "신성남",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.91620584597848,
+            37.31049820185753
+          ],
+          [
+            126.89505130222216,
+            37.19432116693932
+          ],
+          [
+            126.88807282883279,
+            37.13933714576182
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000323",
+        "from_fgn": "FGN0_000100",
+        "from_name": "서서울2",
+        "pair_id": "FGE0_000323",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000305",
+        "to_name": "화성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.91620584597848,
+            37.31049820185753
+          ],
+          [
+            126.90955826369552,
+            37.356303831763334
+          ],
+          [
+            126.90537690351,
+            37.4022947271
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000324",
+        "from_fgn": "FGN0_000100",
+        "from_name": "서서울2",
+        "pair_id": "FGE0_000324",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000591",
+        "to_name": "서안양",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6017701,
+            37.5353658
+          ],
+          [
+            126.67712613625979,
+            37.5199991973804
+          ],
+          [
+            126.72884620790477,
+            37.51592296085198
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "NEAR_EXACT_UNRELATED_OVERLAP;SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000332",
+        "from_fgn": "FGN0_000102",
+        "from_name": "서인천",
+        "pair_id": "FGE0_000332",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000138",
+        "to_name": "신부평",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6017701,
+            37.5353658
+          ],
+          [
+            126.61211812164417,
+            37.58593409910222
+          ],
+          [
+            126.6264834558908,
+            37.63587787780124
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000337",
+        "from_fgn": "FGN0_000103",
+        "from_name": "서인천CC",
+        "pair_id": "FGE0_000337",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000127",
+        "to_name": "신김포",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6017701,
+            37.5353658
+          ],
+          [
+            126.67862159727405,
+            37.52619487711673
+          ],
+          [
+            126.72884620790477,
+            37.51592296085198
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "NEAR_EXACT_UNRELATED_OVERLAP;SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000338",
+        "from_fgn": "FGN0_000103",
+        "from_name": "서인천CC",
+        "pair_id": "FGE0_000338",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000138",
+        "to_name": "신부평",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6017701,
+            37.5353658
+          ],
+          [
+            126.60288114632277,
+            37.52306875212875
+          ],
+          [
+            126.60798067,
+            37.51142823
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000340",
+        "from_fgn": "FGN0_000103",
+        "from_name": "서인천CC",
+        "pair_id": "FGE0_000340",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000228",
+        "to_name": "인천CC",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.43089928377697,
+            36.17647817518565
+          ],
+          [
+            128.4559894588107,
+            36.27437138759232
+          ],
+          [
+            128.48505993153924,
+            36.37154407289441
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000342",
+        "from_fgn": "FGN0_000104",
+        "from_name": "선산",
+        "pair_id": "FGE0_000342",
+        "primary_admin_region": "대구광역시",
+        "to_fgn": "FGN0_000184",
+        "to_name": "안계",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.0396772,
+            37.5680601
+          ],
+          [
+            127.01588827135645,
+            37.570031638081396
+          ],
+          [
+            126.9920246,
+            37.5687541
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000350",
+        "from_fgn": "FGN0_000105",
+        "from_name": "성동",
+        "pair_id": "FGE0_000350",
+        "primary_admin_region": "서울특별시",
+        "to_fgn": "FGN0_000813",
+        "to_name": "종로",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.0396772,
+            37.5680601
+          ],
+          [
+            127.02561801561455,
+            37.56961741007612
+          ],
+          [
+            127.0114333,
+            37.5691926
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000352",
+        "from_fgn": "FGN0_000105",
+        "from_name": "성동",
+        "pair_id": "FGE0_000352",
+        "primary_admin_region": "서울특별시",
+        "to_fgn": "FGN0_000921",
+        "to_name": "흥인",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.3348389,
+            36.495537
+          ],
+          [
+            127.38420145111633,
+            36.52017826155114
+          ],
+          [
+            127.4607944,
+            36.5535774
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000357",
+        "from_fgn": "FGN0_000107",
+        "from_name": "세종",
+        "pair_id": "FGE0_000357",
+        "primary_admin_region": "세종특별자치시",
+        "to_fgn": "FGN0_000261",
+        "to_name": "청원",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.3348389,
+            36.495537
+          ],
+          [
+            127.2730823379261,
+            36.47439739571148
+          ],
+          [
+            127.2429593,
+            36.4666618
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000359",
+        "from_fgn": "FGN0_000107",
+        "from_name": "세종",
+        "pair_id": "FGE0_000359",
+        "primary_admin_region": "세종특별자치시",
+        "to_fgn": "FGN0_000586",
+        "to_name": "서세종",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.10922402138658,
+            34.910873923404274
+          ],
+          [
+            128.3545467831893,
+            35.14124259271396
+          ],
+          [
+            128.52765056358587,
+            35.28793222873844
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000406",
+        "from_fgn": "FGN0_000122",
+        "from_name": "신고성",
+        "pair_id": "FGE0_000406",
+        "primary_admin_region": "경상남도",
+        "to_fgn": "FGN0_000135",
+        "to_name": "신마산",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.10922402138658,
+            34.910873923404274
+          ],
+          [
+            128.4211493776161,
+            35.09167924402237
+          ],
+          [
+            128.6364928,
+            35.2036455
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000407",
+        "from_fgn": "FGN0_000122",
+        "from_name": "신고성",
+        "pair_id": "FGE0_000407",
+        "primary_admin_region": "경상남도",
+        "to_fgn": "FGN0_000251",
+        "to_name": "창원",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.93393885394264,
+            35.20857701448916
+          ],
+          [
+            126.92968452474805,
+            35.08674169763692
+          ],
+          [
+            126.92938312213192,
+            34.964854123851595
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000420",
+        "from_fgn": "FGN0_000124",
+        "from_name": "신광주",
+        "pair_id": "FGE0_000420",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000179",
+        "to_name": "신화순",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.50313105499512,
+            37.61696935646718
+          ],
+          [
+            127.37441981849194,
+            37.75109711959809
+          ],
+          [
+            127.17116225701317,
+            37.94608922746164
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000431",
+        "from_fgn": "FGN0_000125",
+        "from_name": "신가평",
+        "pair_id": "FGE0_000431",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000280",
+        "to_name": "포천LNGC/C",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6264834558908,
+            37.63587787780124
+          ],
+          [
+            126.61954319275758,
+            37.58564117726405
+          ],
+          [
+            126.6085778,
+            37.5358612
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000438",
+        "from_fgn": "FGN0_000127",
+        "from_name": "신김포",
+        "pair_id": "FGE0_000438",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000165",
+        "to_name": "신인천CC",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6264834558908,
+            37.63587787780124
+          ],
+          [
+            126.7001227592326,
+            37.68640819407161
+          ],
+          [
+            126.7711318289157,
+            37.73930685317052
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000439",
+        "from_fgn": "FGN0_000127",
+        "from_name": "신김포",
+        "pair_id": "FGE0_000439",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000173",
+        "to_name": "신파주",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.58057046464705,
+            36.854422123661394
+          ],
+          [
+            126.34330571416275,
+            36.89056034537371
+          ],
+          [
+            126.23078812935461,
+            36.90374456620991
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000453",
+        "from_fgn": "FGN0_000131",
+        "from_name": "신당진개폐소",
+        "pair_id": "FGE0_000453",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000267",
+        "to_name": "태안화력",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.58057046464705,
+            36.854422123661394
+          ],
+          [
+            126.66421151380666,
+            36.934905007583076
+          ],
+          [
+            126.72262159060469,
+            36.9867612629969
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000454",
+        "from_fgn": "FGN0_000131",
+        "from_name": "신당진개폐소",
+        "pair_id": "FGE0_000454",
+        "primary_admin_region": "충청남도",
+        "to_fgn": "FGN0_000302",
+        "to_name": "현대제철",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.76753251583655,
+            37.80559356884876
+          ],
+          [
+            126.82112952084945,
+            37.72207810939782
+          ],
+          [
+            126.8709366,
+            37.6371158
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000458",
+        "from_fgn": "FGN0_000134",
+        "from_name": "신덕은",
+        "pair_id": "FGE0_000458",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000217",
+        "to_name": "원흥",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.76753251583655,
+            37.80559356884876
+          ],
+          [
+            126.7784355045198,
+            37.81749204698653
+          ],
+          [
+            126.78578840508021,
+            37.83099676435944
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000463",
+        "from_fgn": "FGN0_000134",
+        "from_name": "신덕은",
+        "pair_id": "FGE0_000463",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000270",
+        "to_name": "파주문산CC",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.76753251583655,
+            37.80559356884876
+          ],
+          [
+            126.77488227362387,
+            37.81909896154765
+          ],
+          [
+            126.78578840508021,
+            37.83099676435944
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000464",
+        "from_fgn": "FGN0_000134",
+        "from_name": "신덕은",
+        "pair_id": "FGE0_000464",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000271",
+        "to_name": "파주발전소",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.72884620790477,
+            37.51592296085198
+          ],
+          [
+            126.7577613359395,
+            37.51055000530035
+          ],
+          [
+            126.7871369,
+            37.507118
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000481",
+        "from_fgn": "FGN0_000138",
+        "from_name": "신부평",
+        "pair_id": "FGE0_000481",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000444",
+        "to_name": "도당",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.72884620790477,
+            37.51592296085198
+          ],
+          [
+            126.75750242049472,
+            37.50959032022764
+          ],
+          [
+            126.78697318421018,
+            37.506429103168614
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "NEAR_EXACT_UNRELATED_OVERLAP;SEVERE_SAME_HUB_FANOUT_OVERLAP;VISUALLY_INDISTINGUISHABLE_PARALLEL",
+        "edge_id": "FGE0_000482",
+        "from_fgn": "FGN0_000138",
+        "from_name": "신부평",
+        "pair_id": "FGE0_000482",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000534",
+        "to_name": "부천",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.72884620790477,
+            37.51592296085198
+          ],
+          [
+            126.72738900443693,
+            37.5057633175301
+          ],
+          [
+            126.72349859791285,
+            37.49601862338993
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000483",
+        "from_fgn": "FGN0_000138",
+        "from_name": "신부평",
+        "pair_id": "FGE0_000483",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000536",
+        "to_name": "부흥",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.07750932604208,
+            37.221486017627605
+          ],
+          [
+            127.11262936135788,
+            37.230641330431396
+          ],
+          [
+            127.14629195807397,
+            37.24281222013337
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000499",
+        "from_fgn": "FGN0_000143",
+        "from_name": "신수원",
+        "pair_id": "FGE0_000499",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000159",
+        "to_name": "신용인",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.76145452921789,
+            37.3625623266057
+          ],
+          [
+            126.80716083522887,
+            37.40883680736837
+          ],
+          [
+            126.849659987413,
+            37.4570332338926
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000511",
+        "from_fgn": "FGN0_000145",
+        "from_name": "신시흥",
+        "pair_id": "FGE0_000511",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000200",
+        "to_name": "영서",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.76145452921789,
+            37.3625623266057
+          ],
+          [
+            126.82670657227753,
+            37.25163863115896
+          ],
+          [
+            126.88807282883279,
+            37.13933714576182
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000513",
+        "from_fgn": "FGN0_000145",
+        "from_name": "신시흥",
+        "pair_id": "FGE0_000513",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000305",
+        "to_name": "화성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.87871817520184,
+            37.30066923351525
+          ],
+          [
+            126.86084933562968,
+            37.306957911706085
+          ],
+          [
+            126.8441203,
+            37.3150043
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000521",
+        "from_fgn": "FGN0_000146",
+        "from_name": "신안산",
+        "pair_id": "FGE0_000521",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000615",
+        "to_name": "성포",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.28097805558647,
+            37.098172567131044
+          ],
+          [
+            127.21207352253458,
+            37.16954272685585
+          ],
+          [
+            127.14629195807397,
+            37.24281222013337
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000523",
+        "from_fgn": "FGN0_000147",
+        "from_name": "신안성",
+        "pair_id": "FGE0_000523",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000159",
+        "to_name": "신용인",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.55120547512195,
+            38.0158320602642
+          ],
+          [
+            128.40124659653372,
+            38.05368130778145
+          ],
+          [
+            128.1776215,
+            38.1139503
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000530",
+        "from_fgn": "FGN0_000149",
+        "from_name": "신양양",
+        "pair_id": "FGE0_000530",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000225",
+        "to_name": "인제",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.23835798548566,
+            36.081606892817334
+          ],
+          [
+            128.90109273856467,
+            36.34862333704587
+          ],
+          [
+            128.5405140029121,
+            36.596004572281394
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "NEAR_EXACT_UNRELATED_OVERLAP;SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000539",
+        "from_fgn": "FGN0_000152",
+        "from_name": "신영일",
+        "pair_id": "FGE0_000539",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000186",
+        "to_name": "안동복합CC",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.565426243237,
+            36.77527335638704
+          ],
+          [
+            128.8859210611879,
+            36.91060601550448
+          ],
+          [
+            129.3803041923275,
+            37.09262899033544
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000551",
+        "from_fgn": "FGN0_000154",
+        "from_name": "신영주",
+        "pair_id": "FGE0_000551",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000295",
+        "to_name": "한울NP2",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.565426243237,
+            36.77527335638704
+          ],
+          [
+            128.8951296034299,
+            36.89545871527849
+          ],
+          [
+            129.3838066,
+            37.0872223
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000552",
+        "from_fgn": "FGN0_000154",
+        "from_name": "신영주",
+        "pair_id": "FGE0_000552",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000296",
+        "to_name": "한울NP3",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.23522574966847,
+            37.178527541950935
+          ],
+          [
+            128.00757812977741,
+            37.258061953270136
+          ],
+          [
+            127.65843825395186,
+            37.362928647485724
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000590",
+        "from_fgn": "FGN0_000166",
+        "from_name": "신제천",
+        "pair_id": "FGE0_000590",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000195",
+        "to_name": "여주복합",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.3585602,
+            36.7483585
+          ],
+          [
+            127.38844504157838,
+            36.685055188011674
+          ],
+          [
+            127.4607944,
+            36.5535774
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000597",
+        "from_fgn": "FGN0_000167",
+        "from_name": "신중부",
+        "pair_id": "FGE0_000597",
+        "primary_admin_region": "충청북도",
+        "to_fgn": "FGN0_000261",
+        "to_name": "청원",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.42725721163711,
+            36.65479323531532
+          ],
+          [
+            127.44089195286273,
+            36.657135240353576
+          ],
+          [
+            127.4548257,
+            36.657507
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000604",
+        "from_fgn": "FGN0_000169",
+        "from_name": "신청주",
+        "pair_id": "FGE0_000604",
+        "primary_admin_region": "충청북도",
+        "to_fgn": "FGN0_000545",
+        "to_name": "북청주",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.96328586937912,
+            37.26074244902921
+          ],
+          [
+            129.0990633405309,
+            37.21048317555043
+          ],
+          [
+            129.3803041923275,
+            37.09262899033544
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000613",
+        "from_fgn": "FGN0_000172",
+        "from_name": "신태백",
+        "pair_id": "FGE0_000613",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000295",
+        "to_name": "한울NP2",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.96328586937912,
+            37.26074244902921
+          ],
+          [
+            129.0966228735725,
+            37.20313037834971
+          ],
+          [
+            129.3838066,
+            37.0872223
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000614",
+        "from_fgn": "FGN0_000172",
+        "from_name": "신태백",
+        "pair_id": "FGE0_000614",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000296",
+        "to_name": "한울NP3",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.79336966212267,
+            37.00430578677397
+          ],
+          [
+            126.85596593164853,
+            37.09693045660341
+          ],
+          [
+            126.88807282883279,
+            37.13933714576182
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000620",
+        "from_fgn": "FGN0_000175",
+        "from_name": "신평택CC",
+        "pair_id": "FGE0_000620",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000305",
+        "to_name": "화성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.161668361421,
+            37.951324773749484
+          ],
+          [
+            127.19039886523112,
+            37.933681795870086
+          ],
+          [
+            127.22058134239693,
+            37.91763900937004
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000621",
+        "from_fgn": "FGN0_000176",
+        "from_name": "신포천",
+        "pair_id": "FGE0_000621",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000278",
+        "to_name": "포천",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6924144,
+            37.48882524
+          ],
+          [
+            126.65085235317194,
+            37.50167222313117
+          ],
+          [
+            126.60798067,
+            37.51142823
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000650",
+        "from_fgn": "FGN0_000181",
+        "from_name": "신가좌",
+        "pair_id": "FGE0_000650",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000228",
+        "to_name": "인천CC",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.9239626,
+            36.7910375
+          ],
+          [
+            126.90807645583935,
+            36.96532527444803
+          ],
+          [
+            126.88807282883279,
+            37.13933714576182
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000655",
+        "from_fgn": "FGN0_000183",
+        "from_name": "아산",
+        "pair_id": "FGE0_000655",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000305",
+        "to_name": "화성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.97819960793012,
+            37.73221837335117
+          ],
+          [
+            128.79896079726402,
+            37.84467880282917
+          ],
+          [
+            128.5366525,
+            38.02019129
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000662",
+        "from_fgn": "FGN0_000187",
+        "from_name": "안인",
+        "pair_id": "FGE0_000662",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000190",
+        "to_name": "양양PP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.92163137214476,
+            37.6471655
+          ],
+          [
+            128.79639654235703,
+            37.76506869639789
+          ],
+          [
+            128.5366525,
+            38.02019129
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000663",
+        "from_fgn": "FGN0_000188",
+        "from_name": "안인개폐소",
+        "pair_id": "FGE0_000663",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000190",
+        "to_name": "양양PP",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.9202226294506,
+            37.684347490849376
+          ],
+          [
+            126.92008458661815,
+            37.61426880682109
+          ],
+          [
+            126.91644065088201,
+            37.544260295835564
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000667",
+        "from_fgn": "FGN0_000191",
+        "from_name": "양주",
+        "pair_id": "FGE0_000667",
+        "primary_admin_region": "서울특별시",
+        "to_fgn": "FGN0_000244",
+        "to_name": "중부",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.6888778,
+            34.8397949
+          ],
+          [
+            127.71228650407174,
+            34.845925046142206
+          ],
+          [
+            127.7348594,
+            34.85391
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000680",
+        "from_fgn": "FGN0_000193",
+        "from_name": "여수TP",
+        "pair_id": "FGE0_000680",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000974",
+        "to_name": "호남TP",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.849659987413,
+            37.4570332338926
+          ],
+          [
+            126.81963759132708,
+            37.458444456978995
+          ],
+          [
+            126.789862,
+            37.4618211
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000695",
+        "from_fgn": "FGN0_000200",
+        "from_name": "영서",
+        "pair_id": "FGE0_000695",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000620",
+        "to_name": "소래",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.849659987413,
+            37.4570332338926
+          ],
+          [
+            126.87363567162988,
+            37.45446958832859
+          ],
+          [
+            126.8971519,
+            37.449952
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000696",
+        "from_fgn": "FGN0_000200",
+        "from_name": "영서",
+        "pair_id": "FGE0_000696",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000642",
+        "to_name": "시흥",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.4166141,
+            36.1163659
+          ],
+          [
+            128.42134549856843,
+            36.04368920531663
+          ],
+          [
+            128.422079,
+            35.9709127
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "NEAR_EXACT_UNRELATED_OVERLAP",
+        "edge_id": "FGE0_000734",
+        "from_fgn": "FGN0_000224",
+        "from_name": "인동",
+        "pair_id": "FGE0_000734",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000263",
+        "to_name": "칠곡",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.60798067,
+            37.51142823
+          ],
+          [
+            126.6667300839852,
+            37.24928740923967
+          ],
+          [
+            126.72262159060469,
+            36.9867612629969
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000744",
+        "from_fgn": "FGN0_000228",
+        "from_name": "인천CC",
+        "pair_id": "FGE0_000744",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000302",
+        "to_name": "현대제철",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.60798067,
+            37.51142823
+          ],
+          [
+            126.64131335578516,
+            37.5209328340826
+          ],
+          [
+            126.6754096,
+            37.5285386
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000745",
+        "from_fgn": "FGN0_000228",
+        "from_name": "인천CC",
+        "pair_id": "FGE0_000745",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000544",
+        "to_name": "북인천",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.91644065088201,
+            37.544260295835564
+          ],
+          [
+            126.93138904593226,
+            37.54215964715499
+          ],
+          [
+            126.9465674,
+            37.5420315
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000758",
+        "from_fgn": "FGN0_000244",
+        "from_name": "중부",
+        "pair_id": "FGE0_000758",
+        "primary_admin_region": "서울특별시",
+        "to_fgn": "FGN0_000484",
+        "to_name": "마포",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.4607944,
+            36.5535774
+          ],
+          [
+            127.4531570818241,
+            36.580385282025084
+          ],
+          [
+            127.4431385,
+            36.6066787
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000785",
+        "from_fgn": "FGN0_000261",
+        "from_name": "청원",
+        "pair_id": "FGE0_000785",
+        "primary_admin_region": "충청북도",
+        "to_fgn": "FGN0_000817",
+        "to_name": "죽림",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.4607944,
+            36.5535774
+          ],
+          [
+            127.48682878778239,
+            36.575302684228674
+          ],
+          [
+            127.5110548,
+            36.5983537
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000786",
+        "from_fgn": "FGN0_000261",
+        "from_name": "청원",
+        "pair_id": "FGE0_000786",
+        "primary_admin_region": "충청북도",
+        "to_fgn": "FGN0_000852",
+        "to_name": "청주",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.7963397,
+            37.0052173
+          ],
+          [
+            126.84394182948091,
+            37.0715062656027
+          ],
+          [
+            126.88807282883279,
+            37.13933714576182
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000800",
+        "from_fgn": "FGN0_000273",
+        "from_name": "평택TP",
+        "pair_id": "FGE0_000800",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000305",
+        "to_name": "화성",
+        "voltage_band": "345",
+        "voltage_kv": 345
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.6473007,
+            37.5500346
+          ],
+          [
+            126.5620652622873,
+            37.52144260004829
+          ],
+          [
+            126.4753931,
+            37.4958054
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP;UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000868",
+        "from_fgn": "FGN0_000328",
+        "from_name": "경서",
+        "pair_id": "FGE0_000868",
+        "primary_admin_region": "인천광역시",
+        "to_fgn": "FGN0_000713",
+        "to_name": "영종",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.0851578,
+            37.7473931
+          ],
+          [
+            127.06916592876689,
+            37.70104460239324
+          ],
+          [
+            127.0556123,
+            37.6542096
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_000933",
+        "from_fgn": "FGN0_000369",
+        "from_name": "금오",
+        "pair_id": "FGE0_000933",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000572",
+        "to_name": "상계",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.6974034,
+            35.8362606
+          ],
+          [
+            128.75194359946494,
+            35.85159876361692
+          ],
+          [
+            128.83472214401178,
+            35.872198110220545
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_000988",
+        "from_fgn": "FGN0_000403",
+        "from_name": "노변",
+        "pair_id": "FGE0_000988",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000834",
+        "to_name": "진량",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.3778793,
+            36.3799337
+          ],
+          [
+            127.37624957377211,
+            36.36818392934325
+          ],
+          [
+            127.37707145093506,
+            36.35637915416816
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001032",
+        "from_fgn": "FGN0_000426",
+        "from_name": "대덕",
+        "pair_id": "FGE0_001032",
+        "primary_admin_region": "대전광역시",
+        "to_fgn": "FGN0_000474",
+        "to_name": "둔지",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.3759552,
+            35.9483847
+          ],
+          [
+            129.36535081521941,
+            35.99989452384002
+          ],
+          [
+            129.3571495,
+            36.0516937
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_001038",
+        "from_fgn": "FGN0_000431",
+        "from_name": "대송",
+        "pair_id": "FGE0_001038",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000549",
+        "to_name": "북포항",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.2204191,
+            37.5929792
+          ],
+          [
+            127.19236461755474,
+            37.61082226504109
+          ],
+          [
+            127.1628094,
+            37.6270671
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001050",
+        "from_fgn": "FGN0_000438",
+        "from_name": "덕소",
+        "pair_id": "FGE0_001050",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000830",
+        "to_name": "진건",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            126.4185219,
+            34.8195533
+          ],
+          [
+            126.39942897339246,
+            34.82162782010017
+          ],
+          [
+            126.3801712,
+            34.8217203
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001131",
+        "from_fgn": "FGN0_000498",
+        "from_name": "목포",
+        "pair_id": "FGE0_001131",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000550",
+        "to_name": "북항",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.11745396003461,
+            37.65244684979508
+          ],
+          [
+            127.14085304223168,
+            37.640570023536554
+          ],
+          [
+            127.1628094,
+            37.6270671
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001163",
+        "from_fgn": "FGN0_000519",
+        "from_name": "별내",
+        "pair_id": "FGE0_001163",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000830",
+        "to_name": "진건",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            129.1131536,
+            37.491885
+          ],
+          [
+            129.0352781763057,
+            37.6410263122306
+          ],
+          [
+            128.9800638,
+            37.7393621
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001205",
+        "from_fgn": "FGN0_000548",
+        "from_name": "북평",
+        "pair_id": "FGE0_001205",
+        "primary_admin_region": "강원특별자치도",
+        "to_fgn": "FGN0_000709",
+        "to_name": "영동TP",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.2708973,
+            36.9738245
+          ],
+          [
+            127.32229004492201,
+            36.97852597271794
+          ],
+          [
+            127.43186112435737,
+            36.98535609002282
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001261",
+        "from_fgn": "FGN0_000592",
+        "from_name": "서운",
+        "pair_id": "FGE0_001261",
+        "primary_admin_region": "경기도",
+        "to_fgn": "FGN0_000923",
+        "to_name": "광혜원SS",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.2650843,
+            35.0436885
+          ],
+          [
+            127.34635592527309,
+            34.99538737952743
+          ],
+          [
+            127.4260955,
+            34.9454387
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001299",
+        "from_fgn": "FGN0_000640",
+        "from_name": "승주",
+        "pair_id": "FGE0_001299",
+        "primary_admin_region": "전남광주통합특별시",
+        "to_fgn": "FGN0_000966",
+        "to_name": "주암HP",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.9916622,
+            35.1713451
+          ],
+          [
+            128.99220737674156,
+            35.1594788491267
+          ],
+          [
+            128.99514942741354,
+            35.14785257475343
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001326",
+        "from_fgn": "FGN0_000693",
+        "from_name": "엄궁",
+        "pair_id": "FGE0_001326",
+        "primary_admin_region": "부산광역시",
+        "to_fgn": "FGN0_000889",
+        "to_name": "학장",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            127.0817522,
+            37.5035831
+          ],
+          [
+            127.06858437353203,
+            37.50865983683024
+          ],
+          [
+            127.06332155456906,
+            37.51230212656703
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP;UNRELATED_FACILITY_MARKER_PASS_THROUGH",
+        "edge_id": "FGE0_001385",
+        "from_fgn": "FGN0_000792",
+        "from_name": "잠실",
+        "pair_id": "FGE0_001385",
+        "primary_admin_region": "서울특별시",
+        "to_fgn": "FGN0_000971",
+        "to_name": "탄천SS",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          [
+            128.1714403,
+            36.6034984
+          ],
+          [
+            128.16413940375932,
+            36.529841224837746
+          ],
+          [
+            128.14822243152852,
+            36.4197639022872
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "bend_count": 1,
+        "correction_reason": "SEVERE_SAME_HUB_FANOUT_OVERLAP",
+        "edge_id": "FGE0_001393",
+        "from_fgn": "FGN0_000803",
+        "from_name": "점촌",
+        "pair_id": "FGE0_001393",
+        "primary_admin_region": "경상북도",
+        "to_fgn": "FGN0_000932",
+        "to_name": "동상주SS",
+        "voltage_band": "154",
+        "voltage_kv": 154
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}

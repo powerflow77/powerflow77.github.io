@@ -2756,8 +2756,8 @@
             37.7664075
           ],
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ]
         ],
         "type": "LineString"
@@ -2771,7 +2771,7 @@
         "highest_voltage_kv": 345,
         "relation_type": "CANDIDATE_154KV_LINE;FROZEN_345KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 13.014,
+        "straight_distance_km": 13.049,
         "to_fgn": "FGN0_000191",
         "to_name": "양주",
         "voltage_band": "345",
@@ -4097,8 +4097,8 @@
             37.899377390271
           ],
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ]
         ],
         "type": "LineString"
@@ -4112,7 +4112,7 @@
         "highest_voltage_kv": 345,
         "relation_type": "FROZEN_345KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 28.139,
+        "straight_distance_km": 28.111,
         "to_fgn": "FGN0_000191",
         "to_name": "양주",
         "voltage_band": "345",
@@ -5005,37 +5005,6 @@
         "to_name": "정선",
         "voltage_band": "154",
         "voltage_classes": "154"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
-          [
-            129.38504227025348,
-            37.08013506053152
-          ],
-          [
-            127.50313105499512,
-            37.61696935646718
-          ]
-        ],
-        "type": "LineString"
-      },
-      "properties": {
-        "cartographic_geometry_mode": "STRAIGHT_DEFAULT",
-        "circuit_count": "1",
-        "edge_id": "FGE0_000177",
-        "from_fgn": "FGN0_000052",
-        "from_name": "동해안",
-        "highest_voltage_kv": 345,
-        "relation_type": "FROZEN_345KV_LINE",
-        "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 176.734,
-        "to_fgn": "FGN0_000125",
-        "to_name": "신가평",
-        "voltage_band": "345",
-        "voltage_classes": "345"
       },
       "type": "Feature"
     },
@@ -10611,8 +10580,8 @@
             36.495537
           ],
           [
-            127.3610589,
-            36.4936436
+            127.2970974136052,
+            36.518733438049864
           ]
         ],
         "type": "LineString"
@@ -10626,7 +10595,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 2.353,
+        "straight_distance_km": 4.246,
         "to_fgn": "FGN0_000765",
         "to_name": "월산",
         "voltage_band": "154",
@@ -17337,8 +17306,8 @@
             37.7567247
           ],
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ]
         ],
         "type": "LineString"
@@ -17352,7 +17321,7 @@
         "highest_voltage_kv": 345,
         "relation_type": "FROZEN_345KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 17.035,
+        "straight_distance_km": 16.991,
         "to_fgn": "FGN0_000191",
         "to_name": "양주",
         "voltage_band": "345",
@@ -18287,8 +18256,8 @@
             37.73930685317052
           ],
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ]
         ],
         "type": "LineString"
@@ -18302,7 +18271,7 @@
         "highest_voltage_kv": 345,
         "relation_type": "FROZEN_345KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 14.424,
+        "straight_distance_km": 14.469,
         "to_fgn": "FGN0_000191",
         "to_name": "양주",
         "voltage_band": "345",
@@ -19702,8 +19671,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             126.92008458661815,
@@ -19725,7 +19694,7 @@
         "highest_voltage_kv": 345,
         "relation_type": "FROZEN_345KV_LINE",
         "route_semantics": "WEB_ONLY_SELECTIVE_CARTOGRAPHIC_BEND_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 15.578,
+        "straight_distance_km": 15.581,
         "to_fgn": "FGN0_000244",
         "to_name": "중부",
         "voltage_band": "345",
@@ -19737,8 +19706,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             126.8184613,
@@ -19756,7 +19725,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 9.207,
+        "straight_distance_km": 9.256,
         "to_fgn": "FGN0_000335",
         "to_name": "고양",
         "voltage_band": "154",
@@ -19768,8 +19737,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             127.0180468,
@@ -19787,7 +19756,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 11.791,
+        "straight_distance_km": 11.753,
         "to_fgn": "FGN0_000408",
         "to_name": "녹양",
         "voltage_band": "154",
@@ -19799,8 +19768,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             127.0272112,
@@ -19818,7 +19787,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 10.319,
+        "straight_distance_km": 10.273,
         "to_fgn": "FGN0_000662",
         "to_name": "쌍문",
         "voltage_band": "154",
@@ -19830,8 +19799,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             126.9371009,
@@ -19849,7 +19818,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 8.391,
+        "straight_distance_km": 8.383,
         "to_fgn": "FGN0_000774",
         "to_name": "은평",
         "voltage_band": "154",
@@ -19861,8 +19830,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             126.79729339044096,
@@ -19880,7 +19849,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 11.492,
+        "straight_distance_km": 11.54,
         "to_fgn": "FGN0_000789",
         "to_name": "일산",
         "voltage_band": "154",
@@ -19892,8 +19861,8 @@
       "geometry": {
         "coordinates": [
           [
-            126.9196524,
-            37.6843357
+            126.9202226294506,
+            37.684347490849376
           ],
           [
             126.91839207851196,
@@ -19911,7 +19880,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 4.051,
+        "straight_distance_km": 4.054,
         "to_fgn": "FGN0_000967",
         "to_name": "지축SS",
         "voltage_band": "154",
@@ -35468,8 +35437,8 @@
             36.5197244
           ],
           [
-            127.3610589,
-            36.4936436
+            127.2970974136052,
+            36.518733438049864
           ]
         ],
         "type": "LineString"
@@ -35483,7 +35452,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 3.042,
+        "straight_distance_km": 6.634,
         "to_fgn": "FGN0_000765",
         "to_name": "월산",
         "voltage_band": "154",
@@ -37518,8 +37487,8 @@
             36.4666618
           ],
           [
-            127.3610589,
-            36.4936436
+            127.2970974136052,
+            36.518733438049864
           ]
         ],
         "type": "LineString"
@@ -37533,7 +37502,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 10.977,
+        "straight_distance_km": 7.546,
         "to_fgn": "FGN0_000765",
         "to_name": "월산",
         "voltage_band": "154",
@@ -41308,8 +41277,8 @@
       "geometry": {
         "coordinates": [
           [
-            127.3610589,
-            36.4936436
+            127.2970974136052,
+            36.518733438049864
           ],
           [
             127.2739207,
@@ -41327,7 +41296,7 @@
         "highest_voltage_kv": 154,
         "relation_type": "CANDIDATE_154KV_LINE",
         "route_semantics": "STRAIGHT_ENDPOINT_CONNECTIVITY_NOT_ACTUAL_ROUTE",
-        "straight_distance_km": 13.407,
+        "straight_distance_km": 8.385,
         "to_fgn": "FGN0_000812",
         "to_name": "조치원",
         "voltage_band": "154",

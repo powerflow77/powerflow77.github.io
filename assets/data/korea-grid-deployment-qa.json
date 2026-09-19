@@ -1,26 +1,123 @@
 {
   "broken_endpoint_references": [],
   "canonical_inputs_read_only": true,
-  "checkpoint": "M1I_M3BA_M2K",
+  "checkpoint": "M1L_M3BD_M2N",
   "checks": [
     {
+      "detail": [
+        "BTB_ASSET_MASTER",
+        "DC_TERMINAL_REGISTRY",
+        "FUTURE_HVDC_REGISTRY",
+        "HVDC_ASSET_MASTER",
+        "PTP_DC_LINKS"
+      ],
+      "name": "M2N manifest includes HVDC_ASSET_MASTER",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "94F5F4AFAEDAF91080D5B6D65787E9765F244C11D12618019AF87EAC598D62D8",
+        "expected": "94F5F4AFAEDAF91080D5B6D65787E9765F244C11D12618019AF87EAC598D62D8",
+        "path": "current_topology_m2m_hvdc_asset_master.csv"
+      },
+      "name": "M2N manifest SHA-256 matches HVDC_ASSET_MASTER",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "BTB_ASSET_MASTER",
+        "DC_TERMINAL_REGISTRY",
+        "FUTURE_HVDC_REGISTRY",
+        "HVDC_ASSET_MASTER",
+        "PTP_DC_LINKS"
+      ],
+      "name": "M2N manifest includes BTB_ASSET_MASTER",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "083C9F0C4E335556006B0D5CA8B359EEAA32D47D868F0027A3F992AB110F3113",
+        "expected": "083C9F0C4E335556006B0D5CA8B359EEAA32D47D868F0027A3F992AB110F3113",
+        "path": "current_topology_m2m_btb_asset_master.csv"
+      },
+      "name": "M2N manifest SHA-256 matches BTB_ASSET_MASTER",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "BTB_ASSET_MASTER",
+        "DC_TERMINAL_REGISTRY",
+        "FUTURE_HVDC_REGISTRY",
+        "HVDC_ASSET_MASTER",
+        "PTP_DC_LINKS"
+      ],
+      "name": "M2N manifest includes FUTURE_HVDC_REGISTRY",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "actual": "16D54E7F4022A828C8F02F15E10B5FD0F1A1D5FE7B95CD8FD078538CF12ED951",
+        "expected": "16D54E7F4022A828C8F02F15E10B5FD0F1A1D5FE7B95CD8FD078538CF12ED951",
+        "path": "current_topology_m2n_future_hvdc_registry.csv"
+      },
+      "name": "M2N manifest SHA-256 matches FUTURE_HVDC_REGISTRY",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        "generator_g21_capacity_accounting.csv",
+        "generator_g21_family_master.csv",
+        "generator_g21_generator_attachment_edges.csv",
+        "generator_g21_hash_manifest.csv",
+        "generator_g21_injection_group_master.csv",
+        "generator_g21_injection_group_membership.csv",
+        "generator_g21_integrity.json",
+        "generator_g21_internal_hv_interface_master.csv",
+        "generator_g21_m2_compatibility.csv",
+        "generator_g21_machine_family_membership.csv",
+        "generator_g21_machine_master_840.csv",
+        "generator_g21_model_use_authorization.csv",
+        "generator_g21_non_tx_machine_layer.csv",
+        "generator_g21_noncurrent_duplicate_registry.csv",
+        "generator_g21_physical_station_attachment.csv",
+        "generator_g21_public_data_ceiling_registry.csv",
+        "generator_g21_scope_unknown_machine_layer.csv",
+        "generator_g21_source_detail_conflict_registry.csv",
+        "generator_g21_summary.json",
+        "generator_g21_tx_injection_group_layer.csv",
+        "generator_g21_tx_machine_layer.csv"
+      ],
+      "name": "G21 canonical artifact set present",
+      "status": "PASS"
+    },
+    {
       "detail": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
-      "name": "A+ registry SHA-256",
+      "name": "A+ source registry SHA-256",
       "status": "PASS"
     },
     {
-      "detail": 958,
-      "name": "M1I physical-site count",
+      "detail": 957,
+      "name": "M1L physical-site count",
       "status": "PASS"
     },
     {
-      "detail": 958,
-      "name": "M3BA coordinate count",
+      "detail": 957,
+      "name": "M3BD coordinate count",
       "status": "PASS"
     },
     {
-      "detail": 1446,
-      "name": "M2K AC-pair count",
+      "detail": 957,
+      "name": "M3BD facility GeoJSON count",
+      "status": "PASS"
+    },
+    {
+      "detail": 1445,
+      "name": "M2N AC-pair count",
+      "status": "PASS"
+    },
+    {
+      "detail": 1445,
+      "name": "M3BD/M2N AC-pair GeoJSON count",
       "status": "PASS"
     },
     {
@@ -34,63 +131,108 @@
       "status": "PASS"
     },
     {
-      "detail": 98,
-      "name": "A+ registry row count",
+      "detail": 7,
+      "name": "M2N zero-degree registry count",
       "status": "PASS"
     },
     {
       "detail": 98,
-      "name": "A+ GeoJSON feature count",
+      "name": "A+ source registry row count",
+      "status": "PASS"
+    },
+    {
+      "detail": 98,
+      "name": "A+ source GeoJSON feature count",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "unique M1I FGN",
+      "name": "unique M1L FGN",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "unique M3BA FGN",
+      "name": "unique M3BD FGN",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "M1I/M3BA FGN set equality",
+      "name": "unique M3BD facility GeoJSON FGN",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "unique M2K pair IDs",
+      "name": "M1L/M3BD CSV/GeoJSON FGN set equality",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "unique A+ registry pair IDs",
+      "name": "unique M2N CSV pair IDs",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "unique A+ GeoJSON pair IDs",
+      "name": "unique M3BD/M2N GeoJSON pair IDs",
       "status": "PASS"
     },
     {
       "detail": null,
-      "name": "A+ CSV/GeoJSON pair ID equality",
+      "name": "M2N CSV/GeoJSON pair ID equality",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique A+ source registry pair IDs",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "unique A+ source GeoJSON pair IDs",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "A+ source CSV/GeoJSON pair ID equality",
       "status": "PASS"
     },
     {
       "detail": [],
-      "name": "all A+ pair IDs exist in M2K",
+      "name": "M3BD CSV/GeoJSON coordinates identical",
       "status": "PASS"
     },
     {
       "detail": [],
-      "name": "98/98 A+ endpoint IDs and coordinates preserved",
+      "name": "M3BD/M2N canonical display geometries preserve exact endpoints",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "invalid_rule": [],
+        "retired_endpoint": [],
+        "stale_pair": [],
+        "surviving": 98
+      },
+      "name": "all 98 source A+ proposals adjudicated against M2N",
       "status": "PASS"
     },
     {
       "detail": [],
-      "name": "98/98 A+ rules preserved",
+      "name": "stale A+ pair references in production = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "retired A+ endpoint references in production = 0",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "surviving A+ endpoint IDs and M3BD coordinates preserved",
+      "status": "PASS"
+    },
+    {
+      "detail": [],
+      "name": "surviving A+ rules preserved",
       "status": "PASS"
     },
     {
@@ -100,7 +242,39 @@
     },
     {
       "detail": null,
-      "name": "all M3BA coordinates accepted",
+      "name": "all M3BD coordinates accepted",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "FGN0_000052 absent from current M1L/M3BD display",
+      "status": "PASS"
+    },
+    {
+      "detail": null,
+      "name": "FGE0_000177 absent from current M2N display",
+      "status": "PASS"
+    },
+    {
+      "detail": [
+        {
+          "future_id": "M2CFUT001",
+          "inclusion": "NO"
+        },
+        {
+          "future_id": "M2CFUT002",
+          "inclusion": "NO"
+        },
+        {
+          "future_id": "M2CFUT003",
+          "inclusion": "NO"
+        },
+        {
+          "future_id": "M2CFUT004",
+          "inclusion": "NO"
+        }
+      ],
+      "name": "future HVDC registry excluded from current display",
       "status": "PASS"
     },
     {
@@ -119,13 +293,53 @@
       "status": "PASS"
     },
     {
-      "detail": 98,
-      "name": "98/98 A+ corrected geometries materialized",
+      "detail": [
+        "FGN0_000500",
+        "FGN0_000686",
+        "FGN0_000700",
+        "FGN0_000818",
+        "FGN0_000893",
+        "FGN0_000994",
+        "FGN0_000995"
+      ],
+      "name": "integrated zero-degree count",
       "status": "PASS"
     },
     {
-      "detail": 1348,
-      "name": "1,348 straight geometries retained",
+      "detail": {
+        "computed": [
+          "FGN0_000500",
+          "FGN0_000686",
+          "FGN0_000700",
+          "FGN0_000818",
+          "FGN0_000893",
+          "FGN0_000994",
+          "FGN0_000995"
+        ],
+        "registry": [
+          "FGN0_000500",
+          "FGN0_000686",
+          "FGN0_000700",
+          "FGN0_000818",
+          "FGN0_000893",
+          "FGN0_000994",
+          "FGN0_000995"
+        ]
+      },
+      "name": "M2N zero-degree registry matches rendered connectivity",
+      "status": "PASS"
+    },
+    {
+      "detail": 98,
+      "name": "all surviving A+ corrected geometries materialized",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "corrected": 98,
+        "straight": 1347
+      },
+      "name": "straight plus corrected AC count equals M2N",
       "status": "PASS"
     },
     {
@@ -138,23 +352,85 @@
         "after": {
           "a_plus_geojson": "5CCBE87702A314B4EF03CB253A340BF6EE1E14139D8EE570F2DAEE8C168873DD",
           "a_plus_registry": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
-          "ac_pairs": "25E1F2B850E044EF4BD308957F974B8CD5444CBBC135E77173F97981CED8C307",
-          "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
-          "coordinates": "9C6FA579FCE81C6CC13A550635A8379438DBF9E140C574EEBB512FAA84D3EB78",
-          "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
-          "stations": "9FC0AD6888D9FEB9B959222A538C236C749E2E4A70829FAAC39BDBAE73C13D4C"
+          "ac_geojson": "79FBB8B81D44EEA0312F95A8A2A9FD425C95C25FF2F0A797DD660F527ECCFE40",
+          "ac_pairs": "5813C2394B877ADE2C579799AA58B22FCBC5130B2336376809B31E3586DA1EFF",
+          "btb": "083C9F0C4E335556006B0D5CA8B359EEAA32D47D868F0027A3F992AB110F3113",
+          "coordinates": "412121882CC479AC4FCA5DEE5132C3E063A14A1F3FCC8411CE2A5A974C7136CD",
+          "facility_geojson": "4221066A83C6CA14D9D735E19DE0CEAB3958629194EECB15909B4E38B3025392",
+          "future_hvdc": "16D54E7F4022A828C8F02F15E10B5FD0F1A1D5FE7B95CD8FD078538CF12ED951",
+          "hvdc": "94F5F4AFAEDAF91080D5B6D65787E9765F244C11D12618019AF87EAC598D62D8",
+          "hvdc_manifest": "5B1A9C9B4150E029D2E34125CEA48EFA397EC6DF2B5D7C21BD5F0375CB888C51",
+          "stations": "B361BE3BE43AA217EB49B0C78A53190BCF1AA4B669A8C841605CF91E8E4A3378",
+          "zero_degree": "97189E249C8E00014BBF9EE579FF06EE992DF50479F46D69107E00F694511693"
         },
         "before": {
           "a_plus_geojson": "5CCBE87702A314B4EF03CB253A340BF6EE1E14139D8EE570F2DAEE8C168873DD",
           "a_plus_registry": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
-          "ac_pairs": "25E1F2B850E044EF4BD308957F974B8CD5444CBBC135E77173F97981CED8C307",
-          "btb": "B2E86C3655EF8E0D542CA0B3A1A52A1ABEFE70452CD14D5209A87B6194404321",
-          "coordinates": "9C6FA579FCE81C6CC13A550635A8379438DBF9E140C574EEBB512FAA84D3EB78",
-          "hvdc": "7D88B797E16DD1951A0E2A721A5E4E21A54B6E7C4BE11646ECE835D474F9E96C",
-          "stations": "9FC0AD6888D9FEB9B959222A538C236C749E2E4A70829FAAC39BDBAE73C13D4C"
+          "ac_geojson": "79FBB8B81D44EEA0312F95A8A2A9FD425C95C25FF2F0A797DD660F527ECCFE40",
+          "ac_pairs": "5813C2394B877ADE2C579799AA58B22FCBC5130B2336376809B31E3586DA1EFF",
+          "btb": "083C9F0C4E335556006B0D5CA8B359EEAA32D47D868F0027A3F992AB110F3113",
+          "coordinates": "412121882CC479AC4FCA5DEE5132C3E063A14A1F3FCC8411CE2A5A974C7136CD",
+          "facility_geojson": "4221066A83C6CA14D9D735E19DE0CEAB3958629194EECB15909B4E38B3025392",
+          "future_hvdc": "16D54E7F4022A828C8F02F15E10B5FD0F1A1D5FE7B95CD8FD078538CF12ED951",
+          "hvdc": "94F5F4AFAEDAF91080D5B6D65787E9765F244C11D12618019AF87EAC598D62D8",
+          "hvdc_manifest": "5B1A9C9B4150E029D2E34125CEA48EFA397EC6DF2B5D7C21BD5F0375CB888C51",
+          "stations": "B361BE3BE43AA217EB49B0C78A53190BCF1AA4B669A8C841605CF91E8E4A3378",
+          "zero_degree": "97189E249C8E00014BBF9EE579FF06EE992DF50479F46D69107E00F694511693"
         }
       },
       "name": "canonical and proposal inputs unchanged",
+      "status": "PASS"
+    },
+    {
+      "detail": {
+        "after": {
+          "generator_g21_capacity_accounting.csv": "769FF460BA22BED028812FB95180AEBF4A0EDA6918B7BC3E32E317A48C6ECC77",
+          "generator_g21_family_master.csv": "8BD93C57B38E0E9ADBBD4B0D270376909217C3878D6E93256127B9F0F6D42C6C",
+          "generator_g21_generator_attachment_edges.csv": "23514C99A31EEE0AFE41EE402A5334B38EE66F7D5E47672DF8477FFBD92A1090",
+          "generator_g21_hash_manifest.csv": "83FC29E12B726B84CFF873A917B490219369AF8045B30F267C29E9C205E2F155",
+          "generator_g21_injection_group_master.csv": "1EF276BE0211E17B9173FBAB2D9C10572ED4D0538505E61F9F33F3127E4218C2",
+          "generator_g21_injection_group_membership.csv": "E32F424D9C550884639A0A7BDF0D0392E239B824D7E94D54F2F571289D6FAA73",
+          "generator_g21_integrity.json": "51366BB32D2BE7A825BC03F4DCD5BA8E40B52C547587191307143B222D132025",
+          "generator_g21_internal_hv_interface_master.csv": "31E325F7A3074C88589D938C504E2DD9E1B257842B5FC2BBF4B20C5DE955385B",
+          "generator_g21_m2_compatibility.csv": "9E3ABF25F9D945FC06336E84C48A285E927EB6BF5FD69E9D9490D5D2BF0EF4F4",
+          "generator_g21_machine_family_membership.csv": "BDB0601D5452C6AA771DC35C0DDF7DD4A9C97B824770274141437BF1B0ED3B62",
+          "generator_g21_machine_master_840.csv": "43462C63B4A74478D967D3188FA9C3732822DC5FFD0684A82A115D63031B9E60",
+          "generator_g21_model_use_authorization.csv": "6F058C24642BCF0C840D4DDE2F084138672455EAC7C043DCFC8CA5B626CC63F2",
+          "generator_g21_non_tx_machine_layer.csv": "58C2B6476A31F58FBB3B39FDB70DB0EB4B379A69CE42806CB36B5D565F0415DB",
+          "generator_g21_noncurrent_duplicate_registry.csv": "953A542D47F814184E28AC0BCF871FDD38E183EF8634B5D974027D8876BC2E3A",
+          "generator_g21_physical_station_attachment.csv": "6A90D86607A60762234E257290C7EE1300CB919BFED0A365EB33684EA334FBB6",
+          "generator_g21_public_data_ceiling_registry.csv": "244D243C6DA4C5A2319D553B8EC0D6139AF74774E21B74047F964D9F7AB4C58F",
+          "generator_g21_scope_unknown_machine_layer.csv": "2AC8789A2A7EFBFF31BC8CD889D438AB1DC557BA07D10BDC7A24C6197B16F03F",
+          "generator_g21_source_detail_conflict_registry.csv": "663411EC9BE40DA2B7EFDE5571B49A4817602A25C9481947FEFB6593EEAF070B",
+          "generator_g21_summary.json": "386A00389C8DC9D46075EFAE05554216BAD18069C2CD07034919FEC4E8F1003D",
+          "generator_g21_tx_injection_group_layer.csv": "3DC62C85C1A254DE58D9BDBD650F244C67018422A361AD7F1FCDB75FB58742C4",
+          "generator_g21_tx_machine_layer.csv": "DA8A16DC5F6776D4B54B449BF8767AE4C2DEFED5DF6CDEB040DD7DB5C531D8DE"
+        },
+        "before": {
+          "generator_g21_capacity_accounting.csv": "769FF460BA22BED028812FB95180AEBF4A0EDA6918B7BC3E32E317A48C6ECC77",
+          "generator_g21_family_master.csv": "8BD93C57B38E0E9ADBBD4B0D270376909217C3878D6E93256127B9F0F6D42C6C",
+          "generator_g21_generator_attachment_edges.csv": "23514C99A31EEE0AFE41EE402A5334B38EE66F7D5E47672DF8477FFBD92A1090",
+          "generator_g21_hash_manifest.csv": "83FC29E12B726B84CFF873A917B490219369AF8045B30F267C29E9C205E2F155",
+          "generator_g21_injection_group_master.csv": "1EF276BE0211E17B9173FBAB2D9C10572ED4D0538505E61F9F33F3127E4218C2",
+          "generator_g21_injection_group_membership.csv": "E32F424D9C550884639A0A7BDF0D0392E239B824D7E94D54F2F571289D6FAA73",
+          "generator_g21_integrity.json": "51366BB32D2BE7A825BC03F4DCD5BA8E40B52C547587191307143B222D132025",
+          "generator_g21_internal_hv_interface_master.csv": "31E325F7A3074C88589D938C504E2DD9E1B257842B5FC2BBF4B20C5DE955385B",
+          "generator_g21_m2_compatibility.csv": "9E3ABF25F9D945FC06336E84C48A285E927EB6BF5FD69E9D9490D5D2BF0EF4F4",
+          "generator_g21_machine_family_membership.csv": "BDB0601D5452C6AA771DC35C0DDF7DD4A9C97B824770274141437BF1B0ED3B62",
+          "generator_g21_machine_master_840.csv": "43462C63B4A74478D967D3188FA9C3732822DC5FFD0684A82A115D63031B9E60",
+          "generator_g21_model_use_authorization.csv": "6F058C24642BCF0C840D4DDE2F084138672455EAC7C043DCFC8CA5B626CC63F2",
+          "generator_g21_non_tx_machine_layer.csv": "58C2B6476A31F58FBB3B39FDB70DB0EB4B379A69CE42806CB36B5D565F0415DB",
+          "generator_g21_noncurrent_duplicate_registry.csv": "953A542D47F814184E28AC0BCF871FDD38E183EF8634B5D974027D8876BC2E3A",
+          "generator_g21_physical_station_attachment.csv": "6A90D86607A60762234E257290C7EE1300CB919BFED0A365EB33684EA334FBB6",
+          "generator_g21_public_data_ceiling_registry.csv": "244D243C6DA4C5A2319D553B8EC0D6139AF74774E21B74047F964D9F7AB4C58F",
+          "generator_g21_scope_unknown_machine_layer.csv": "2AC8789A2A7EFBFF31BC8CD889D438AB1DC557BA07D10BDC7A24C6197B16F03F",
+          "generator_g21_source_detail_conflict_registry.csv": "663411EC9BE40DA2B7EFDE5571B49A4817602A25C9481947FEFB6593EEAF070B",
+          "generator_g21_summary.json": "386A00389C8DC9D46075EFAE05554216BAD18069C2CD07034919FEC4E8F1003D",
+          "generator_g21_tx_injection_group_layer.csv": "3DC62C85C1A254DE58D9BDBD650F244C67018422A361AD7F1FCDB75FB58742C4",
+          "generator_g21_tx_machine_layer.csv": "DA8A16DC5F6776D4B54B449BF8767AE4C2DEFED5DF6CDEB040DD7DB5C531D8DE"
+        }
+      },
+      "name": "G21 canonical artifacts unchanged",
       "status": "PASS"
     }
   ],
@@ -162,16 +438,31 @@
   "counts": {
     "a_plus_one_bend_connections": 98,
     "a_plus_registry_sha256": "1C0B0B16938DE3D7CEEA8D622F0E9DBC504F24A06769273C6BD9855340587774",
-    "ac_connections": 1446,
+    "ac_connections": 1445,
     "btb_assets": 1,
     "canonical_topology_modified": false,
     "electrical_nodes_created": 0,
     "hvdc_links": 4,
-    "physical_facilities": 958,
+    "integrated_zero_degree_facilities": 7,
+    "invalid_rule_rejections": 0,
+    "physical_facilities": 957,
     "policy": "STRAIGHT_BY_DEFAULT",
-    "straight_connections": 1348
+    "retired_endpoint_references": 0,
+    "stale_pair_references": 0,
+    "straight_connections": 1347
   },
+  "invalid_a_plus_rules_removed": [],
   "proposal_endpoint_issues": [],
   "proposal_rule_issues": [],
+  "retired_a_plus_endpoint_ids_removed": [],
+  "retired_public_objects": {
+    "ac_pair_ids": [
+      "FGE0_000177"
+    ],
+    "facility_ids": [
+      "FGN0_000052"
+    ]
+  },
+  "stale_a_plus_pair_ids_removed": [],
   "status": "PASS"
 }

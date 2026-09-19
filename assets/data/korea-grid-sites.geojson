@@ -5541,32 +5541,6 @@
     {
       "geometry": {
         "coordinates": [
-          129.38504227025348,
-          37.08013506053152
-        ],
-        "type": "Point"
-      },
-      "properties": {
-        "ac_pair_count": 1,
-        "connected_physical_pair_count": 1,
-        "coordinate_method": "V44_OFFICIAL_PLAN_KEPCO_NUMBERED_IDENTITY_PLUS_VWORLD_EXACT_JIBUN_POINT",
-        "coordinate_tier": "GEO_B_FACILITY_SITE",
-        "facility_type": "HVDC_CONVERTER",
-        "fgn": "FGN0_000052",
-        "highest_voltage_kv": 345,
-        "hvdc_link_count": 0,
-        "is_orphan": false,
-        "legacy_gist_reference": false,
-        "name": "동해안",
-        "nmi": "NMI000052",
-        "voltage_band": "345",
-        "voltage_classes": "345"
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
           128.5584929,
           35.853813
         ],
@@ -12021,8 +11995,8 @@
         "type": "Point"
       },
       "properties": {
-        "ac_pair_count": 7,
-        "connected_physical_pair_count": 7,
+        "ac_pair_count": 6,
+        "connected_physical_pair_count": 6,
         "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
         "coordinate_tier": "GEO_B_FACILITY_SITE",
         "facility_type": "SUBSTATION",
@@ -14979,16 +14953,16 @@
     {
       "geometry": {
         "coordinates": [
-          126.9196524,
-          37.6843357
+          126.9202226294506,
+          37.684347490849376
         ],
         "type": "Point"
       },
       "properties": {
         "ac_pair_count": 11,
         "connected_physical_pair_count": 11,
-        "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
-        "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
+        "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
+        "coordinate_tier": "GEO_B_FACILITY_SITE",
         "facility_type": "SUBSTATION",
         "fgn": "FGN0_000191",
         "highest_voltage_kv": 345,
@@ -17865,16 +17839,16 @@
     {
       "geometry": {
         "coordinates": [
-          127.3610589,
-          36.4936436
+          127.2970974136052,
+          36.518733438049864
         ],
         "type": "Point"
       },
       "properties": {
         "ac_pair_count": 4,
         "connected_physical_pair_count": 4,
-        "coordinate_method": "LOCAL_OSM_PUBLIC_MAP_EXTRACT",
-        "coordinate_tier": "GEO_C_STRONG_NAME_MATCH",
+        "coordinate_method": "Official exact-PNU parcel, EPSG:900913 to EPSG:5179 interior representative_point then EPSG:4326",
+        "coordinate_tier": "GEO_B_FACILITY_SITE",
         "facility_type": "SUBSTATION",
         "fgn": "FGN0_000765",
         "highest_voltage_kv": 154,
