@@ -113,7 +113,8 @@ for asset in assets:
 for p in docs:
     text = p.read_text(encoding='utf-8')
     for forbidden in ('Meiyi Li', 'mli30@lsu.edu', 'vYnoysMAAAAJ', 'OPAL Lab'):
-        if forbidden in text:
+        allowed_related_lab = forbidden == 'Meiyi Li' and p == SITE / 'resources/related-labs/index.html'
+        if forbidden in text and not allowed_related_lab:
             errors.append(f'Reference personal content in {p.relative_to(SITE)}: {forbidden}')
     if '{{' in text or '{%' in text:
         errors.append(f'Unrendered Liquid in {p.relative_to(SITE)}')
